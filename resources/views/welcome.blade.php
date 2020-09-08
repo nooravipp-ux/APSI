@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('landing-content')
+@section('content')
 <div class="site-wrap">
     <div class="site-mobile-menu">
         <div class="site-mobile-menu-header">
@@ -24,27 +24,28 @@
                                     <div class="d-inline-block d-lg-none  ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle"><span class="icon-menu h3"></span></a></div>
                                         <ul class="site-menu js-clone-nav d-none d-lg-block">
                                             <li class="active">
-                                                <a href="index.html">Home</a>
+                                                <a href="index.html">HOME</a>
                                             </li>
                                             <li class="has-children">
-                                                <a href="classes.html">Yoga Classes</a>
+                                                <a href="classes.html">APSI</a>
                                                 <ul class="dropdown arrow-top">
-                                                    <li><a href="classes.html">Yoga Dance</a></li>
-                                                    <li><a href="classes.html">Bare Workout</a></li>
-                                                    <li><a href="classes.html">Peace of Mind</a></li>
-                                                    <li class="has-children">
-                                                        <a href="classes.html">More</a>
-                                                        <ul class="dropdown">
-                                                            <li><a href="classes.html">Yoga Dance</a></li>
-                                                            <li><a href="classes.html">Bare Workout</a></li>
-                                                            <li><a href="classes.html">Peace of Mind</a></li>
-                                                        </ul>
-                                                    </li>
+                                                    <li><a href="classes.html">Sejarah</a></li>
+                                                    <li><a href="classes.html">Visi Misi</a></li>
+                                                    <li><a href="classes.html">Struktur Organisasi</a></li>
+                                                    <li><a href="classes.html">Keanggotaan</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="events.html">Events</a></li>
-                                            <li><a href="about.html">About Studio</a></li>
-                                            <li><a href="contact.html">Contact</a></li>
+                                            <li class="has-children">
+                                                <a href="classes.html">MEDIA</a>
+                                                <ul class="dropdown arrow-top">
+                                                    <li><a href="classes.html">Berita</a></li>
+                                                    <li><a href="classes.html">Artikel</a></li>
+                                                    <li><a href="classes.html">Galery</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="events.html">AGENDA</a></li>
+                                            <li><a href="contact.html">CONTACT</a></li>
+                                            <li><a href="{{url('/login')}}">LOGIN</a></li>
                                         </ul>
                                     </div>
                                 </nav>
@@ -55,7 +56,7 @@
             </div>
         </div>
         <div class="slide-one-item home-slider owl-carousel">
-            <div class="site-blocks-cover overlay" style="background-image: url('{{asset('landingpage/images/hero_1.jpg')}}');" data-aos="fade" data-stellar-background-ratio="0.5">
+            <div class="site-blocks-cover overlay" style="background-image: url('{{asset('landingpage/images/satpam1.jpg')}}');" data-aos="fade" data-stellar-background-ratio="0.5">
                 <div class="container">
                     <div class="row align-items-center justify-content-center">
                         <div class="col-md-7 text-center" data-aos="fade">
@@ -65,7 +66,7 @@
                     </div>
                 </div>
             </div>
-            <div class="site-blocks-cover overlay" style="background-image: url('{{asset('landingpage/images/hero_2.jpg')}}');" data-aos="fade" data-stellar-background-ratio="0.5">
+            <div class="site-blocks-cover overlay" style="background-image: url('{{asset('landingpage/images/satpam2.jpg')}}');" data-aos="fade" data-stellar-background-ratio="0.5">
                 <div class="container">
                     <div class="row align-items-center justify-content-center">
                         <div class="col-md-7 text-center" data-aos="fade">
@@ -79,7 +80,7 @@
         <div class="site-block-half d-flex">
             <div class="image bg-image" style="background-image: url('{{asset('landingpage/images/img_1.jpg')}}');"></div>
                 <div class="text">
-                    <h2 class="font-family-serif">Welcome To Yogalife</h2>
+                    <h2 class="font-family-serif">Selamat Datang di Portal APSI</h2>
                     <span class="caption d-block text-primary pl-0 mb-4">Hello there!</span>
                     <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti odio laboriosam in recusandae expedita ducimus voluptatum provident doloremque doloribus, deserunt, ad maxime voluptas voluptatem ex qui quam saepe debitis dolorum!</p>
                     <p><a href="#" class="btn btn-primary pill px-4 py-3 text-white">See The Yoga Pricing</a></p>

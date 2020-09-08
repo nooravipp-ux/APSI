@@ -6,11 +6,8 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <title>{{ config('app.name', 'Laravel') }}</title>
-
     <!-- Scripts -->
-    <title>Yogalife &mdash; Colorlib Website Template</title>
+    <title>APSI - Asosiasi Pengusaha Satpam Indonesia</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -27,9 +24,10 @@
     <link rel="stylesheet" href="{{asset('landingpage/fonts/flaticon/font/flaticon.css')}}">
     <link rel="stylesheet" href="{{asset('landingpage/css/aos.css')}}">
     <link rel="stylesheet" href="{{asset('landingpage/css/style.css')}}">
+    @yield('style')
 </head>
 <body>
-    @yield('landing-content')
+    @yield('content')
     <script src="{{asset('landingpage/js/jquery-3.3.1.min.js')}}"></script>
     <script src="{{asset('landingpage/js/jquery-migrate-3.0.1.min.js')}}"></script>
     <script src="{{asset('landingpage/js/jquery-ui.js')}}"></script>
@@ -66,5 +64,6 @@
                     }
                 });
     </script>
+    @yield('script')
 </body>
 </html>

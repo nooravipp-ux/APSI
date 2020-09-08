@@ -12,10 +12,12 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+// portal APSI
 Route::get('/', function () {
     return view('welcome');
 });
 
+
 Auth::routes();
-Route::get('superadmin/dashboard', 'DashboardController@dashboard')->name('dashboard');
+
+Route::get('admin/dashboard', 'DashboardController@dashboard')->name('dashboard');
