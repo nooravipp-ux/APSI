@@ -14,10 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 // portal APSI
 Route::get('/', function () {
-    return view('welcome');
+    return view('website.index');
 });
 
 
 Auth::routes();
 
-Route::get('admin/dashboard', 'DashboardController@dashboard')->name('dashboard');
+Route::get('/admin', 'DashboardController@dashboard')->name('dashboard');

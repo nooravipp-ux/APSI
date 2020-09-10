@@ -35,10 +35,10 @@
 <body class="nav-md">
 	<div class="container body">
 		<div class="main_container">
-			<div class="col-md-3 left_col">
+			<div class="col-md-3 left_col menu_fixed">
 				<div class="left_col scroll-view">
 					<div class="navbar nav_title" style="border: 0;">
-						<a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>APSI</span></a>
+						<a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>DPD APSI</span></a>
 					</div>
 
 					<div class="clearfix"></div>
@@ -46,7 +46,7 @@
 					<!-- menu profile quick info -->
 					<div class="profile clearfix">
 						<div class="profile_pic">
-							<img src="images/img.jpg" alt="..." class="img-circle profile_img">
+							<img src="{{asset('template/vendors/images/img.jpg')}}" alt="..." class="img-circle profile_img">
 						</div>
 						<div class="profile_info">
 							<span>Welcome,</span>
@@ -62,7 +62,50 @@
 						<div class="menu_section">
 							<h3>General</h3>
 							<ul class="nav side-menu">
-								<li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
+								<li><a><i class="fa fa-users"></i> Users Management<span class="fa fa-chevron-down"></span></a>
+									<ul class="nav child_menu">
+										<li><a href="index.html">Data Users</a></li>
+									</ul>
+								</li>
+								<li><a><i class="fa fa-users"></i>Data Anggota<span class="fa fa-chevron-down"></span></a>
+									<ul class="nav child_menu">
+										<li><a href="index.html">Members</a></li>
+										<li><a href="index.html">Registration</a></li>
+									</ul>
+								</li>
+								<li><a><i class="fa fa-users"></i>Management Personil<span class="fa fa-chevron-down"></span></a>
+									<ul class="nav child_menu">
+										<li><a href="index.html">Members</a></li>
+										<li><a href="index.html">Registration</a></li>
+									</ul>
+								</li>
+								<li><a><i class="fa fa-users"></i>Record Training<span class="fa fa-chevron-down"></span></a>
+									<ul class="nav child_menu">
+										<li><a href="index.html">Members</a></li>
+										<li><a href="index.html">Registration</a></li>
+									</ul>
+								</li>
+								<li><a><i class="fa fa-users"></i>Reqruitement & Contract<span class="fa fa-chevron-down"></span></a>
+									<ul class="nav child_menu">
+										<li><a href="index.html">Members</a></li>
+										<li><a href="index.html">Registration</a></li>
+									</ul>
+								</li>
+								<li><a><i class="fa fa-users"></i>Laporan<span class="fa fa-chevron-down"></span></a>
+									<ul class="nav child_menu">
+										<li><a href="index.html">Laporan Patroli</a></li>
+										<li><a href="index.html">Laporan Absensi</a></li>
+										<li><a href="index.html">Laporan Aktifitas</a></li>
+									</ul>
+								</li>
+								<li><a><i class="fa fa-users"></i>Blog & Events<span class="fa fa-chevron-down"></span></a>
+									<ul class="nav child_menu">
+										<li><a href="index.html">Dashboard</a></li>
+										<li><a href="index2.html">Dashboard2</a></li>
+										<li><a href="index3.html">Dashboard3</a></li>
+									</ul>
+								</li>
+								<li><a><i class="fa fa-users"></i>Uploads<span class="fa fa-chevron-down"></span></a>
 									<ul class="nav child_menu">
 										<li><a href="index.html">Dashboard</a></li>
 										<li><a href="index2.html">Dashboard2</a></li>
@@ -70,7 +113,7 @@
 									</ul>
 								</li>
 								
-								<li><a href="javascript:void(0)"><i class="fa fa-laptop"></i> Landing Page </a></li>
+								<li><a href="/"><i class="fa fa-laptop"></i> Landing Page </a></li>
 							</ul>
 						</div>
 
