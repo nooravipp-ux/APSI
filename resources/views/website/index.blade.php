@@ -25,7 +25,7 @@
     </div>
 </div>
 <div class="site-block-half d-flex">
-    <div class="image bg-image" style="background-image: url('{{asset('landingpage/images/img_1.jpg')}}');"></div>
+    <div class="image bg-image" style="background-image: url('{{asset('landingpage/images/satpam2.jpg')}}');"></div>
     <div class="text">
         <h2 class="font-family-serif">Selamat Datang di Portal APSI</h2>
         <span class="caption d-block text-primary pl-0 mb-4">Hello there!</span>

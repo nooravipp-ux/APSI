@@ -14,7 +14,7 @@
                                 </div>
                                 <ul class="site-menu js-clone-nav d-none d-lg-block">
                                     <li class="active">
-                                        <a href="index.html">HOME</a>
+                                        <a href="{{url('/')}}">HOME</a>
                                     </li>
                                     <li class="has-children">
                                         <a href="classes.html">APSI</a>
@@ -22,7 +22,7 @@
                                             <li><a href="classes.html">Sejarah</a></li>
                                             <li><a href="classes.html">Visi Misi</a></li>
                                             <li><a href="classes.html">Struktur Organisasi</a></li>
-                                            <li><a href="classes.html">Keanggotaan</a></li>
+                                            <li><a href="{{url('/keanggotaan/pendaftaran')}}">Keanggotaan</a></li>
                                         </ul>
                                     </li>
                                     <li class="has-children">
@@ -34,7 +34,7 @@
                                         </ul>
                                     </li>
                                     <li><a href="events.html">AGENDA</a></li>
-                                    <li><a href="contact.html">CONTACT</a></li>
+                                    <li><a href="{{url('/contact')}}">CONTACT</a></li>
                                     
                                 </ul>
                             </div>

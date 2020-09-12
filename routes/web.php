@@ -16,8 +16,17 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('website.index');
 });
+Route::get('/contact', 'WebsiteController@contact');
 
 
 Auth::routes();
 
 Route::get('/admin', 'DashboardController@dashboard')->name('dashboard');
+
+Route::get('/keanggotaan/pendaftaran', 'KeanggotaanController@pendaftaran_personil');
+Route::post('/keanggotaan/daftar', 'KeanggotaanController@simpan_pendaftar');
+
+//Admin
+Route::get('/admin/pendaftaran', 'KeanggotaanController@data_pendaftar');
+Route::get('/admin/pendaftaran/detail/{no_pendaftar}', 'KeanggotaanController@detail_pendaftar')->name('detail.pendaftar','{no_pendaftar}');
+

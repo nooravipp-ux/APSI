@@ -30,6 +30,7 @@
 
 	<!-- Custom Theme Style -->
 	<link href="{{asset('template/build/css/custom.min.css')}}" rel="stylesheet">
+	@yield('style')
 </head>
 
 <body class="nav-md">
@@ -67,13 +68,13 @@
 										<li><a href="index.html">Data Users</a></li>
 									</ul>
 								</li>
-								<li><a><i class="fa fa-users"></i>Data Anggota<span class="fa fa-chevron-down"></span></a>
+								<li><a><i class="fa fa-edit"></i>Data Pendaftaran<span class="fa fa-chevron-down"></span></a>
 									<ul class="nav child_menu">
-										<li><a href="index.html">Members</a></li>
-										<li><a href="index.html">Registration</a></li>
+										<li><a href="index.html">Daftar Anggota Terdaftar</a></li>
+										<li><a href="{{url('/admin/pendaftaran')}}">Pendaftar</a></li>
 									</ul>
 								</li>
-								<li><a><i class="fa fa-users"></i>Management Personil<span class="fa fa-chevron-down"></span></a>
+								<li><a><i class="fa fa-child"></i>Management Personil<span class="fa fa-chevron-down"></span></a>
 									<ul class="nav child_menu">
 										<li><a href="index.html">Members</a></li>
 										<li><a href="index.html">Registration</a></li>
@@ -85,13 +86,13 @@
 										<li><a href="index.html">Registration</a></li>
 									</ul>
 								</li>
-								<li><a><i class="fa fa-users"></i>Reqruitement & Contract<span class="fa fa-chevron-down"></span></a>
+								<li><a><i class="fa fa-file-text-o"></i>Reqruitement & Contract<span class="fa fa-chevron-down"></span></a>
 									<ul class="nav child_menu">
 										<li><a href="index.html">Members</a></li>
 										<li><a href="index.html">Registration</a></li>
 									</ul>
 								</li>
-								<li><a><i class="fa fa-users"></i>Laporan<span class="fa fa-chevron-down"></span></a>
+								<li><a><i class="fa fa-book"></i>Laporan<span class="fa fa-chevron-down"></span></a>
 									<ul class="nav child_menu">
 										<li><a href="index.html">Laporan Patroli</a></li>
 										<li><a href="index.html">Laporan Absensi</a></li>
@@ -105,7 +106,7 @@
 										<li><a href="index3.html">Dashboard3</a></li>
 									</ul>
 								</li>
-								<li><a><i class="fa fa-users"></i>Uploads<span class="fa fa-chevron-down"></span></a>
+								<li><a><i class="fa fa-cloud-upload"></i>Uploads<span class="fa fa-chevron-down"></span></a>
 									<ul class="nav child_menu">
 										<li><a href="index.html">Dashboard</a></li>
 										<li><a href="index2.html">Dashboard2</a></li>
@@ -289,6 +290,6 @@
 	<script src="{{asset('template/vendors/starrr/dist/starrr.js')}}"></script>
 	<!-- Custom Theme Scripts -->
 	<script src="{{asset('template/build/js/custom.min.js')}}"></script>
-
+	@yield('script')
 </body>
 </html>
