@@ -4,7 +4,7 @@
             <div class="py-1">
                 <div class="row align-items-center">
                     <div class="col-2">
-                        <h2 class="mb-0 site-logo"><a href="index.html">DPD APSI</a></h2>
+                        <h2 class="mb-0 site-logo"><a href="index.html">APSI JABAR</a></h2>
                     </div>
                     <div class="col-10">
                         <nav class="site-navigation text-right" role="navigation">
@@ -22,18 +22,13 @@
                                             <li><a href="classes.html">Sejarah</a></li>
                                             <li><a href="classes.html">Visi Misi</a></li>
                                             <li><a href="classes.html">Struktur Organisasi</a></li>
-                                            <li><a href="{{url('/keanggotaan/pendaftaran')}}">Keanggotaan</a></li>
                                         </ul>
                                     </li>
-                                    <li class="has-children">
-                                        <a href="classes.html">MEDIA</a>
-                                        <ul class="dropdown arrow-top">
-                                            <li><a href="classes.html">Berita</a></li>
-                                            <li><a href="classes.html">Artikel</a></li>
-                                            <li><a href="classes.html">Galery</a></li>
-                                        </ul>
+                                    <li><a href="{{url('/keanggotaan')}}">KEANGGOTAAN</a></li>
+                                    <li>
+                                        <a href="classes.html">BERITA</a>
                                     </li>
-                                    <li><a href="events.html">AGENDA</a></li>
+                                    <li><a href="events.html">EVENTS</a></li>
                                     <li><a href="{{url('/contact')}}">CONTACT</a></li>
                                     
                                 </ul>

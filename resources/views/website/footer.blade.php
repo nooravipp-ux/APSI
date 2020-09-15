@@ -3,7 +3,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <h3 class="footer-heading mb-4 text-white">About</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat quos rem ullam, placeat amet.
+                    <p>Asosiasi Profesi Sekuriti Indonesia awalnya bernama Asosiasi Manager Security Indonesia (AMSI) yang berdiri pada 9 Juli 2001 di Hotel Kartika Chandra, Jakarta Pusat. AMSI dikukuhkan dengan SK Kapolri No. 500/VI/2002 tertanggal 28 Juni 2002.
                     </p>
                     <p><a href="#" class="btn btn-primary pill text-white px-4">Read More</a></p>
                 </div>

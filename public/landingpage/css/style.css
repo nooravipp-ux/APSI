@@ -117,7 +117,7 @@ a {
   .site-footer:before {
     position: absolute;
     content: "";
-    background: rgba(0, 0, 0, 0.8);
+    background: #0f263a ;
     top: 0;
     left: 0;
     right: 0;
@@ -331,7 +331,7 @@ a {
       .site-navbar-wrap.scrolled .site-navbar .site-navigation .site-menu > li > a:hover {
         color: #000; }
     .site-navbar-wrap.scrolled .site-navbar .site-navigation .site-menu > li.active > a {
-      color: #87e5da !important; }
+      color: #0f263a !important; }
 
 .site-mobile-menu {
   width: 300px;

@@ -17,13 +17,13 @@ Route::get('/', function () {
     return view('website.index');
 });
 Route::get('/contact', 'WebsiteController@contact');
-
+Route::get('/keanggotaan', 'WebsiteController@keanggotaan');
+Route::get('/keanggotaan/pendaftaran', 'KeanggotaanController@pendaftaran_personil');
+Route::get('/keanggotaan/pendaftaran-bujp', 'KeanggotaanController@pendaftaran_BUJP');
 
 Auth::routes();
 
 Route::get('/admin', 'DashboardController@dashboard')->name('dashboard');
-
-Route::get('/keanggotaan/pendaftaran', 'KeanggotaanController@pendaftaran_personil');
 Route::post('/keanggotaan/daftar', 'KeanggotaanController@simpan_pendaftar');
 
 //Admin

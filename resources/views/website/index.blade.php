@@ -6,8 +6,7 @@
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-md-7 text-center" data-aos="fade">
-                    <h2 class="caption mb-2">Selamat Datang</h2>
-                    <h1 class="">Asosiasi Profesi Satpam Indonesia</h1>
+                    <h1 class="">Asosiasi Profesi Satpam Indonesia Jawa Barat</h1>
                 </div>
             </div>
         </div>
@@ -17,8 +16,8 @@
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-md-7 text-center" data-aos="fade">
-                    <h2 class="caption mb-2">Enjoy With Us</h2>
-                    <h1 class="">Yoga &amp; Meditation</h1>
+                    <h1 class="">Bergabung Dengan APSI JABAR</h1>
+                    <h2 class="caption mb-2">Menguatkan Simpul Korsa Dengan Menjadi Anggota APSI Jadilah Bagian Dari Keluarga Besar Satpam Indonesia</h2>
                 </div>
             </div>
         </div>
@@ -27,12 +26,9 @@
 <div class="site-block-half d-flex">
     <div class="image bg-image" style="background-image: url('{{asset('landingpage/images/satpam2.jpg')}}');"></div>
     <div class="text">
-        <h2 class="font-family-serif">Selamat Datang di Portal APSI</h2>
-        <span class="caption d-block text-primary pl-0 mb-4">Hello there!</span>
-        <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti odio laboriosam in
-            recusandae expedita ducimus voluptatum provident doloremque doloribus, deserunt, ad maxime voluptas
-            voluptatem ex qui quam saepe debitis dolorum!</p>
-        <p><a href="#" class="btn btn-primary pill px-4 py-3 text-white">See The Yoga Pricing</a></p>
+        <h2 class="font-family-serif">Selamat Datang di Portal APSI JABAR</h2>
+        <p class="mb-5">Asosiasi Profesi Sekuriti Indonesia awalnya bernama Asosiasi Manager Security Indonesia (AMSI) yang berdiri pada 9 Juli 2001 di Hotel Kartika Chandra, Jakarta Pusat. AMSI dikukuhkan dengan SK Kapolri No. 500/VI/2002 tertanggal 28 Juni 2002.</p>
+        <p><a href="#" class="btn btn-primary pill px-4 py-3 text-white">Lihat lebih lanjut</a></p>
     </div>
 </div>
 <div class="site-section bg-light">

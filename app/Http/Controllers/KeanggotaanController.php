@@ -6,8 +6,13 @@ use Illuminate\Http\Request;
 
 class KeanggotaanController extends Controller
 {
+    
     public function pendaftaran_personil(){
-        return view('website.pendaftaran');
+        return view('website.keanggotaan.pendaftaran');
+    }
+
+    public function pendaftaran_BUJP(){
+        return view('website.keanggotaan.pendaftaran_bujp');
     }
 
     public function simpan_pendaftar(Request $req){

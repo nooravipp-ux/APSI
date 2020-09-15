@@ -22,15 +22,39 @@
             <form method="POST" action="{{url('/keanggotaan/daftar')}}" enctype="multipart/form-data">
                 @csrf
                 <div class="form-group row">
-                    <label for="inputEmail3" class="col-sm-2 col-form-label">Nama Lengkap</label>
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Nama Perusahaan</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" name="nama">
+                        <input type="text" class="form-control" name="nama_perusahaan">
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="" class="col-sm-2 col-form-label">Alamat Kantor</label>
                     <div class="col-sm-10">
                         <textarea type="text" class="form-control" name="alamat_kantor"></textarea>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Nama Lengkap</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="nama">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Tanggal Lahir</label>
+                    <div class="col-sm-10">
+                        <input type="date" class="form-control" name="tgl_lahir">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="" class="col-sm-2 col-form-label">Alamat</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="alamat">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="" class="col-sm-2 col-form-label">Jabatan</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="jabatan">
                     </div>
                 </div>
                 <div class="form-group row">
@@ -72,7 +96,7 @@
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="" class="col-sm-2 col-form-label">Ijazah Pelatihan</label>
+                    <label for="" class="col-sm-2 col-form-label">Ijazah Diklat</label>
                     <div class="col-sm-10">
                         <div class="input-group mb-3">
                             <div class="custom-file">
