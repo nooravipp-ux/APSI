@@ -1,8 +1,9 @@
 @extends('layouts.app')
 @section('content')
 <div class="slide-one-item home-slider owl-carousel">
-    <div class="site-blocks-cover overlay" style="background-image: url('{{asset('landingpage/images/dewan-pimpinan-daerah.jpg')}}');"
-        data-aos="fade" data-stellar-background-ratio="0.5">
+    <div class="site-blocks-cover overlay"
+        style="background-image: url('{{asset('landingpage/images/dewan-pimpinan-daerah.jpg')}}');" data-aos="fade"
+        data-stellar-background-ratio="0.5">
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-md-7 text-center" data-aos="fade">
@@ -17,17 +18,21 @@
             <div class="row align-items-center justify-content-center">
                 <div class="col-md-7 text-center" data-aos="fade">
                     <h1 class="">Bergabung Dengan APSI</h1>
-                    <h2 class="caption mb-2">Menguatkan Simpul Korsa Dengan Menjadi Anggota APSI Jadilah Bagian Dari Keluarga Besar Satpam Indonesia</h2>
+                    <h2 class="caption mb-2">Menguatkan Simpul Korsa Dengan Menjadi Anggota APSI Jadilah Bagian Dari
+                        Keluarga Besar Satpam Indonesia</h2>
                 </div>
             </div>
         </div>
     </div>
 </div>
 <div class="site-block-half d-flex">
-    <div class="image bg-image" style="background-image: url('{{asset('landingpage/images/direktur-gada88.jpg')}}');"></div>
+    <div class="image bg-image" style="background-image: url('{{asset('landingpage/images/direktur-gada88.jpg')}}');">
+    </div>
     <div class="text">
         <h2 class="font-family-serif">Selamat Datang di Portal APSI JABAR</h2>
-        <p class="mb-5">Asosiasi Profesi Sekuriti Indonesia awalnya bernama Asosiasi Manager Security Indonesia (AMSI) yang berdiri pada 9 Juli 2001 di Hotel Kartika Chandra, Jakarta Pusat. AMSI dikukuhkan dengan SK Kapolri No. 500/VI/2002 tertanggal 28 Juni 2002.</p>
+        <p class="mb-5">Asosiasi Profesi Sekuriti Indonesia awalnya bernama Asosiasi Manager Security Indonesia (AMSI)
+            yang berdiri pada 9 Juli 2001 di Hotel Kartika Chandra, Jakarta Pusat. AMSI dikukuhkan dengan SK Kapolri No.
+            500/VI/2002 tertanggal 28 Juni 2002.</p>
         <p><a href="#" class="btn btn-primary pill px-4 py-3 text-white">Lihat lebih lanjut</a></p>
     </div>
 </div>
@@ -41,8 +46,8 @@
         <div class="row">
             <div class="col-md-6 col-lg-4 mb-5">
                 <div class="program">
-                    <a href="#" class="d-block mb-0 thumbnail"><img src="{{asset('landingpage/images/seragam.jpeg')}}" alt="Image" style="width:800px;height:240px;"
-                            class="img-fluid"></a>
+                    <a href="#" class="d-block mb-0 thumbnail"><img src="{{asset('landingpage/images/seragam.jpeg')}}"
+                            alt="Image" style="width:800px;height:240px;" class="img-fluid"></a>
                     <div class="program-body">
                         <h3 class="heading mb-2"><a href="#">Embrace Your Edge</a></h3>
                         <p><a href="#">Healthy Yoga</a> with <a href="#">Vicky Johnson</a></p>
@@ -54,8 +59,8 @@
             </div>
             <div class="col-md-6 col-lg-4 mb-5">
                 <div class="program">
-                    <a href="#" class="d-block mb-0 thumbnail"><img src="{{asset('landingpage/images/img_1.jpg')}}" alt="Image" style="width:800px;height:240px;"
-                            class="img-fluid"></a>
+                    <a href="#" class="d-block mb-0 thumbnail"><img src="{{asset('landingpage/images/seragam.jpeg')}}"
+                            alt="Image" style="width:800px;height:240px;" class="img-fluid"></a>
                     <div class="program-body">
                         <h3 class="heading mb-2"><a href="#">Yoga to Build Resilience</a></h3>
                         <p><a href="#">Healthy Yoga</a> with <a href="#">Kit Rich</a></p>
@@ -67,8 +72,8 @@
             </div>
             <div class="col-md-6 col-lg-4 mb-5">
                 <div class="program">
-                    <a href="#" class="d-block mb-0 thumbnail"><img src="{{asset('landingpage/images/img_1.jpg')}}" alt="Image" style="width:800px;height:240px;"
-                            class="img-fluid"></a>
+                    <a href="#" class="d-block mb-0 thumbnail"><img src="{{asset('landingpage/images/seragam.jpeg')}}"
+                            alt="Image" style="width:800px;height:240px;" class="img-fluid"></a>
                     <div class="program-body">
                         <h3 class="heading mb-2"><a href="#">Rise &amp; Shine</a></h3>
                         <p><a href="#">Power Yoga</a> with <a href="#">Sara Clark</a></p>
@@ -80,8 +85,8 @@
             </div>
             <div class="col-md-6 col-lg-4 mb-5">
                 <div class="program">
-                    <a href="#" class="d-block mb-0 thumbnail"><img src="{{asset('landingpage/images/img_1.jpg')}}" alt="Image" style="width:800px;height:240px;"
-                            class="img-fluid"></a>
+                    <a href="#" class="d-block mb-0 thumbnail"><img src="{{asset('landingpage/images/seragam.jpeg')}}"
+                            alt="Image" style="width:800px;height:240px;" class="img-fluid"></a>
                     <div class="program-body">
                         <h3 class="heading mb-2"><a href="#">Bend &amp; Stretch</a></h3>
                         <p><a href="#">Meditation Yoga</a> with <a href="#">David Scott</a></p>
@@ -93,8 +98,8 @@
             </div>
             <div class="col-md-6 col-lg-4 mb-5">
                 <div class="program">
-                    <a href="#" class="d-block mb-0 thumbnail"><img src="{{asset('landingpage/images/img_1.jpg')}}" alt="Image" style="width:800px;height:240px;"
-                            class="img-fluid"></a>
+                    <a href="#" class="d-block mb-0 thumbnail"><img src="{{asset('landingpage/images/seragam.jpeg')}}"
+                            alt="Image" style="width:800px;height:240px;" class="img-fluid"></a>
                     <div class="program-body">
                         <h3 class="heading mb-2"><a href="#">Vinyasa Yoga</a></h3>
                         <p><a href="#">Meditation Yoga</a> with <a href="#">David Scott</a></p>
@@ -106,8 +111,8 @@
             </div>
             <div class="col-md-6 col-lg-4 mb-5">
                 <div class="program">
-                    <a href="#" class="d-block mb-0 thumbnail"><img src="{{asset('landingpage/images/img_1.jpg')}}" alt="Image"
-                            class="img-fluid"></a>
+                    <a href="#" class="d-block mb-0 thumbnail"><img src="{{asset('landingpage/images/seragam.jpeg')}}"
+                            alt="Image" style="width:800px;height:240px;" class="img-fluid"></a>
                     <div class="program-body">
                         <h3 class="heading mb-2"><a href="#">Barre Workout</a></h3>
                         <p><a href="#">Meditation Yoga</a> with <a href="#">David Scott</a></p>
@@ -122,23 +127,16 @@
 </div>
 <div class="site-section">
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-md-6 mb-5 mb-md-0">
-                <div class="img-border">
-                    <a href="https://vimeo.com/28959265" class="popup-vimeo image-play">
-                        <span class="icon-wrap">
-                            <span class="icon icon-play"></span>
-                        </span>
-                        <img src="images/img_4.jpg" alt="" class="img-fluid rounded">
-                    </a>
-                </div>
-                <img src="images/img_1.jpg" alt="Image" class="img-fluid image-absolute">
+        <div class="row ">
+            <div class="col-md-8 mb-3 mb-md-0">
+                <iframe width="700" height="345" src="https://www.youtube.com/embed/iz45Pe35TU0">
+                </iframe>
             </div>
-            <div class="col-md-5 ml-auto">
+            <div class="col-md-4 ml-auto">
                 <div class="section-heading text-left">
-                    <h2 class="mb-5">Watch Video</h2>
+                    <h2 class="mb-3">Watch Video</h2>
                 </div>
-                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, nisi Lorem ipsum
+                <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, nisi Lorem ipsum
                     dolor sit amet, consectetur adipisicing elit. Odit nobis magni eaque velit eum, id rem eveniet
                     dolor possimus voluptas..</p>
                 <p><a href="https://vimeo.com/28959265" class="popup-vimeo text-uppercase">Watch Video <span
@@ -163,13 +161,9 @@
                             <h3 class="h4 mb-4">GADA PRATAMA</h3>
                             <strong class="font-weight-normal h1 text-white"></strong>
                         </div>
-                        <ul class="list-unstyled mb-5">
-                            <li>Photocopy ijazah Diklat Gada Pratama</li>
-                            <li>Flexible schedule</li>
-                            <li>4-week series</li>
-                            <li>10% off Vinyasa treatment</li>
-                        </ul>
-                        <p class="mb-0"><a href="{{url('/keanggotaan/pendaftaran-satpam')}}" class="btn pill btn-outline-white">Daftar</a></p>
+                        <p>Untuk satpam pelaksana, yang telah memiliki ijazah Gada Pratama</p>
+                        <p class="mb-0"><a href="{{url('/keanggotaan/pendaftaran-satpam')}}"
+                                class="btn pill btn-outline-white">Daftar</a></p>
                     </div>
                 </div>
             </div>
@@ -179,13 +173,9 @@
                         <h3 class="h4 mb-4">GADA MADYA</h3>
                         <strong class="font-weight-normal h1"></strong>
                     </div>
-                    <ul class="list-unstyled mb-5">
-                        <li>10 days classes</li>
-                        <li>Flexible schedule</li>
-                        <li>4-week series</li>
-                        <li>10% off Vinyasa treatment</li>
-                    </ul>
-                    <p class="mb-0"><a href="{{url('/keanggotaan/pendaftaran-satpam')}}" class="btn pill btn-primary">Daftar</a></p>
+                    <p>Untuk supervisor satpam, yang telah memiliki ijazah Gada Madya</p>
+                    <p class="mb-0"><a href="{{url('/keanggotaan/pendaftaran-satpam')}}"
+                            class="btn pill btn-primary">Daftar</a></p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3 mb-4">
@@ -194,13 +184,9 @@
                         <h3 class="h4 mb-4">GADA UTAMA</h3>
                         <strong class="font-weight-normal h1"></strong>
                     </div>
-                    <ul class="list-unstyled mb-5">
-                        <li>20 days classes</li>
-                        <li>Flexible schedule</li>
-                        <li>4-week series</li>
-                        <li>10% off Vinyasa treatment</li>
-                    </ul>
-                    <p class="mb-0"><a href="{{url('/keanggotaan/pendaftaran-satpam')}}" class="btn pill btn-primary">Daftar</a></p>
+                    <p>Untuk manager satpam / Chief Security, yang telah memiliki ijazah Gada Utama</p>
+                    <p class="mb-0"><a href="{{url('/keanggotaan/pendaftaran-satpam')}}"
+                            class="btn pill btn-primary">Daftar</a></p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3 mb-4">
@@ -213,9 +199,10 @@
                         <li>30 days classes</li>
                         <li>Flexible schedule</li>
                         <li>4-week series</li>
-                        <li>10% off Vinyasa treatment</li>
+                        <li>10% off </li>
                     </ul>
-                    <p class="mb-0"><a href="{{url('/keanggotaan/pendaftaran-bujp')}}" class="btn pill btn-primary">Daftar</a></p>
+                    <p class="mb-0"><a href="{{url('/keanggotaan/pendaftaran-bujp')}}"
+                            class="btn pill btn-primary">Daftar</a></p>
                 </div>
             </div>
         </div>
@@ -231,11 +218,11 @@
         </div>
         <div class="row no-gutters">
             <div class="col-md-6 col-lg-3">
-                <a href="images/img_1.jpg" class="image-popup img-opacity"><img src="images/img_1.jpg" alt="Image"
+                <a href="images/img_1.jpg" class="image-popup img-opacity"><img src="" alt="Image"
                         class="img-fluid"></a>
             </div>
             <div class="col-md-6 col-lg-3">
-                <a href="images/img_2.jpg" class="image-popup img-opacity"><img src="images/img_2.jpg" alt="Image"
+                <a href="images/img_2.jpg" class="image-popup img-opacity"><img src="{{asset('landingpage/images/jalan-sehat-apsi.jpeg')}}" alt="Image"
                         class="img-fluid"></a>
             </div>
             <div class="col-md-6 col-lg-3">

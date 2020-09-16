@@ -3,7 +3,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <h3 class="footer-heading mb-4 text-white">About</h3>
-                    <p>Asosiasi Profesi Sekuriti Indonesia awalnya bernama Asosiasi Manager Security Indonesia (AMSI) yang berdiri pada 9 Juli 2001 di Hotel Kartika Chandra, Jakarta Pusat. AMSI dikukuhkan dengan SK Kapolri No. 500/VI/2002 tertanggal 28 Juni 2002.
+                    <p>Asosiasi Profesi Sekuriti Indonesia awalnya bernama Asosiasi Manager Security Indonesia (AMSI) yang berdiri pada 9 Juli 2001 di Hotel Kartika Chandra, Jakarta Pusat....
                     </p>
                     <p><a href="#" class="btn btn-primary pill text-white px-4">Read More</a></p>
                 </div>
@@ -12,22 +12,21 @@
                         <div class="col-md-6">
                             <h3 class="footer-heading mb-4 text-white">Quick Menu</h3>
                             <ul class="list-unstyled">
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Features</a></li>
-                                <li><a href="#">Approach</a></li>
+                                <li><a href="#">APSI</a></li>
+                                <li><a href="#">Struktur Organisasi</a></li>
+                                <li><a href="#">Keanggotaan</a></li>
                                 <li><a href="#">Events</a></li>
-                                <li><a href="#">Classes</a></li>
-                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Berita</a></li>
+                                <li><a href="#">contact</a></li>
                             </ul>
                         </div>
                         <div class="col-md-6">
-                            <h3 class="footer-heading mb-4 text-white">Ministries</h3>
+                            <h3 class="footer-heading mb-4 text-white">Keanggotaan</h3>
                             <ul class="list-unstyled">
-                                <li><a href="#">Yoga for Health</a></li>
-                                <li><a href="#">Yoga for Resilience</a></li>
-                                <li><a href="#">Yoga Class</a></li>
-                                <li><a href="#">Meditation</a></li>
-                                <li><a href="#">Mind Balance</a></li>
+                                <li><a href="#">Gada Pratama</a></li>
+                                <li><a href="#">Gada Madya</a></li>
+                                <li><a href="#">Gada Utama</a></li>
+                                <li><a href="#">Gada Utama BUJP</a></li>
                             </ul>
                         </div>
                     </div>
