@@ -9,7 +9,7 @@
             <div class="row align-items-center justify-content-center">
                 <div class="col-md-7 text-center" data-aos="fade">
                     <h2 class="caption mb-2">Keanggotaan</h2>
-                    <h1 class="">Pendaftaran Calon Anggota</h1>
+                    <h1 class="">Pendaftaran Calon Anggota BUJP</h1>
                 </div>
             </div>
         </div>
@@ -19,7 +19,7 @@
 
     <div class="row shadow p-4 mb-4 bg-white border rounded mt-lg-5 mb-lg-5">
         <div class="col-md-12">
-            <form method="POST" action="{{url('/keanggotaan/daftar')}}" enctype="multipart/form-data">
+            <form method="POST" action="{{url('/keanggotaan/daftar-bujp')}}" enctype="multipart/form-data">
                 @csrf
                 <div class="form-group row">
                     <label for="inputEmail3" class="col-sm-2 col-form-label">Nama Perusahaan</label>
@@ -34,49 +34,36 @@
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="inputEmail3" class="col-sm-2 col-form-label">Nama Lengkap</label>
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Penanggung Jawab</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" name="nama">
+                        <input type="text" class="form-control" name="penanggung_jawab">
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="inputEmail3" class="col-sm-2 col-form-label">Tanggal Lahir</label>
-                    <div class="col-sm-10">
-                        <input type="date" class="form-control" name="tgl_lahir">
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label for="" class="col-sm-2 col-form-label">Alamat</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" name="alamat">
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label for="" class="col-sm-2 col-form-label">Jabatan</label>
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Jabatan</label>
                     <div class="col-sm-10">
                         <input type="text" class="form-control" name="jabatan">
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="" class="col-sm-2 col-form-label">No Telepon</label>
+                    <label for="" class="col-sm-2 col-form-label">Jumlah Satpam :</label>
+                </div>
+                <div class="form-group row">
+                    <label for="" class="col-sm-2 col-form-label">Gada Pratama</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" name="no_telepon">
+                        <input type="number" class="form-control" name="gada_pratama">
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="" class="col-sm-2 col-form-label">E-mail</label>
+                    <label for="" class="col-sm-2 col-form-label">Gada Madya</label>
                     <div class="col-sm-10">
-                        <input type="email" class="form-control" name="email">
+                        <input type="number" class="form-control" name="gada_madya">
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="" class="col-sm-2 col-form-label">Calon Anggota</label>
+                    <label for="" class="col-sm-2 col-form-label">Gada Utama</label>
                     <div class="col-sm-10">
-                        <select name="calon_anggota" class="form-control">
-                            <option value="GADA PRATAMA">GADA PRATAMA</option>
-                            <option value="GADA UTAMA">GADA UTAMA</option>
-                            <option value="GADA MADYA">GADA MADYA</option>
-                        </select>
+                        <input type="number" class="form-control" name="gada_utama">
                     </div>
                 </div>
                 <div class="form-group row">
@@ -86,41 +73,41 @@
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="" class="col-sm-2 col-form-label">KTP</label>
+                    <label for="" class="col-sm-2 col-form-label">Akta Pendirian Perusahaan</label>
                     <div class="col-sm-10">
                         <div class="input-group mb-3">
                             <div class="custom-file">
-                                <input type="file" name="file_ktp" id="fileToUpload">
+                                <input type="file" name="akta_pendirian_perusahaan">
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="" class="col-sm-2 col-form-label">Ijazah Diklat</label>
+                    <label for="" class="col-sm-2 col-form-label">SIUP</label>
                     <div class="col-sm-10">
                         <div class="input-group mb-3">
                             <div class="custom-file">
-                                <input type="file" name="file_ijazah">
+                                <input type="file" name="siup">
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="" class="col-sm-2 col-form-label">Verifikasi DPC</label>
+                    <label for="" class="col-sm-2 col-form-label">NIB</label>
                     <div class="col-sm-10">
                         <div class="input-group mb-3">
                             <div class="custom-file">
-                                <input type="file" name="file_verifikasi">
+                                <input type="file" name="nib">
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="" class="col-sm-2 col-form-label">Foto (2x3)</label>
+                    <label for="" class="col-sm-2 col-form-label">Ijin Operasional MABES POLRI</label>
                     <div class="col-sm-10">
                         <div class="input-group mb-3">
                             <div class="custom-file">
-                                <input type="file" name="file_foto">
+                                <input type="file" name="ijin_mabes_polri">
                             </div>
                         </div>
                     </div>

@@ -854,21 +854,18 @@ textarea.form-control {
                                         <div class="row" id="user-profile">
                                             <div class="col-lg-3 col-md-4 col-sm-4">
                                                 <div class="main-box clearfix">
-                                                    <h2>{{$data_pendaftar->nama}}</h2>
-                                                    <img src="data:image/png;base64, {{$data_pendaftar->foto}}"
-                                                        alt="Foto Belum di Isi"
+                                                    <h2>{{$data_pendaftar->nama_perusahaan}}</h2>
+                                                    <img src="data:image/png;base64," alt="Foto Belum di Isi"
                                                         class="profile-img img-responsive center-block"
                                                         style="height: 300px;">
                                                     <div>
-                                                        <form action="{{url('/admin/pendaftaran/confirm')}}" method="POST">
+                                                        <form action="{{url('/admin/pendaftaran-bujp/confirm')}}" method="post">
                                                             @csrf
                                                             <input type="hidden" name="no_pendaftaran" value="{{$data_pendaftar->no_pendaftaran}}">
                                                             <button class="btn btn-primary btn-sm">Confirmasi Pendaftar</button>
                                                         </form>
-                                                        
                                                     </div>
                                                 </div>
-
                                             </div>
 
                                             <div class="col-lg-9 col-md-8 col-sm-8">
@@ -892,30 +889,8 @@ textarea.form-control {
                                                             </div>
                                                             <div class="profile-user-details clearfix">
                                                                 <div class="form-group row">
-                                                                    <label class="col-sm-3 col-form-label">Nama
-                                                                    </label>
-                                                                    <div class="col-sm-9">
-                                                                        <input type="text" readonly
-                                                                            class="form-control-plaintext"
-                                                                            value="{{$data_pendaftar->nama}}">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="profile-user-details clearfix">
-                                                                <div class="form-group row">
-                                                                    <label class="col-sm-3 col-form-label">Tanggal Lahir
-                                                                    </label>
-                                                                    <div class="col-sm-9">
-                                                                        <input type="date" readonly
-                                                                            class="form-control-plaintext"
-                                                                            value="{{$data_pendaftar->tanggal_lahir}}">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="profile-user-details clearfix">
-                                                                <div class="form-group row">
-                                                                    <label class="col-sm-3 col-form-label">Alamat Kantor
-                                                                    </label>
+                                                                    <label class="col-sm-3 col-form-label">alamat
+                                                                        Kantor</label>
                                                                     <div class="col-sm-9">
                                                                         <input type="text" readonly
                                                                             class="form-control-plaintext"
@@ -925,29 +900,19 @@ textarea.form-control {
                                                             </div>
                                                             <div class="profile-user-details clearfix">
                                                                 <div class="form-group row">
-                                                                    <label class="col-sm-3 col-form-label">No Telepon
+                                                                    <label class="col-sm-3 col-form-label">Penanggung
                                                                         Jawab</label>
                                                                     <div class="col-sm-9">
                                                                         <input type="text" readonly
                                                                             class="form-control-plaintext"
-                                                                            value="{{$data_pendaftar->telepon}}">
+                                                                            value="{{$data_pendaftar->penanggung_jawab}}">
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                             <div class="profile-user-details clearfix">
                                                                 <div class="form-group row">
-                                                                    <label class="col-sm-3 col-form-label">Email</label>
-                                                                    <div class="col-sm-9">
-                                                                        <input type="text" readonly
-                                                                            class="form-control-plaintext"
-                                                                            value="{{$data_pendaftar->email}}">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="profile-user-details clearfix">
-                                                                <div class="form-group row">
-                                                                    <label class="col-sm-3 col-form-label">Jabatan
-                                                                    </label>
+                                                                    <label
+                                                                        class="col-sm-3 col-form-label">Jabatan</label>
                                                                     <div class="col-sm-9">
                                                                         <input type="text" readonly
                                                                             class="form-control-plaintext"
@@ -955,7 +920,39 @@ textarea.form-control {
                                                                     </div>
                                                                 </div>
                                                             </div>
-
+                                                            <div class="profile-user-details clearfix">
+                                                                <div class="form-group row">
+                                                                    <label class="col-sm-3 col-form-label">Gada
+                                                                        Pratama</label>
+                                                                    <div class="col-sm-9">
+                                                                        <input type="text" readonly
+                                                                            class="form-control-plaintext"
+                                                                            value="{{$data_pendaftar->jml_gada_pratama}}">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="profile-user-details clearfix">
+                                                                <div class="form-group row">
+                                                                    <label class="col-sm-3 col-form-label">Gada
+                                                                        Madya</label>
+                                                                    <div class="col-sm-9">
+                                                                        <input type="text" readonly
+                                                                            class="form-control-plaintext"
+                                                                            value="{{$data_pendaftar->jml_gada_madya}}">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="profile-user-details clearfix">
+                                                                <div class="form-group row">
+                                                                    <label class="col-sm-3 col-form-label">Gada
+                                                                        Utama</label>
+                                                                    <div class="col-sm-9">
+                                                                        <input type="text" readonly
+                                                                            class="form-control-plaintext"
+                                                                            value="{{$data_pendaftar->jml_gada_utama}}">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                         <div class="col-sm-4 profile-social">
 
@@ -964,17 +961,20 @@ textarea.form-control {
 
                                                     <div class="tabs-wrapper profile-tabs">
                                                         <ul class="nav nav-tabs">
-                                                            <li><a href="#tab-ktp" data-toggle="tab">KTP</a></li>
-                                                            <li class="active"><a href="#tab-ijazah"
-                                                                    data-toggle="tab">Ijazah Diklat</a></li>
+                                                            <li><a href="#tab-akta" data-toggle="tab">Akta Pendirian
+                                                                    Perusahaan</a></li>
+                                                            <li class="active"><a href="#tab-siup"
+                                                                    data-toggle="tab">SIUP</a></li>
+                                                            <li><a href="#tab-nib" data-toggle="tab">NIB</a></li>
+                                                            <li><a href="#tab-ijin" data-toggle="tab">Surat Ijin MABES
+                                                                    POLRI</a></li>
                                                         </ul>
 
                                                         <div class="tab-content">
-                                                            <div class="tab-pane fade in active" id="tab-ktp">
+                                                            <div class="tab-pane fade in active" id="tab-akta">
 
-                                                                <img id="ktp"
-                                                                    src="data:image/png;base64, {{$data_pendaftar->ktp}}"
-                                                                    alt="Snow" style="width:100%;max-width:300px">
+                                                                <img class="img-fluid" id="k" alt="Bukti Pembayaran"
+                                                                    src="data:image/png;base64, {{$data_pendaftar->akta_pendirian_perusahaan}}">
 
 
                                                                 <div id="myModal" class="modal">
@@ -991,25 +991,56 @@ textarea.form-control {
 
                                                             </div>
 
-                                                            <div class="tab-pane fade" id="tab-ijazah">
-                                                                <img id="ijazah"
-                                                                    src="data:image/png;base64, {{$data_pendaftar->ijazah_diklat}}"
-                                                                    alt="Snow" style="width:100%;max-width:300px">
+                                                            <div class="tab-pane fade" id="tab-siup">
+                                                                <img class="img-fluid" id="k" alt="Bukti Pembayaran"
+                                                                    src="data:image/png;base64, {{$data_pendaftar->siup}}">
 
 
-                                                                <div id="myModal-ijazah" class="modal">
+                                                                <div id="myModal" class="modal">
 
                                                                     <!-- The Close Button -->
                                                                     <span class="close">&times;</span>
 
                                                                     <!-- Modal Content (The Image) -->
-                                                                    <img class="modal-content" id="img01-ijazah">
+                                                                    <img class="modal-content" id="img01">
 
                                                                     <!-- Modal Caption (Image Text) -->
                                                                     <div id="caption"></div>
                                                                 </div>
                                                             </div>
 
+                                                            <div class="tab-pane fade" id="tab-nib">
+                                                                <img class="img-fluid" id="k" alt="Bukti Pembayaran"
+                                                                    src="data:image/png;base64, {{$data_pendaftar->nib}}">
+
+
+                                                                <div id="myModal" class="modal">
+
+                                                                    <!-- The Close Button -->
+                                                                    <span class="close">&times;</span>
+
+                                                                    <!-- Modal Content (The Image) -->
+                                                                    <img class="modal-content" id="img01">
+
+                                                                    <!-- Modal Caption (Image Text) -->
+                                                                    <div id="caption"></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="tab-pane fade" id="tab-ijin">
+                                                                <img class="img-fluid" id="k" alt="Bukti Pembayaran"
+                                                                    src="data:image/png;base64, {{$data_pendaftar->ijin_mabes_polri}}">
+                                                                <div id="myModal" class="modal">
+
+                                                                    <!-- The Close Button -->
+                                                                    <span class="close">&times;</span>
+
+                                                                    <!-- Modal Content (The Image) -->
+                                                                    <img class="modal-content" id="img01">
+
+                                                                    <!-- Modal Caption (Image Text) -->
+                                                                    <div id="caption"></div>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
 
@@ -1035,7 +1066,7 @@ textarea.form-control {
 var modal = document.getElementById("myModal");
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("ktp");
+var img = document.getElementById("myImg");
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
 img.onclick = function() {

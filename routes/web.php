@@ -18,15 +18,19 @@ Route::get('/', function () {
 });
 Route::get('/contact', 'WebsiteController@contact');
 Route::get('/keanggotaan', 'WebsiteController@keanggotaan');
-Route::get('/keanggotaan/pendaftaran', 'KeanggotaanController@pendaftaran_personil');
+Route::get('/keanggotaan/pendaftaran-satpam', 'KeanggotaanController@pendaftaran_personil');
 Route::get('/keanggotaan/pendaftaran-bujp', 'KeanggotaanController@pendaftaran_BUJP');
 
 Auth::routes();
 
 Route::get('/admin', 'DashboardController@dashboard')->name('dashboard');
 Route::post('/keanggotaan/daftar', 'KeanggotaanController@simpan_pendaftar');
+Route::post('/keanggotaan/daftar-bujp', 'KeanggotaanController@simpan_pendaftar_bujp');
 
 //Admin
 Route::get('/admin/pendaftaran', 'KeanggotaanController@data_pendaftar');
 Route::get('/admin/pendaftaran/detail/{no_pendaftar}', 'KeanggotaanController@detail_pendaftar')->name('detail.pendaftar','{no_pendaftar}');
-
+Route::get('/admin/pendaftaran-bujp', 'KeanggotaanController@data_pendaftar_bujp');
+Route::get('/admin/pendaftaran-bujp/detail/{no_pendaftar}', 'KeanggotaanController@detail_pendaftar_bujp')->name('detail.pendaftar.bujp','{no_pendaftar}');
+Route::post('/admin/pendaftaran-bujp/confirm', 'KeanggotaanController@confirmasi_pendaftar_bujp');
+Route::post('/admin/pendaftaran/confirm', 'KeanggotaanController@confirmasi_pendaftar_satpam');

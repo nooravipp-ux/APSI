@@ -70,8 +70,8 @@
 								</li>
 								<li><a><i class="fa fa-edit"></i>Data Pendaftaran<span class="fa fa-chevron-down"></span></a>
 									<ul class="nav child_menu">
-										<li><a href="index.html">Daftar Anggota Terdaftar</a></li>
-										<li><a href="{{url('/admin/pendaftaran')}}">Pendaftar</a></li>
+										<li><a href="{{url('/admin/pendaftaran-bujp')}}">BUJP</a></li>
+										<li><a href="{{url('/admin/pendaftaran')}}">SATPAM</a></li>
 									</ul>
 								</li>
 								<li><a><i class="fa fa-child"></i>Management Personil<span class="fa fa-chevron-down"></span></a>

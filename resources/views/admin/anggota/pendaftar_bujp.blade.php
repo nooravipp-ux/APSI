@@ -41,11 +41,13 @@
                                             <tr>
                                                 <th>No Pendaftaran</th>
                                                 <th>Tgl Pendaftaran</th>
-                                                <th>Nama</th>
+                                                <th>Nama Perusahaan</th>
                                                 <th>Alamat Kantor</th>
-                                                <th>Email</th>
-                                                <th>No Telepon</th>
-                                                <th>Calon Anggota</th>
+                                                <th>Penanggung Jawab</th>
+                                                <th>Jabatan</th>
+                                                <th>jml Gada Pratama</th>
+                                                <th>jml Gada Madya</th>
+                                                <th>jml Gada Utama</th>
                                                 <th>Status</th>
                                                 <th>Action</th>
                                             </tr>
@@ -55,13 +57,15 @@
                                             <tr>
                                                 <td>{{$data->no_pendaftaran}}</td>
                                                 <td>{{$data->tgl_pendaftaran}}</td>
-                                                <td>{{$data->nama}}</td>
+                                                <td>{{$data->nama_perusahaan}}</td>
                                                 <td>{{$data->alamat_kantor}}</td>
-                                                <td>{{$data->telepon}}</td>
-                                                <td>{{$data->email}}</td>
+                                                <td>{{$data->penanggung_jawab}}</td>
                                                 <td>{{$data->jabatan}}</td>
+                                                <td>{{$data->jml_gada_pratama}}</td>
+                                                <td>{{$data->jml_gada_madya}}</td>
+                                                <td>{{$data->jml_gada_utama}}</td>
                                                 <td>{{$data->status}}</td>
-                                                <td><a href="{{route('detail.pendaftar', $data->no_pendaftaran)}}">Lihat</a></td>
+                                                <td><a href="{{route('detail.pendaftar.bujp', $data->no_pendaftaran )}}">Lihat</a></td>
                                             </tr>
                                             @endforeach
                                         </tbody>

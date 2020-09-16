@@ -16,7 +16,7 @@
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-md-7 text-center" data-aos="fade">
-                    <h1 class="">Bergabung Dengan APSI JABAR</h1>
+                    <h1 class="">Bergabung Dengan APSI</h1>
                     <h2 class="caption mb-2">Menguatkan Simpul Korsa Dengan Menjadi Anggota APSI Jadilah Bagian Dari Keluarga Besar Satpam Indonesia</h2>
                 </div>
             </div>
@@ -24,7 +24,7 @@
     </div>
 </div>
 <div class="site-block-half d-flex">
-    <div class="image bg-image" style="background-image: url('{{asset('landingpage/images/satpam2.jpg')}}');"></div>
+    <div class="image bg-image" style="background-image: url('{{asset('landingpage/images/direktur-gada88.jpg')}}');"></div>
     <div class="text">
         <h2 class="font-family-serif">Selamat Datang di Portal APSI JABAR</h2>
         <p class="mb-5">Asosiasi Profesi Sekuriti Indonesia awalnya bernama Asosiasi Manager Security Indonesia (AMSI) yang berdiri pada 9 Juli 2001 di Hotel Kartika Chandra, Jakarta Pusat. AMSI dikukuhkan dengan SK Kapolri No. 500/VI/2002 tertanggal 28 Juni 2002.</p>
@@ -35,13 +35,13 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 mx-auto text-center mb-5 section-heading">
-                <h2 class="mb-5">Our Programs</h2>
+                <h2 class="mb-5">Berita Terakhir </h2>
             </div>
         </div>
         <div class="row">
             <div class="col-md-6 col-lg-4 mb-5">
                 <div class="program">
-                    <a href="#" class="d-block mb-0 thumbnail"><img src="images/img_1.jpg" alt="Image"
+                    <a href="#" class="d-block mb-0 thumbnail"><img src="{{asset('landingpage/images/seragam.jpeg')}}" alt="Image" style="width:800px;height:240px;"
                             class="img-fluid"></a>
                     <div class="program-body">
                         <h3 class="heading mb-2"><a href="#">Embrace Your Edge</a></h3>
@@ -54,7 +54,7 @@
             </div>
             <div class="col-md-6 col-lg-4 mb-5">
                 <div class="program">
-                    <a href="#" class="d-block mb-0 thumbnail"><img src="images/img_2.jpg" alt="Image"
+                    <a href="#" class="d-block mb-0 thumbnail"><img src="{{asset('landingpage/images/img_1.jpg')}}" alt="Image" style="width:800px;height:240px;"
                             class="img-fluid"></a>
                     <div class="program-body">
                         <h3 class="heading mb-2"><a href="#">Yoga to Build Resilience</a></h3>
@@ -67,7 +67,7 @@
             </div>
             <div class="col-md-6 col-lg-4 mb-5">
                 <div class="program">
-                    <a href="#" class="d-block mb-0 thumbnail"><img src="images/img_3.jpg" alt="Image"
+                    <a href="#" class="d-block mb-0 thumbnail"><img src="{{asset('landingpage/images/img_1.jpg')}}" alt="Image" style="width:800px;height:240px;"
                             class="img-fluid"></a>
                     <div class="program-body">
                         <h3 class="heading mb-2"><a href="#">Rise &amp; Shine</a></h3>
@@ -80,7 +80,7 @@
             </div>
             <div class="col-md-6 col-lg-4 mb-5">
                 <div class="program">
-                    <a href="#" class="d-block mb-0 thumbnail"><img src="images/img_4.jpg" alt="Image"
+                    <a href="#" class="d-block mb-0 thumbnail"><img src="{{asset('landingpage/images/img_1.jpg')}}" alt="Image" style="width:800px;height:240px;"
                             class="img-fluid"></a>
                     <div class="program-body">
                         <h3 class="heading mb-2"><a href="#">Bend &amp; Stretch</a></h3>
@@ -93,7 +93,7 @@
             </div>
             <div class="col-md-6 col-lg-4 mb-5">
                 <div class="program">
-                    <a href="#" class="d-block mb-0 thumbnail"><img src="images/img_5.jpg" alt="Image"
+                    <a href="#" class="d-block mb-0 thumbnail"><img src="{{asset('landingpage/images/img_1.jpg')}}" alt="Image" style="width:800px;height:240px;"
                             class="img-fluid"></a>
                     <div class="program-body">
                         <h3 class="heading mb-2"><a href="#">Vinyasa Yoga</a></h3>
@@ -106,7 +106,7 @@
             </div>
             <div class="col-md-6 col-lg-4 mb-5">
                 <div class="program">
-                    <a href="#" class="d-block mb-0 thumbnail"><img src="images/img_6.jpg" alt="Image"
+                    <a href="#" class="d-block mb-0 thumbnail"><img src="{{asset('landingpage/images/img_1.jpg')}}" alt="Image"
                             class="img-fluid"></a>
                     <div class="program-body">
                         <h3 class="heading mb-2"><a href="#">Barre Workout</a></h3>
@@ -151,7 +151,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 mx-auto text-center mb-5 section-heading">
-                <h2 class="mb-5">Daftar Menjadi Anggota</h2>
+                <h2 class="mb-5">Keanggotaan</h2>
             </div>
         </div>
         <div class="row align-items-stretched">
@@ -161,15 +161,15 @@
                     <div class="pricing-content">
                         <div class="text-center mb-4">
                             <h3 class="h4 mb-4">GADA PRATAMA</h3>
-                            <strong class="font-weight-normal h1 text-white">$20</strong>
+                            <strong class="font-weight-normal h1 text-white"></strong>
                         </div>
                         <ul class="list-unstyled mb-5">
-                            <li>1 week unlimitted classes</li>
+                            <li>Photocopy ijazah Diklat Gada Pratama</li>
                             <li>Flexible schedule</li>
                             <li>4-week series</li>
                             <li>10% off Vinyasa treatment</li>
                         </ul>
-                        <p class="mb-0"><a href="#" class="btn pill btn-outline-white">Join Now</a></p>
+                        <p class="mb-0"><a href="{{url('/keanggotaan/pendaftaran-satpam')}}" class="btn pill btn-outline-white">Daftar</a></p>
                     </div>
                 </div>
             </div>
@@ -177,7 +177,7 @@
                 <div class="pricing p-5 h-100 text-center">
                     <div class="text-center mb-4">
                         <h3 class="h4 mb-4">GADA MADYA</h3>
-                        <strong class="font-weight-normal h1">$40</strong>
+                        <strong class="font-weight-normal h1"></strong>
                     </div>
                     <ul class="list-unstyled mb-5">
                         <li>10 days classes</li>
@@ -185,14 +185,14 @@
                         <li>4-week series</li>
                         <li>10% off Vinyasa treatment</li>
                     </ul>
-                    <p class="mb-0"><a href="#" class="btn pill btn-primary">Join Now</a></p>
+                    <p class="mb-0"><a href="{{url('/keanggotaan/pendaftaran-satpam')}}" class="btn pill btn-primary">Daftar</a></p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3 mb-4">
                 <div class="pricing p-5 h-100 text-center">
                     <div class="text-center mb-4">
                         <h3 class="h4 mb-4">GADA UTAMA</h3>
-                        <strong class="font-weight-normal h1">$70</strong>
+                        <strong class="font-weight-normal h1"></strong>
                     </div>
                     <ul class="list-unstyled mb-5">
                         <li>20 days classes</li>
@@ -200,14 +200,14 @@
                         <li>4-week series</li>
                         <li>10% off Vinyasa treatment</li>
                     </ul>
-                    <p class="mb-0"><a href="#" class="btn pill btn-primary">Join Now</a></p>
+                    <p class="mb-0"><a href="{{url('/keanggotaan/pendaftaran-satpam')}}" class="btn pill btn-primary">Daftar</a></p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3 mb-4">
                 <div class="pricing p-5 h-100 text-center">
                     <div class="text-center mb-4">
-                        <h3 class="h4 mb-4">SERTIFIKASI LSP</h3>
-                        <strong class="font-weight-normal h1">$150</strong>
+                        <h3 class="h4 mb-4">GADA UTAMA BUJP</h3>
+                        <strong class="font-weight-normal h1"></strong>
                     </div>
                     <ul class="list-unstyled mb-5">
                         <li>30 days classes</li>
@@ -215,51 +215,13 @@
                         <li>4-week series</li>
                         <li>10% off Vinyasa treatment</li>
                     </ul>
-                    <p class="mb-0"><a href="#" class="btn pill btn-primary">Join Now</a></p>
+                    <p class="mb-0"><a href="{{url('/keanggotaan/pendaftaran-bujp')}}" class="btn pill btn-primary">Daftar</a></p>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div class="site-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 mx-auto text-center mb-5 section-heading">
-                <h2 class="mb-5">Yoga Features</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="text-center item">
-                    <span class="flaticon-001-stone display-3 mb-3 d-block text-primary"></span>
-                    <h2 class="h5">Peace of Mind</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde temporibus</p>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="text-center item">
-                    <span class="flaticon-002-lotus display-3 mb-3 d-block text-primary"></span>
-                    <h2 class="h5">Mindfullness</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde temporibus</p>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="text-center item">
-                    <span class="flaticon-003-meditation display-3 mb-3 d-block text-primary"></span>
-                    <h2 class="h5">Meditation</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde temporibus</p>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="text-center item">
-                    <span class="flaticon-004-carpet display-3 mb-3 d-block text-primary"></span>
-                    <h2 class="h5">Yoga Carpet</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde temporibus</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+
 <div class="site-section">
     <div class="">
         <div class="row">

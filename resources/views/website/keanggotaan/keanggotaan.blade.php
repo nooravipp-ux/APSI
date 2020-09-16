@@ -19,11 +19,9 @@
         <div class="col-md-4">
             <div class="row">
                 <div class="col-md-12">
-                    <ul>
-                        <li class="shadow p-4 mb-4 bg-white border rounded mt-lg-2 mb-lg-2"><a href="{{url('/keanggotaan/pendaftaran')}}">Daftar Gada Pratama</a></li>
-                        <li class="shadow p-4 mb-4 bg-white border rounded mt-lg-1 mb-lg-2"><a href="{{url('/keanggotaan/pendaftaran')}}">Daftar Gada Madya</a></li>
-                        <li class="shadow p-4 mb-4 bg-white border rounded mt-lg-1 mb-lg-2"><a href="{{url('/keanggotaan/pendaftaran')}}">Daftar Gada Utama</a></li>
-                        <li class="shadow p-4 mb-4 bg-white border rounded mt-lg-1 mb-lg-2"><a href="{{url('/keanggotaan/pendaftaran-bujp')}}">Daftar Gada Utama BUJP</a></li>
+                    <ul class="list-unstyled">
+                        <li class="shadow p-4 mb-4 bg-white border rounded mt-lg-2 mb-lg-2"><a href="{{url('/keanggotaan/pendaftaran-satpam')}}">Daftar Satpam</a></li>
+                        <li class="shadow p-4 mb-4 bg-white border rounded mt-lg-1 mb-lg-2"><a href="{{url('/keanggotaan/pendaftaran-bujp')}}">Daftar BUJP</a></li>
                         <li class="shadow p-4 mb-4 bg-white border rounded mt-lg-1 mb-lg-2">Download Formulir Pendaftaran</li>
                     </ul>
                 </div>

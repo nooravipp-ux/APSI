@@ -54,7 +54,11 @@
                 <div class="form-group row">
                     <label for="" class="col-sm-2 col-form-label">Jabatan</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" name="jabatan">
+                        <select name="calon_anggota" class="form-control">
+                            <option value="GADA PRATAMA">GADA PRATAMA</option>
+                            <option value="GADA UTAMA">GADA UTAMA</option>
+                            <option value="GADA MADYA">GADA MADYA</option>
+                        </select>
                     </div>
                 </div>
                 <div class="form-group row">
@@ -67,16 +71,6 @@
                     <label for="" class="col-sm-2 col-form-label">E-mail</label>
                     <div class="col-sm-10">
                         <input type="email" class="form-control" name="email">
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label for="" class="col-sm-2 col-form-label">Calon Anggota</label>
-                    <div class="col-sm-10">
-                        <select name="calon_anggota" class="form-control">
-                            <option value="GADA PRATAMA">GADA PRATAMA</option>
-                            <option value="GADA UTAMA">GADA UTAMA</option>
-                            <option value="GADA MADYA">GADA MADYA</option>
-                        </select>
                     </div>
                 </div>
                 <div class="form-group row">
@@ -106,16 +100,6 @@
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="" class="col-sm-2 col-form-label">Verifikasi DPC</label>
-                    <div class="col-sm-10">
-                        <div class="input-group mb-3">
-                            <div class="custom-file">
-                                <input type="file" name="file_verifikasi">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group row">
                     <label for="" class="col-sm-2 col-form-label">Foto (2x3)</label>
                     <div class="col-sm-10">
                         <div class="input-group mb-3">
@@ -139,20 +123,6 @@
 @endsection
 @section('script')
 <script>
-$('#file-ktp').on('change', function() {
-    //get the file name
-    var fileName = $(this).val();
-    //replace the "Choose a file" label
-    $(this).next('.custom-file-label').html(fileName);
 
-});
-
-$('#file-verifikasi').on('change', function() {
-    //get the file name
-    var fileName = $(this).val();
-    //replace the "Choose a file" label
-    $(this).next('.custom-file-label').html(fileName);
-
-})
 </script>
 @endsection
