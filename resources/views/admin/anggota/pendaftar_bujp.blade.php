@@ -33,6 +33,7 @@
                     <div class="x_content">
                         <div class="row">
                             <div class="col-sm-12">
+                            <a class="btn btn-primary btn-sm" href="{{url('/admin/pendaftaran-bujp/export')}}">Export to Excel</a>
                                 <div class="card-box table-responsive">
 
                                     <table id="data_pendaftar" class="table table-striped jambo_table bulk_action"

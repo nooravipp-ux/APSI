@@ -33,6 +33,7 @@
                     <div class="x_content">
                         <div class="row">
                             <div class="col-sm-12">
+                                <a class="btn btn-primary btn-sm" href="{{url('/admin/pendaftaran/export')}}">Export to Excel</a>
                                 <div class="card-box table-responsive">
 
                                     <table id="data_pendaftar" class="table table-striped jambo_table bulk_action"
@@ -41,6 +42,7 @@
                                             <tr>
                                                 <th>No Pendaftaran</th>
                                                 <th>Tgl Pendaftaran</th>
+                                                <th>Nama Perusahaan</th>
                                                 <th>Nama</th>
                                                 <th>Alamat Kantor</th>
                                                 <th>Email</th>
@@ -55,6 +57,7 @@
                                             <tr>
                                                 <td>{{$data->no_pendaftaran}}</td>
                                                 <td>{{$data->tgl_pendaftaran}}</td>
+                                                <td>{{$data->nama_perusahaan}}</td>
                                                 <td>{{$data->nama}}</td>
                                                 <td>{{$data->alamat_kantor}}</td>
                                                 <td>{{$data->telepon}}</td>

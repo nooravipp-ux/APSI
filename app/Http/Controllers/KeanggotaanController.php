@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 use DB;
 use Illuminate\Http\Request;
+use App\Exports\PendaftaranSatpamExport;
+use App\Exports\PendaftaranBUJPExport;
+use Maatwebsite\Excel\Facades\Excel;
 
 class KeanggotaanController extends Controller
 {
@@ -32,7 +35,7 @@ class KeanggotaanController extends Controller
         $file_ijazah = base64_encode(file_get_contents($path_file_ijazah));
         $file_foto = base64_encode(file_get_contents($path_file_foto));
         DB::table('tbl_pendaftaran_satpam')->insert(
-            ['nama' => $req->nama, 'alamat_kantor' => $req->alamat_kantor,'telepon' => $req->no_telepon, 'email' => $req->email, 'jabatan'=>$req->calon_anggota, 'ktp'=>$file_ktp, 'ijazah_diklat'=>$file_ijazah, 'foto'=>$file_foto]
+            ['nama' => $req->nama, 'nama_perusahaan' => $req->nama_perusahaan, 'tanggal_lahir' => $req->tgl_lahir, 'alamat_kantor' => $req->alamat_kantor,'telepon' => $req->no_telepon, 'email' => $req->email, 'jabatan'=>$req->calon_anggota, 'ktp'=>$file_ktp, 'ijazah_diklat'=>$file_ijazah, 'foto'=>$file_foto]
         );
 
         return redirect('/')->with('status', 'Data di Simpan!');
@@ -94,5 +97,12 @@ class KeanggotaanController extends Controller
 
         $data_pendaftar = DB::table('tbl_pendaftaran_satpam')->get();
         return view('admin.anggota.pendaftar', compact('data_pendaftar'));
+    }
+
+    public function export_satpam_excel(){
+        return Excel::download(new PendaftaranSatpamExport, 'Data-Pendaftaran-Satpam.xlsx');
+    }
+    public function export_bujp_excel(){
+        return Excel::download(new PendaftaranBUJPExport, 'Data-Pendaftaran-BUJP.xlsx');
     }
 }

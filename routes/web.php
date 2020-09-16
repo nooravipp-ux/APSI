@@ -34,3 +34,6 @@ Route::get('/admin/pendaftaran-bujp', 'KeanggotaanController@data_pendaftar_bujp
 Route::get('/admin/pendaftaran-bujp/detail/{no_pendaftar}', 'KeanggotaanController@detail_pendaftar_bujp')->name('detail.pendaftar.bujp','{no_pendaftar}');
 Route::post('/admin/pendaftaran-bujp/confirm', 'KeanggotaanController@confirmasi_pendaftar_bujp');
 Route::post('/admin/pendaftaran/confirm', 'KeanggotaanController@confirmasi_pendaftar_satpam');
+
+Route::get('/admin/pendaftaran/export', 'KeanggotaanController@export_satpam_excel');
+Route::get('/admin/pendaftaran-bujp/export', 'KeanggotaanController@export_bujp_excel');
