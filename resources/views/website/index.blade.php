@@ -138,7 +138,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 mx-auto text-center mb-5 section-heading">
-                <h2 class="mb-5">Keanggotaan</h2>
+                <h2 class="mb-5">Anggota Terdaftar</h2>
             </div>
         </div>
         <div class="row align-items-stretched">
@@ -148,11 +148,9 @@
                     <div class="pricing-content">
                         <div class="text-center mb-4">
                             <h3 class="h4 mb-4">GADA PRATAMA</h3>
-                            <strong class="font-weight-normal h1 text-white"></strong>
+                            <strong class="font-weight-normal h1 text-white">1654</strong>
                         </div>
-                        <p>Untuk satpam pelaksana, yang telah memiliki ijazah Gada Pratama</p>
-                        <p class="mb-0"><a href="{{url('/keanggotaan/pendaftaran-satpam')}}"
-                                class="btn pill btn-outline-white">Daftar</a></p>
+                        <a href="{{url('/keanggotaan/pendaftaran-satpam')}}" class="btn pill btn-outline-white">Bergabung</a>
                     </div>
                 </div>
             </div>
@@ -160,38 +158,30 @@
                 <div class="pricing p-5 h-100 text-center">
                     <div class="text-center mb-4">
                         <h3 class="h4 mb-4">GADA MADYA</h3>
-                        <strong class="font-weight-normal h1"></strong>
+                        <strong class="font-weight-normal h1">150</strong>
                     </div>
-                    <p>Untuk supervisor satpam, yang telah memiliki ijazah Gada Madya</p>
                     <p class="mb-0"><a href="{{url('/keanggotaan/pendaftaran-satpam')}}"
-                            class="btn pill btn-primary">Daftar</a></p>
+                            class="btn pill btn-primary">Bergabung</a></p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3 mb-4">
                 <div class="pricing p-5 h-100 text-center">
                     <div class="text-center mb-4">
                         <h3 class="h4 mb-4">GADA UTAMA</h3>
-                        <strong class="font-weight-normal h1"></strong>
+                        <strong class="font-weight-normal h1">1200</strong>
                     </div>
-                    <p>Untuk manager satpam / Chief Security, yang telah memiliki ijazah Gada Utama</p>
                     <p class="mb-0"><a href="{{url('/keanggotaan/pendaftaran-satpam')}}"
-                            class="btn pill btn-primary">Daftar</a></p>
+                            class="btn pill btn-primary">Bergabung</a></p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3 mb-4">
                 <div class="pricing p-5 h-100 text-center">
                     <div class="text-center mb-4">
                         <h3 class="h4 mb-4">GADA UTAMA BUJP</h3>
-                        <strong class="font-weight-normal h1"></strong>
+                        <strong class="font-weight-normal h1">500</strong>
                     </div>
-                    <ul class="list-unstyled mb-5">
-                        <li>30 days classes</li>
-                        <li>Flexible schedule</li>
-                        <li>4-week series</li>
-                        <li>10% off </li>
-                    </ul>
                     <p class="mb-0"><a href="{{url('/keanggotaan/pendaftaran-bujp')}}"
-                            class="btn pill btn-primary">Daftar</a></p>
+                            class="btn pill btn-primary">Bergabung</a></p>
                 </div>
             </div>
         </div>
