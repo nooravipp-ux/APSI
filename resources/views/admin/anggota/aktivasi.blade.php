@@ -926,7 +926,7 @@ textarea.form-control {
                                                             <div class="profile-user-details clearfix">
                                                                 <div class="form-group row">
                                                                     <label class="col-sm-3 col-form-label">No Telepon
-                                                                        Jawab</label>
+                                                                </label>
                                                                     <div class="col-sm-9">
                                                                         <input type="text" readonly
                                                                             class="form-control-plaintext"
@@ -974,7 +974,7 @@ textarea.form-control {
 
                                                                 <img id="ktp"
                                                                     src="data:image/png;base64, {{$data_pendaftar->ktp}}"
-                                                                    alt="Snow" style="width:100%;max-width:300px">
+                                                                    alt="Snow">
 
 
                                                                 <div id="myModal" class="modal">
@@ -994,7 +994,7 @@ textarea.form-control {
                                                             <div class="tab-pane fade" id="tab-ijazah">
                                                                 <img id="ijazah"
                                                                     src="data:image/png;base64, {{$data_pendaftar->ijazah_diklat}}"
-                                                                    alt="Snow" style="width:100%;max-width:300px">
+                                                                    alt="Snow">
 
 
                                                                 <div id="myModal-ijazah" class="modal">

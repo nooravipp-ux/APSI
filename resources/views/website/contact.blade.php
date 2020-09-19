@@ -2,8 +2,8 @@
 @section('content')
 <div class="slide-one-item home-slider owl-carousel">
     <div class="site-blocks-cover overlay"
-        style="background-image: url('{{asset('landingpage/images/dewan-pimpinan-daerah.jpg')}}');height:30px;" data-aos="fade"
-        data-stellar-background-ratio="0.5">
+        style="background-image: url('{{asset('landingpage/images/dewan-pimpinan-daerah.jpg')}}');height:30px;"
+        data-aos="fade" data-stellar-background-ratio="0.5">
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-md-7 text-center" data-aos="fade">
@@ -65,9 +65,9 @@
 
             <div class="col-lg-4">
                 <div class="p-4 mb-3 bg-white">
-                    <h3 class="h5 text-black mb-3">Contact Info</h3>
-                    <p class="mb-0 font-weight-bold">Address</p>
-                    <p class="mb-4">203 Fake St. Mountain View, San Francisco, California, USA</p>
+                    <h3 class="footer-heading mb-4 text-white">Hubungi Kami</h3>
+                    <p class="mb-0 font-weight-bold">Alamat</p>
+                    <p class="mb-4">Jl. Zamrud II, Cilandak Barat, Cilandak, Jakarta Selatan, DKI Jakarta 12430</p>
 
                     <p class="mb-0 font-weight-bold">Phone</p>
                     <p class="mb-4"><a href="#">+1 232 3235 324</a></p>

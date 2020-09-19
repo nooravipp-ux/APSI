@@ -129,18 +129,7 @@
     <div class="container">
         <div class="row ">
             <div class="col-md-8 mb-3 mb-md-0">
-                <iframe width="700" height="345" src="https://www.youtube.com/embed/iz45Pe35TU0">
-                </iframe>
-            </div>
-            <div class="col-md-4 ml-auto">
-                <div class="section-heading text-left">
-                    <h2 class="mb-3">Watch Video</h2>
-                </div>
-                <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, nisi Lorem ipsum
-                    dolor sit amet, consectetur adipisicing elit. Odit nobis magni eaque velit eum, id rem eveniet
-                    dolor possimus voluptas..</p>
-                <p><a href="https://vimeo.com/28959265" class="popup-vimeo text-uppercase">Watch Video <span
-                            class="icon-arrow-right small"></span></a></p>
+                <img src="{{asset('landingpage/images/demografi-apsi.png')}}" class="img" alt="Responsive image">
             </div>
         </div>
     </div>
