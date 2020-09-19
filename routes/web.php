@@ -16,10 +16,15 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('website.index');
 });
-Route::get('/contact', 'WebsiteController@contact');
+Route::get('/tentang/sejarah', 'WebsiteController@sejarah');
+Route::get('/tentang/visi-misi', 'WebsiteController@visi_misi');
+Route::get('/tentang/struktur-organisasi', 'WebsiteController@struktur_organisasi');
 Route::get('/keanggotaan', 'WebsiteController@keanggotaan');
 Route::get('/keanggotaan/pendaftaran-satpam', 'KeanggotaanController@pendaftaran_personil');
 Route::get('/keanggotaan/pendaftaran-bujp', 'KeanggotaanController@pendaftaran_BUJP');
+Route::get('/berita', 'WebsiteController@visi_misi');
+Route::get('/event', 'WebsiteController@visi_misi');
+Route::get('/contact', 'WebsiteController@contact');
 
 Auth::routes();
 
@@ -37,3 +42,6 @@ Route::post('/admin/pendaftaran/confirm', 'KeanggotaanController@confirmasi_pend
 
 Route::get('/admin/pendaftaran/export', 'KeanggotaanController@export_satpam_excel');
 Route::get('/admin/pendaftaran-bujp/export', 'KeanggotaanController@export_bujp_excel');
+
+//Gallery
+Route::get('/admin/gallery', 'GalleryController@gallery');

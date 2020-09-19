@@ -17,18 +17,18 @@
                                         <a href="{{url('/')}}">HOME</a>
                                     </li>
                                     <li class="has-children">
-                                        <a href="classes.html">APSI</a>
+                                        <a href="classes.html"> TENTANG APSI</a>
                                         <ul class="dropdown arrow-top">
-                                            <li><a href="classes.html">Sejarah</a></li>
-                                            <li><a href="classes.html">Visi Misi</a></li>
-                                            <li><a href="classes.html">Struktur Organisasi</a></li>
+                                            <li><a href="{{url('/tentang/sejarah')}}">Sejarah</a></li>
+                                            <li><a href="{{url('/tentang/visi-misi')}}">Visi Misi</a></li>
+                                            <li><a href="{{url('/tentang/struktur-organisasi')}}">Struktur Organisasi</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="{{url('/keanggotaan')}}">KEANGGOTAAN</a></li>
                                     <li>
-                                        <a href="classes.html">BERITA</a>
+                                        <a href="{{url('/berita')}}">BERITA</a>
                                     </li>
-                                    <li><a href="events.html">EVENTS</a></li>
+                                    <li><a href="{{url('/event')}}">EVENTS</a></li>
                                     <li><a href="{{url('/contact')}}">CONTACT</a></li>
                                     
                                 </ul>

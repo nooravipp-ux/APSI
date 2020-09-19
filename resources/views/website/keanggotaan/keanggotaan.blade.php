@@ -15,6 +15,13 @@
     </div>
 </div>
 <div class="container-fluid">
+    <nav aria-label="breadcrumb" class="mt-lg-3">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{url('/')}}">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Keanggotaan</li>
+        </ol>
+    </nav>
+    <hr>
     <div class="row">
         <div class="col-md-4">
             <div class="row">

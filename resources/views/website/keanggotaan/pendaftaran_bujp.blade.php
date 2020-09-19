@@ -16,8 +16,14 @@
     </div>
 </div>
 <div class="container">
-
-    <div class="row shadow p-4 mb-4 bg-white border rounded mt-lg-5 mb-lg-5">
+    <nav aria-label="breadcrumb" class="mt-lg-3">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{url('/')}}">Home</a></li>
+            <li class="breadcrumb-item"><a href="{{url('/keanggotaan')}}">Keanggotaan</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Anggota BUJP</li>
+        </ol>
+    </nav>
+    <div class="row shadow p-4 mb-4 bg-white border rounded mt-lg-3 mb-lg-5">
         <div class="col-md-12">
             <form method="POST" action="{{url('/keanggotaan/daftar-bujp')}}" enctype="multipart/form-data">
                 @csrf
