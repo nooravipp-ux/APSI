@@ -39,12 +39,7 @@
                 <div class="col-md-12">
                     <p>
 
-                        Copyright &copy; <script data-cfasync="false"
-                            src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-                        <script type="3ab469f225a3ccf85a64f2a6-text/javascript">
-                        document.write(new Date().getFullYear());
-                        </script> All Rights Reserved | This template is made with <i class="icon-heart text-primary"
-                            aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                        Copyright &copy; {{date('Y')}} APSI DPD JABAR
 
                     </p>
                 </div>
