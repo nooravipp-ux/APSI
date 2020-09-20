@@ -17,7 +17,7 @@
                                         <a href="{{url('/')}}">HOME</a>
                                     </li>
                                     <li class="has-children">
-                                        <a href="classes.html"> TENTANG APSI</a>
+                                        <a href="{{url('/tentang/visi-misi')}}"> TENTANG APSI</a>
                                         <ul class="dropdown arrow-top">
                                             <li><a href="{{url('/tentang/sejarah')}}">Sejarah</a></li>
                                             <li><a href="{{url('/tentang/visi-misi')}}">Visi Misi</a></li>
@@ -34,7 +34,13 @@
                                     <li>
                                         <a href="{{url('/berita')}}">BERITA</a>
                                     </li>
-                                    <li><a href="{{url('/event')}}">EVENTS</a></li>
+                                    <li class="has-children">
+                                        <a href="{{url('/event')}}">EVENTS</a>
+                                        <ul class="dropdown arrow-top">
+                                            <li><a href="{{url('/keanggotaan/pendaftaran-satpam')}}">SEMINAR</a></li>
+                                            <li><a href="{{url('/keanggotaan/pendaftaran-bujp')}}">DIKLAT</a></li>
+                                        </ul>
+                                    </li>
                                     <li><a href="{{url('/contact')}}">CONTACT</a></li>
                                     
                                 </ul>

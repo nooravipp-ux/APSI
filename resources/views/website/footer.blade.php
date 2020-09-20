@@ -39,7 +39,7 @@
                 <div class="col-md-12">
                     <p>
 
-                        Copyright &copy; {{date('Y')}} APSI DPD JABAR
+                        Copyright &copy; {{date('Y')}} DPD APSI JABAR
 
                     </p>
                 </div>

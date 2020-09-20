@@ -2,12 +2,12 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="{{asset('landingpage/images/logo.jpg')}}">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="description" content="DPD APSI JABAR adalah Dewan Pimpinan Daerah Untuk Daerah Jawa barat DPD ini berkantor pusat di l. Terusan Buah Batu no.38 - 42, Batununggal, Bandung">
     <!-- Scripts -->
-    <title>APSI - Asosiasi Pengusaha Satpam Indonesia</title>
+    <title>@yield('title')</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -20,7 +20,6 @@
     <link rel="stylesheet" href="{{asset('landingpage/css/owl.theme.default.min.css')}}">
     <link rel="stylesheet" href="{{asset('landingpage/css/bootstrap-datepicker.css')}}">
     <link rel="stylesheet" href="{{asset('landingpage/css/animate.css')}}">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
     <link rel="stylesheet" href="{{asset('landingpage/fonts/flaticon/font/flaticon.css')}}">
     <link rel="stylesheet" href="{{asset('landingpage/css/aos.css')}}">
     <link rel="stylesheet" href="{{asset('landingpage/css/style.css')}}">
@@ -51,31 +50,8 @@
     <script src="{{asset('landingpage/js/jquery.magnific-popup.min.js')}}"></script>
     <script src="{{asset('landingpage/js/bootstrap-datepicker.min.js')}}"></script>
     <script src="{{asset('landingpage/js/aos.js')}}"></script>
-
-  
     <script src="{{asset('landingpage/js/mediaelement-and-player.min.js')}}"></script>
-
     <script src="{{asset('landingpage/js/main.js')}}"></script>
-        
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-                    var mediaElements = document.querySelectorAll('video, audio'), total = mediaElements.length;
-
-                    for (var i = 0; i < total; i++) {
-                        new MediaElementPlayer(mediaElements[i], {
-                            pluginPath: 'https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/',
-                            shimScriptAccess: 'always',
-                            success: function () {
-                                var target = document.body.querySelectorAll('.player'), targetTotal = target.length;
-                                for (var j = 0; j < targetTotal; j++) {
-                                    target[j].style.visibility = 'visible';
-                                }
-                    }
-                    });
-                    }
-                });
-    </script>
     @yield('script')
 </body>
 </html>

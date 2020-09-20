@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title', 'DPD APSI JABAR - Dewan Pimpinan Daerah APSI Jawa Barat')
 @section('content')
 <div class="slide-one-item home-slider owl-carousel">
     <div class="site-blocks-cover overlay"
@@ -7,17 +8,17 @@
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-md-7 text-center" data-aos="fade">
-                    <h1 class="">Asosiasi Profesi Satpam Indonesia Jawa Barat</h1>
+                    <h1 class="">DPD APSI JABAR</h1>
                 </div>
             </div>
         </div>
     </div>
-    <div class="site-blocks-cover overlay" style="background-image: url('{{asset('landingpage/images/satpam2.jpg')}}');"
+    <div class="site-blocks-cover overlay" style="background-image: url('{{asset('landingpage/images/apsi-jabar.jpeg')}}');"
         data-aos="fade" data-stellar-background-ratio="0.5">
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-md-7 text-center" data-aos="fade">
-                    <h1 class="">Bergabung Dengan APSI</h1>
+                    <h1 class="">Bergabung Dengan APSI JABAR</h1>
                     <h2 class="caption mb-2">Menguatkan Simpul Korsa Dengan Menjadi Anggota APSI Jadilah Bagian Dari
                         Keluarga Besar Satpam Indonesia</h2>
                 </div>
@@ -196,54 +197,12 @@
             </div>
         </div>
         <div class="row no-gutters">
+            @foreach($gallery as $img)
             <div class="col-md-6 col-lg-3">
-                <a href="images/img_1.jpg" class="image-popup img-opacity"><img src="" alt="Image"
+                <a href="" class="image-popup img-opacity"><img src="data:image/png;base64, {{$img->gambar}}" alt="{{$img->title}}" style="width:450px; height:300px;"
                         class="img-fluid"></a>
             </div>
-            <div class="col-md-6 col-lg-3">
-                <a href="images/img_2.jpg" class="image-popup img-opacity"><img src="{{asset('landingpage/images/jalan-sehat-apsi.jpeg')}}" alt="Image"
-                        class="img-fluid"></a>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <a href="images/img_3.jpg" class="image-popup img-opacity"><img src="images/img_3.jpg" alt="Image"
-                        class="img-fluid"></a>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <a href="images/img_4.jpg" class="image-popup img-opacity"><img src="images/img_4.jpg" alt="Image"
-                        class="img-fluid"></a>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <a href="images/img_4.jpg" class="image-popup img-opacity"><img src="images/img_4.jpg" alt="Image"
-                        class="img-fluid"></a>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <a href="images/img_5.jpg" class="image-popup img-opacity"><img src="images/img_5.jpg" alt="Image"
-                        class="img-fluid"></a>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <a href="images/img_6.jpg" class="image-popup img-opacity"><img src="images/img_6.jpg" alt="Image"
-                        class="img-fluid"></a>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <a href="images/img_7.jpg" class="image-popup img-opacity"><img src="images/img_7.jpg" alt="Image"
-                        class="img-fluid"></a>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <a href="images/img_1.jpg" class="image-popup img-opacity"><img src="images/img_1.jpg" alt="Image"
-                        class="img-fluid"></a>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <a href="images/img_2.jpg" class="image-popup img-opacity"><img src="images/img_2.jpg" alt="Image"
-                        class="img-fluid"></a>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <a href="images/img_3.jpg" class="image-popup img-opacity"><img src="images/img_3.jpg" alt="Image"
-                        class="img-fluid"></a>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <a href="images/img_4.jpg" class="image-popup img-opacity"><img src="images/img_4.jpg" alt="Image"
-                        class="img-fluid"></a>
-            </div>
+            @endforeach
         </div>
     </div>
 </div>

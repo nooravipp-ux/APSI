@@ -1,11 +1,15 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use DB;
 use Illuminate\Http\Request;
 
 class WebsiteController extends Controller
 {
+    public function index(){
+        $gallery = DB::table('tbl_gallery')->limit(12)->orderBy('created_at', 'asc')->get();
+        return view('website.index', compact('gallery'));
+    }
     public function apsi(){
         return view('website.keanggotaan.keanggotaan');
     }

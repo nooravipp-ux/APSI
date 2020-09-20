@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title','Keanggotaan - DPD APSI JABAR')
 @section('style')
 <style>
 .timeline {

@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title','Contact - DPD APSI JABAR')
 @section('content')
 <div class="slide-one-item home-slider owl-carousel">
     <div class="site-blocks-cover overlay"

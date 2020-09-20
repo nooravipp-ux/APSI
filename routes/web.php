@@ -13,9 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 // portal APSI
-Route::get('/', function () {
-    return view('website.index');
-});
+Route::get('/', 'WebsiteController@index');
 Route::get('/tentang/sejarah', 'WebsiteController@sejarah');
 Route::get('/tentang/visi-misi', 'WebsiteController@visi_misi');
 Route::get('/tentang/struktur-organisasi', 'WebsiteController@struktur_organisasi');
@@ -45,3 +43,4 @@ Route::get('/admin/pendaftaran-bujp/export', 'KeanggotaanController@export_bujp_
 
 //Gallery
 Route::get('/admin/gallery', 'GalleryController@gallery');
+Route::post('/admin/gallery/simpan', 'GalleryController@upload_gambar');

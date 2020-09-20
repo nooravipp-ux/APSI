@@ -51,7 +51,7 @@
             <div class="col-md-12 col-sm-12 ">
                 <div class="x_panel">
                     <div class="x_title">
-                        <h2>Data Pendaftaran Calon Anggota</h2>
+                        <h2>Gallery</h2>
                         <ul class="nav navbar-right panel_toolbox">
                             <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                             </li>
@@ -70,6 +70,44 @@
                     </div>
                     <div class="x_content">
                         <!-- Grid row -->
+                        <div class="row shadow p-4 mb-4 bg-white border rounded mt-lg-3 mb-lg-5">
+                            <div class="col-md-6">
+                                <form action="{{url('/admin/gallery/simpan')}}" method="POST" enctype="multipart/form-data">
+                                    @csrf
+                                    <div class="form-group row">
+                                        <label for="" class="col-sm-2 col-form-label">Judul Gambar</label>
+                                        <div class="col-sm-10">
+                                            <div class="input-group mb-3">
+                                                <div class="custom-file">
+                                                    <input type="text" name="title" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="" class="col-sm-2 col-form-label">Gambar</label>  
+                                        <div class="col-sm-10">
+                                            <div class="input-group mb-3">
+                                                <div class="custom-file">
+                                                    <input type="file" name="img">
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <button type="submit" class="btn btn-primary">Upload</button>  
+                                        <div class="col-sm-10">
+                                            <div class="input-group mb-3">
+                                                <div class="custom-file">
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
                         <div class="row">
 
                             <!-- Grid column -->
@@ -90,52 +128,15 @@
 
                         <!-- Grid row -->
                         <div class="gallery" id="gallery">
-
+                            @foreach($data_img as $data)
                             <!-- Grid column -->
                             <div class="mb-3 pics animation all 2">
                                 <img class="img-fluid"
-                                    src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg"
+                                    src="data:image/png;base64, {{$data->gambar}}"
                                     alt="Card image cap">
                             </div>
                             <!-- Grid column -->
-
-                            <!-- Grid column -->
-                            <div class="mb-3 pics animation all 1">
-                                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Vertical/mountain1.jpg"
-                                    alt="Card image cap">
-                            </div>
-                            <!-- Grid column -->
-
-                            <!-- Grid column -->
-                            <div class="mb-3 pics animation all 1">
-                                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Vertical/mountain2.jpg"
-                                    alt="Card image cap">
-                            </div>
-                            <!-- Grid column -->
-
-                            <!-- Grid column -->
-                            <div class="mb-3 pics animation all 2">
-                                <img class="img-fluid"
-                                    src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
-                                    alt="Card image cap">
-                            </div>
-                            <!-- Grid column -->
-
-                            <!-- Grid column -->
-                            <div class="mb-3 pics animation all 2">
-                                <img class="img-fluid"
-                                    src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
-                                    alt="Card image cap">
-                            </div>
-                            <!-- Grid column -->
-
-                            <!-- Grid column -->
-                            <div class="mb-3 pics animation all 1">
-                                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Vertical/mountain3.jpg"
-                                    alt="Card image cap">
-                            </div>
-                            <!-- Grid column -->
-
+                            @endforeach
                         </div>
                         <!-- Grid row -->
                     </div>

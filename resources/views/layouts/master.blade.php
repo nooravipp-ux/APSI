@@ -6,8 +6,9 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="{{asset('landingpage/images/logo.jpg')}}">
 
-	<title>Gentelella Alela! | </title>
+	<title>APSI | ADMIN PANEL</title>
 
 	<!-- Bootstrap -->
 	<link href="{{asset('template/vendors/bootstrap/dist/css/bootstrap.min.css')}}" rel="stylesheet">
@@ -108,7 +109,7 @@
 								</li>
 								<li><a><i class="fa fa-cloud-upload"></i>Gallery<span class="fa fa-chevron-down"></span></a>
 									<ul class="nav child_menu">
-										<li><a href="index.html">Uploads</a></li>
+										<li><a href="{{url('/admin/gallery')}}">Uploads</a></li>
 									</ul>
 								</li>
 								

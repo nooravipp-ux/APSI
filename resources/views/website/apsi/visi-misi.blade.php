@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title','Visi Misi - DPD APSI JABAR')
 @section('style')
 
 
