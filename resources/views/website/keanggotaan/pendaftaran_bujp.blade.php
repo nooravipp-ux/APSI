@@ -25,7 +25,7 @@
     </nav>
     <div class="row">
         <div class="col-md-12">
-            <h2>BUJP (Badan Usaha Jasa Pengamanan)</h2>
+            <h2>BUJP (Badan Usaha Jasa Pengamanan) APSI</h2>
             <p>Badan Usaha Jasa Pengamanan atau yang akrab disingkat BUJP ini ternyata tidak hanya melulu perusahaan yang bergerak di bidang pengadaan satpam saja. Dalam Peraturan Kepolisian No. 17 Tahun 2006 tentang Pedoman Pembinaan Badan Usaha Jasa Pengamanan yang tertuang dalam Pasal 3 dan Pasal 4, tersebut ada 6 jenis usaha BUJP. Berikut keenam BUJP tersebut:</p>
             <p>Inilah 6 Penggolongan BUJP sebagaimana diatur dalam Perkap No. 17 Tahun 2006:</p>
             <ol>
@@ -33,7 +33,7 @@
                     <p>Usaha Jasa Konsultasi Keamanan (Security Consultancy) memberikan jasa kepada pengguna jasa berupa saran, pertimbangan atau pendapat dan membantu dalam pengelolaan tentang cara dan prosedur pengamanan suatu objek.</p>
                 </li>
                 <li>Usaha Jasa Penerapan Peralatan Keamanan (Security Devices)
-                    <p>Usaha Jasa Penerapan Peralatan Keamanan (Security Devices) memberikan jasa kepada pengguna jasa berupa penerapan teknologi peralatan pengamanan dalam kaitannya dengan cara dan prosedur pengamanan suatu objek.</p>
+                    <p>Usaha Jasa Penerapan Peralatan Keamanan (Security Devices) Memberikan jasa kepada pengguna jasa berupa penerapan teknologi peralatan pengamanan dalam kaitannya dengan cara dan prosedur pengamanan suatu objek.</p>
                 </li>
                 <li>Usaha Jasa Pendidikan dan Latihan Keamanan (Security Training and Education)
                     <p>Usaha Jasa Pendidikan dan Latihan Keamanan (Security Training and Education) memberikan jasa berupa penyediaan sarana dan prasarana untuk melaksanakan pendidikan dan latihan di bidang keamanan guna menyiapkan, meningkatkan, dan memelihara kemampuan tenaga Satuan Pengamanan.</p>
@@ -50,7 +50,7 @@
             </ol>
             <h2>Syarat Administrasi Pengurusan Izin BUJP</h2>
             <ol>
-                <li>Surat Permohonan Kepada KAPOLDA METRO JAYA up KARO BINAMITRA POLDA METRO JAYA</li>
+                <li>Surat Permohonan Kepada KAPOLDA METRO JAYA up KARO BINAMITRA POLDA JABAR</li>
                 <li>AkTA Pendirian Badan Usaha dalam bentuk PT yang mencantumkan JASA PENGAMANAN sebagai bidang usahanya.</li>
                 <li>Struktur Organisasi</li>
                 <li>Daftar Personil dan daftar Riwayat Hidup (Pimpinan, staf dan Tenaga Ahli)</li>

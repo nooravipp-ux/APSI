@@ -67,13 +67,13 @@
                 <div class="p-4 mb-3 bg-white">
                     <h3 class="footer-heading mb-4 text-white">Hubungi Kami</h3>
                     <p class="mb-0 font-weight-bold">Alamat</p>
-                    <p class="mb-4">Jl. Zamrud II, Cilandak Barat, Cilandak, Jakarta Selatan, DKI Jakarta 12430</p>
+                    <p class="mb-4">Jl. Terusan Buah Batu no.38 - 42, Batununggal, Bandung </p>
 
                     <p class="mb-0 font-weight-bold">Phone</p>
-                    <p class="mb-4"><a href="#">+1 232 3235 324</a></p>
+                    <p class="mb-4"><a href="#">082294949409</a></p>
 
                     <p class="mb-0 font-weight-bold">Email Address</p>
-                    <p class="mb-0"><a href="#">youremail@domain.com</a></p>
+                    <p class="mb-0"><a href="#">dpdapsi.jabar.@gmail.com</a></p>
 
                 </div>
 

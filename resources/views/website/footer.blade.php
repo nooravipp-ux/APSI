@@ -13,9 +13,9 @@
                         <div class="col-md-6">
                             <h3 class="footer-heading mb-4 text-white">Keanggotaan</h3>
                             <ul class="list-unstyled">
-                                <li><a href="#">Gada Pratama</a></li>
-                                <li><a href="#">Gada Madya</a></li>
-                                <li><a href="#">Gada Utama</a></li>
+                                <li><a href="{{url('/keanggotaan/pendaftaran-satpam')}}">Gada Pratama</a></li>
+                                <li><a href="{{url('/keanggotaan/pendaftaran-satpam')}}">Gada Madya</a></li>
+                                <li><a href="{{url('/keanggotaan/pendaftaran-bujp')}}">Gada Utama</a></li>
                                 <li><a href="#">Gada Utama BUJP</a></li>
                             </ul>
                         </div>
@@ -25,13 +25,13 @@
                     <div class="col-md-12">
                         <h3 class="footer-heading mb-4 text-white">Hubungi Kami</h3>
                         <p class="mb-0 font-weight-bold">Alamat</p>
-                        <p class="mb-4">Jl. Zamrud II, Cilandak Barat, Cilandak, Jakarta Selatan, DKI Jakarta 12430</p>
+                        <p class="mb-4">Jl. Terusan Buah Batu no.38 - 42, Batununggal, Bandung </p>
 
                         <p class="mb-0 font-weight-bold">Phone</p>
-                        <p class="mb-4"><a href="#">+1 232 3235 324</a></p>
+                        <p class="mb-4"><a href="#">082294949409</a></p>
 
                         <p class="mb-0 font-weight-bold">Email Address</p>
-                        <p class="mb-0"><a href="#">youremail@domain.com</a></p>
+                        <p class="mb-0"><a href="#">dpdapsi.jabar.@gmail.com</a></p>
                     </div>
                 </div>
             </div>

@@ -24,7 +24,13 @@
                                             <li><a href="{{url('/tentang/struktur-organisasi')}}">Struktur Organisasi</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="{{url('/keanggotaan')}}">KEANGGOTAAN</a></li>
+                                    <li class="has-children">
+                                        <a href="{{url('/keanggotaan')}}">KEANGGOTAAN</a>
+                                        <ul class="dropdown arrow-top">
+                                            <li><a href="{{url('/keanggotaan/pendaftaran-satpam')}}">SATPAM</a></li>
+                                            <li><a href="{{url('/keanggotaan/pendaftaran-bujp')}}">BUJP</a></li>
+                                        </ul>
+                                    </li>
                                     <li>
                                         <a href="{{url('/berita')}}">BERITA</a>
                                     </li>
