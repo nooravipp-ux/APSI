@@ -321,7 +321,7 @@ pusat di jl. Terusan Buah Batu no.38 - 42, Batununggal, Bandung')
             </div>
         </div>
     </div>
-    <div class="site-section block-15 bg-light">
+    <div class="site-section block-15">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 mx-auto text-center mb-5 section-heading">
