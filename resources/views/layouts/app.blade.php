@@ -2,15 +2,16 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
-    <link rel="icon" href="{{asset('landingpage/images/logo.jpg')}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="{{asset('landingpage/images/logo.jpg')}}" type="image/gif">
     <!-- CSRF Token -->
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <meta name="description" content="DPD APSI JABAR adalah Dewan Pimpinan Daerah Untuk Daerah Jawa barat DPD ini berkantor pusat di l. Terusan Buah Batu no.38 - 42, Batununggal, Bandung">
+    <meta name="description" content="@yield('description')">
+    <meta name="keywords" content="apsi, apsi jabar, dpd apsi jabar, satpam apsi, daftar satpam apsi">
+    <meta name="robots" content="index, follow"> 
     <!-- Scripts -->
     <title>@yield('title')</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Work+Sans:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('landingpage/fonts/icomoon/style.css')}}">
     <link rel="stylesheet" href="{{asset('landingpage/css/bootstrap.min.css')}}">

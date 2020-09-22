@@ -44,7 +44,7 @@
             <div class="col-md-6">
                 <h3>DEKLARASI APSI 2018</h3>
                 <p>Pada hari ini, JUM’AT, tanggal DUA bulan NOVEMBER tahun DUA RIBU DELAPAN BELAS, Pengurus Asosiasi Profesi Sekuriti Indonesia (APSI) yang beranggotakan Satpam di wilayah Nusantara, bersepakat untuk merubah Asosiasi Profesi Sekuriti Indonesia (APSI), menjadi ASOSIASI PROFESI SATPAM INDONESIA (APSI) dengan pertimbangan, agar lebih fokus pada pengembangan Kompetensi Profesi Satpam.
-Denpasar – Bali, 02 November 2018</p>
+                    Denpasar – Bali, 02 November 2018</p>
                 <h3>Visi & Misi APSI 2018 - 2023</h3>
                 <h4>Visi</h4>
                 <p>Menjadikan Profesi Satpam Sebagai Bidang Pekerjaan yang Lebih Diakui, Dihargai dan Dibanggakan</p>
@@ -58,6 +58,7 @@ Denpasar – Bali, 02 November 2018</p>
                     <li>Menggalang Kerja Sama dengan Asosiasi Bidang Sekuriti lain, baik Nasional , Regional dan International</li>
                     <li>Mewujudkan Pekerjaan Satpam menjadi Profesi Satpam</li>
                 </ul>
+                <h3>Obsesi APSI</h3>
             </div>
         </div>
     </div>

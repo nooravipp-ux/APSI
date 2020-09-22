@@ -1,5 +1,6 @@
 @extends('layouts.app')
-@section('title','sejarah - DPD APSI JABAR')
+@section('title','sejarah APSI - DPD APSI JABAR')
+@section('description', 'APSI adalah Asosiasi Profesi Sekuriti Indonesia, yang lahir pada tanggal 1 November 2014.')
 @section('style')
 <style>
 ul.timeline {
@@ -113,7 +114,7 @@ ul.timeline>li:before {
                         <a href="#" class="float-right">2019</a>
                         <ol>
                             <li>Peraturan Kepolisian Republik Indonesia (Perpol) tentang sistem pengamanan swakarsa</li>
-                            <li>Peraturan Keala Badan Pemeliharaan Keamanan (PERKABA) tentang SATPAM, BUJP, Pengguna
+                            <li>Peraturan Kepala Badan Pemeliharaan Keamanan (PERKABA) tentang SATPAM, BUJP, Pengguna
                                 jasa Satpam dan Asosiasi</l>
                         </ol>
                         <p>Pelatihan :</p>
@@ -149,6 +150,31 @@ ul.timeline>li:before {
                         <p>Denpasar, Bali Dynasty Hotel</p>
                     </li>
                 </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h4>Sejarah Dari AMSI ke APSI</h4>
+                <p>Asosiasi Profesi Sekuriti Indonesia awalnya bernama Asosiasi Manager Security Indonesia (AMSI) yang berdiri pada 9 Juli 2001 di Hotel Kartika Chandra, Jakarta Pusat. AMSI dikukuhkan dengan SK Kapolri No. 500/VI/2002 tertanggal 28 Juni 2002.</p>
+                <p>Asosiasi Manager Securty Indonesia telah berhasil mendirikan cabang kepengurusan di 20 kewilayahan Polda dan menyelenggarakan serangkaian kegiatan pelatihan dan seminar dalam rangka peningkatan kompetensi security manager di Indonesia.</p>
+                <p>Seiring perkembangan industrial security di Indonesia, dirasakan kebutuhan organisasi yang dapat menjadi payung bagi seluruh profesi sekuriti di Indonesia. Pada tanggal 1 November 2014, seluruh pengurus pusat dan daerah AMSI secara bulat memutuskan untuk merubah AMSI menjadi Asosiasi Profesi Sekuriti Indonesia (APSI).</p>
+                <p>Seluruh kegiatan AMSI yang awalnya hanya terfokus pada pengembangan security manager kini melingkupi seluruh tingkatan di Satuan Pengamanan (pelaksana-penyelia-pimpinan) sehingga kualifikasi dan kompetensi personil dapat meningkat guna menghadapi tantangan dan ancaman di lokasi kerja.</p>
+                <h4>Munaslub APSI Sahkan Asosiasi Profesi Satpam Indonesia</h4>
+                <p>APSI adalah Asosiasi Profesi Sekuriti Indonesia, yang lahir pada tanggal 1 November 2014 sebagai penjelmaan dari Asosiasi Manager Security Indonesia (AMSI), yang lahir pada tanggal 1 Juli 2001. Sesuai dengan rencanan program APSI 2018, APSI menyelenggarakan Rapat Kerja Nasional (Rakernas) pada tanggal 31 Oktober sampai 2 November 2018.</p>
+                <p>Rakernas APSI diselenggarakan di Bali Dynasty Resort Denpasar Bali yang dihadiri oleh beberapa pengurus dari 15 Dewan Pimpinan Daerah (DPD), dari 22 DPD yang ada. DPD APSI yang hadir yaitu DPD DKI Jaya, Banten, Kepulauan Riau, Jatim, Jateng, Jabar, Sumbar, Sumsel, Sumut, Jambi, Kaltim, Sulbar, Sulsel, NTB dan Bali.Acara rakernas APSI ini dirangkaikan dengan acara Pelantikan dan Pengukuhan pengurus DPD APSI Bali periode 2018-2023 serta kegiatan seminar tentang perkembangan sekuriti di Indonesia.</p>
+                <p>Seminar sekuriti dibuka oleh Kakorbinmas Polri Irjen Pol Drs. Arkian Lubis sekaligus bertindak sebagai keynote speaker. Sedangkan narasumber seminar adalah Ketua Umum APSI Azis Said, Komisioner BNSP, Dr Sugiyanto dan Kasubdit Komsatpam, Kombes Pol. Liliek Darmanto dari Baharkam Polri.</p>
+                <p>Dalam rakernas APSI ini, Ketua Umum APSI Azis Said memberikan presentasi tentang perkembangan Industrial Security Indonesia termasuk rancangan perubahan Perkap no 24 tahun 2007. Setelah Azis selesai presentasi, rakernas sidang dipimpin oleh Sekjen APSI, Djarot Soeprianto.</p>
+                <p>Dalam sidang pleno pertama beberapa DPD mengusulkan perubahan nama asosiasi dari Asosiasi Profesi Sekuriti Indonesia (APSI) menjadi Asosiasi Profesi Satpam Indonesia (APSI) dengan pertimbangan sebagai berikut:</p>
+                    <ol>
+                        <li>APSI agar bisa lebih fokus untuk memajukan satpam sebagai sebuah profesi yang lebih diakui, dihargai dan dibanggakan.</li>
+                        <li>Menjadikan wadah nyata dalam menampung aspirasi satpam. </li>
+                        <li>Dapat memperjuangkan hak-hak satpam sesuai ketentuan ketenagakerjaan dan ketentuan polri.</li>
+                        <li>Dapat memberikan pendampingan dan advokasi hukum kepada satpam yang menjadi anggota APSI dan lain sebagainya.</li>
+                    </ol>
+                <p>Akhirnya acara rakernas APSI saat itu berubah menjadi musyawarah nasional luar biasa (Munaslub). Sebagaimana diatur dalam AD/AR APSI, bahwa peserta pengurus yang hadir telah memenuhi kuorum untuk menyelenggarakan munaslub.</p>
+                <p>Sekjen Djarot kemudian menanyakan kepada peserta sidang tentang perubahan nama asosiasi tersebut, ternyata peserta sidang menyetujui perubahan Asosiasi Profesi Sekuriti Indonesia (APSI) menjadi Asosiasi Profesi Satpam Indonesia (APSI).</p>
+                <p>Ketua sidang Djarot Suprianto kemudian menginventarisir pengurus DPP yg telah mengikuti pelatihan Satpam. Ternyata sebagian besar Pengurus DPP dan DPD periode 2014-2019 adalah anggota satpam yang telah mengikuti pelatihan Gada Utama.</p>
+                <p>Akhirnya, pada Jumat 2 November 2018 jam 09.00 WITA, bertempat di Bali Dynasty Resort Denpasar Bali digelar Deklarasi yang diikuti oleh pengurus DPP, dan DPD yang jumlahnya 15 DPD dari 22 DPD yang ada diseantero nusantara.</p>
             </div>
         </div>
     </div>
