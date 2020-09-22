@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="{{asset('landingpage/images/logo.jpg')}}" type="image/gif">
     <!-- CSRF Token -->
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="description" content="@yield('description')">
     <meta name="keywords" content="apsi, apsi jabar, dpd apsi jabar, satpam apsi, daftar satpam apsi">
@@ -13,17 +12,17 @@
     <!-- Scripts -->
     <title>@yield('title')</title>
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Work+Sans:300,400,700" rel="stylesheet">
-    <link rel="stylesheet" href="{{asset('landingpage/fonts/icomoon/style.css')}}">
-    <link rel="stylesheet" href="{{asset('landingpage/css/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{asset('landingpage/css/magnific-popup.css')}}">
-    <link rel="stylesheet" href="{{asset('landingpage/css/jquery-ui.css')}}">
-    <link rel="stylesheet" href="{{asset('landingpage/css/owl.carousel.min.css')}}">
-    <link rel="stylesheet" href="{{asset('landingpage/css/owl.theme.default.min.css')}}">
-    <link rel="stylesheet" href="{{asset('landingpage/css/bootstrap-datepicker.css')}}">
-    <link rel="stylesheet" href="{{asset('landingpage/css/animate.css')}}">
-    <link rel="stylesheet" href="{{asset('landingpage/fonts/flaticon/font/flaticon.css')}}">
-    <link rel="stylesheet" href="{{asset('landingpage/css/aos.css')}}">
-    <link rel="stylesheet" href="{{asset('landingpage/css/style.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('landingpage/fonts/icomoon/style.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('landingpage/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('landingpage/css/magnific-popup.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('landingpage/css/jquery-ui.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('landingpage/css/owl.carousel.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('landingpage/css/owl.theme.default.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('landingpage/css/bootstrap-datepicker.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('landingpage/css/animate.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('landingpage/fonts/flaticon/font/flaticon.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('landingpage/css/aos.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('landingpage/css/style.css')}}">
     @yield('style')
 </head>
 <body>
