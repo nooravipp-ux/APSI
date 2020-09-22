@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'DPD APSI JABAR - Dewan Pimpinan Daerah APSI Jawa Barat')
+@section('title', 'Dewan Pimpinan Daerah APSI Jawa Barat - DPD APSI JABAR')
 @section('content')
 <div class="slide-one-item home-slider owl-carousel">
     <div class="site-blocks-cover overlay"
@@ -129,8 +129,11 @@
 <div class="site-section">
     <div class="container">
         <div class="row ">
+            <div class="col-md-6 mx-auto text-center mb-5 section-heading">
+                <h2 class="mb-5">Anggota Terdaftar</h2>
+            </div>
             <div class="col-md-8 mb-3 mb-md-0">
-                <img src="{{asset('landingpage/images/demografi-apsi.png')}}" class="img" alt="Responsive image">
+                <img src="" class="img" alt="Responsive image">
             </div>
         </div>
     </div>
@@ -145,7 +148,7 @@
         <div class="row align-items-stretched">
             <div class="col-md-6 col-lg-3 mb-4">
                 <div class="pricing p-5 h-100 text-center bg-image no-border"
-                    style="background-image: url('images/img_1.jpg');">
+                    style="background-image: url('');">
                     <div class="pricing-content">
                         <div class="text-center mb-4">
                             <h3 class="h4 mb-4">GADA PRATAMA</h3>
@@ -217,7 +220,7 @@
             <div class="media-with-text p-md-5">
                 <div class="img-border-sm mb-4">
                     <a href="#" class="popup-vimeo image-play">
-                        <img src="images/img_1.jpg" alt="" class="img-fluid">
+                        <img src="" alt="" class="img-fluid">
                     </a>
                 </div>
                 <h2 class="heading mb-0"><a href="#">Lorem Ipsum Dolor Sit Amet</a></h2>
@@ -228,7 +231,7 @@
             <div class="media-with-text p-md-4">
                 <div class="img-border-sm mb-4">
                     <a href="#" class="popup-vimeo image-play">
-                        <img src="images/img_2.jpg" alt="" class="img-fluid">
+                        <img src="" alt="" class="img-fluid">
                     </a>
                 </div>
                 <h2 class="heading mb-0"><a href="#">Lorem Ipsum Dolor Sit Amet</a></h2>
@@ -239,7 +242,7 @@
             <div class="media-with-text p-md-4">
                 <div class="img-border-sm mb-4">
                     <a href="#" class="popup-vimeo image-play">
-                        <img src="images/img_3.jpg" alt="" class="img-fluid">
+                        <img src="" alt="" class="img-fluid">
                     </a>
                 </div>
                 <h2 class="heading mb-0"><a href="#">Lorem Ipsum Dolor Sit Amet</a></h2>
@@ -250,7 +253,7 @@
             <div class="media-with-text p-md-4">
                 <div class="img-border-sm mb-4">
                     <a href="#" class="popup-vimeo image-play">
-                        <img src="images/img_1.jpg" alt="" class="img-fluid">
+                        <img src="" alt="" class="img-fluid">
                     </a>
                 </div>
                 <h2 class="heading mb-0"><a href="#">Lorem Ipsum Dolor Sit Amet</a></h2>
@@ -261,7 +264,7 @@
             <div class="media-with-text p-md-4">
                 <div class="img-border-sm mb-4">
                     <a href="#" class="popup-vimeo image-play">
-                        <img src="images/img_2.jpg" alt="" class="img-fluid">
+                        <img src="" alt="" class="img-fluid">
                     </a>
                 </div>
                 <h2 class="heading mb-0"><a href="#">Lorem Ipsum Dolor Sit Amet</a></h2>
@@ -272,7 +275,7 @@
             <div class="media-with-text p-md-4">
                 <div class="img-border-sm mb-4">
                     <a href="#" class="popup-vimeo image-play">
-                        <img src="images/img_3.jpg" alt="" class="img-fluid">
+                        <img src="" alt="" class="img-fluid">
                     </a>
                 </div>
                 <h2 class="heading mb-0"><a href="#">Lorem Ipsum Dolor Sit Amet</a></h2>
@@ -283,7 +286,7 @@
             <div class="media-with-text p-md-4">
                 <div class="img-border-sm mb-4">
                     <a href="#" class="popup-vimeo image-play">
-                        <img src="images/img_1.jpg" alt="" class="img-fluid">
+                        <img src="" alt="" class="img-fluid">
                     </a>
                 </div>
                 <h2 class="heading mb-0"><a href="#">Lorem Ipsum Dolor Sit Amet</a></h2>
@@ -294,7 +297,7 @@
             <div class="media-with-text p-md-4">
                 <div class="img-border-sm mb-4">
                     <a href="#" class="popup-vimeo image-play">
-                        <img src="images/img_2.jpg" alt="" class="img-fluid">
+                        <img src="" alt="" class="img-fluid">
                     </a>
                 </div>
                 <h2 class="heading mb-0"><a href="#">Lorem Ipsum Dolor Sit Amet</a></h2>
@@ -305,7 +308,7 @@
             <div class="media-with-text p-md-4">
                 <div class="img-border-sm mb-4">
                     <a href="#" class="popup-vimeo image-play">
-                        <img src="images/img_3.jpg" alt="" class="img-fluid">
+                        <img src="" alt="" class="img-fluid">
                     </a>
                 </div>
                 <h2 class="heading mb-0"><a href="#">Lorem Ipsum Dolor Sit Amet</a></h2>
@@ -327,7 +330,7 @@
             <div class="p-4">
                 <div class="d-flex block-testimony">
                     <div class="person mr-3">
-                        <img src="images/person_1.jpg" alt="Image" class="img-fluid rounded">
+                        <img src="" alt="Image" class="img-fluid rounded">
                     </div>
                     <div>
                         <h2 class="h5">Katie Johnson</h2>
@@ -340,7 +343,7 @@
             <div class="p-4">
                 <div class="d-flex block-testimony">
                     <div class="person mr-3">
-                        <img src="images/person_2.jpg" alt="Image" class="img-fluid rounded">
+                        <img src="" alt="Image" class="img-fluid rounded">
                     </div>
                     <div>
                         <h2 class="h5">Jane Mars</h2>
@@ -353,7 +356,7 @@
             <div class="p-4">
                 <div class="d-flex block-testimony">
                     <div class="person mr-3">
-                        <img src="images/person_3.jpg" alt="Image" class="img-fluid rounded">
+                        <img src="" alt="Image" class="img-fluid rounded">
                     </div>
                     <div>
                         <h2 class="h5">Shane Holmes</h2>
@@ -366,7 +369,7 @@
             <div class="p-4">
                 <div class="d-flex block-testimony">
                     <div class="person mr-3">
-                        <img src="images/person_4.jpg" alt="Image" class="img-fluid rounded">
+                        <img src="" alt="Image" class="img-fluid rounded">
                     </div>
                     <div>
                         <h2 class="h5">Mark Johnson</h2>
