@@ -48,11 +48,12 @@ class WebsiteController extends Controller
                     ->join('tbl_kategori','tbl_kategori.id','tbl_post.kategori_id')
                     ->join('users','users.id','tbl_post.author_id')
                     ->limit(6)->orderBy('tbl_post.create_at', 'asc')->get();
-        $post = DB::table('tbl_post')
+        $post_detail = DB::table('tbl_post')
                     ->join('tbl_kategori','tbl_kategori.id','tbl_post.kategori_id')
                     ->join('users','users.id','tbl_post.author_id')
                     ->where('slug', $slug)->first();
-        return view('website.berita.detail_berita', compact('side_posts','post'));
+                    // dd($post);
+        return view('website.berita.detail_berita', compact('side_posts','post_detail'));
     }
 
     public function event(){
