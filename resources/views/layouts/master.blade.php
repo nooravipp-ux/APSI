@@ -102,7 +102,7 @@
 								</li>
 								<li><a><i class="fa fa-users"></i>Berita & Events<span class="fa fa-chevron-down"></span></a>
 									<ul class="nav child_menu">
-										<li><a href="index.html">Berita</a></li>
+										<li><a href="{{url('/admin/posts')}}">Berita</a></li>
 										<li><a href="index2.html">Events</a></li>
 									</ul>
 								</li>

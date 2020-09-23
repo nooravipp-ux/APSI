@@ -3,6 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <link rel="icon" href="{{asset('landingpage/images/logo.jpg')}}" type="image/gif">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">

@@ -108,7 +108,7 @@ pusat di jl. Terusan Buah Batu no.38 - 42, Batununggal, Bandung')
                                     <h3 class="title"></h3>
                                     <p class="description">
                                         Mengadakan pelatihan singkat untuk profesional security
-                                        
+
                                     </p>
                                 </a>
                             </div>
@@ -127,8 +127,8 @@ pusat di jl. Terusan Buah Batu no.38 - 42, Batununggal, Bandung')
                                     </div>
                                     <h3 class="title"></h3>
                                     <p class="description">
-                                        Sejak tahun 2002, mengadakan lomba gerak jalan dan turnamen volly 
-                                        "Awaloedin Djamin Cup" khusus untuk satpam di jabotabek, dalam memeriahkan 
+                                        Sejak tahun 2002, mengadakan lomba gerak jalan dan turnamen volly
+                                        "Awaloedin Djamin Cup" khusus untuk satpam di jabotabek, dalam memeriahkan
                                         HUT satpam.
                                     </p>
                                 </a>
@@ -141,7 +141,7 @@ pusat di jl. Terusan Buah Batu no.38 - 42, Batununggal, Bandung')
                                     <h3 class="title"></h3>
                                     <p class="description">
                                         Bersama Asosiasi bidang sekuriti lain, berperan dalam pembuatan
-                                        SKKNI dan perubahan perkap no 24 tahun 2007 menjadi perpol tentang 
+                                        SKKNI dan perubahan perkap no 24 tahun 2007 menjadi perpol tentang
                                         pamswakarsa, satpam, BUJP, pengguna jasa satpam san asosiasi.
 
                                     </p>
@@ -216,90 +216,22 @@ pusat di jl. Terusan Buah Batu no.38 - 42, Batununggal, Bandung')
                 </div>
             </div>
             <div class="row">
+                 @foreach($posts as $post)
                 <div class="col-md-6 col-lg-4 mb-5">
                     <div class="program">
-                        <a href="#" class="d-block mb-0 thumbnail"><img
-                                src="{{asset('landingpage/images/seragam.jpeg')}}" alt="Image"
+                        <a href="{{url('/berita/'.$post->slug)}}" class="d-block mb-0 thumbnail"><img
+                                src="data:image/png;base64, {{$post->banner}}" alt="Image"
                                 style="width:800px;height:240px;" class="img-fluid"></a>
                         <div class="program-body">
-                            <h3 class="heading mb-2"><a href="#">Embrace Your Edge</a></h3>
-                            <p><a href="#">Healthy Yoga</a> with <a href="#">Vicky Johnson</a></p>
-                            <div class="span"><span class="mr-4"><span class="icon-schedule icon"></span> 20 min</span>
-                                <span> <span class="icon-signal icon"></span> Beginner</span>
+                            <h3 class="heading mb-2"><a href="{{url('/berita/'.$post->slug)}}">{{$post->title}}</a></h3>
+                            <p><a href="{{url('/')}}">APSI JABAR</a> with {{$post->username}}</p>
+                            <div class="span"><span class="mr-4"><span class="icon-schedule icon"></span> {{$post->published_at}}</span>
+                                <span> <span class="icon-signal icon"></span> {{$post->kategori}}</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="program">
-                        <a href="#" class="d-block mb-0 thumbnail"><img
-                                src="{{asset('landingpage/images/seragam.jpeg')}}" alt="Image"
-                                style="width:800px;height:240px;" class="img-fluid"></a>
-                        <div class="program-body">
-                            <h3 class="heading mb-2"><a href="#">Yoga to Build Resilience</a></h3>
-                            <p><a href="#">Healthy Yoga</a> with <a href="#">Kit Rich</a></p>
-                            <div class="span"><span class="mr-4"><span class="icon-schedule icon"></span> 20 min</span>
-                                <span> <span class="icon-signal icon"></span> Advanced</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="program">
-                        <a href="#" class="d-block mb-0 thumbnail"><img
-                                src="{{asset('landingpage/images/seragam.jpeg')}}" alt="Image"
-                                style="width:800px;height:240px;" class="img-fluid"></a>
-                        <div class="program-body">
-                            <h3 class="heading mb-2"><a href="#">Rise &amp; Shine</a></h3>
-                            <p><a href="#">Power Yoga</a> with <a href="#">Sara Clark</a></p>
-                            <div class="span"><span class="mr-4"><span class="icon-schedule icon"></span> 20 min</span>
-                                <span> <span class="icon-signal icon"></span> Intermediate</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="program">
-                        <a href="#" class="d-block mb-0 thumbnail"><img
-                                src="{{asset('landingpage/images/seragam.jpeg')}}" alt="Image"
-                                style="width:800px;height:240px;" class="img-fluid"></a>
-                        <div class="program-body">
-                            <h3 class="heading mb-2"><a href="#">Bend &amp; Stretch</a></h3>
-                            <p><a href="#">Meditation Yoga</a> with <a href="#">David Scott</a></p>
-                            <div class="span"><span class="mr-4"><span class="icon-schedule icon"></span> 20 min</span>
-                                <span> <span class="icon-signal icon"></span> Beginner</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="program">
-                        <a href="#" class="d-block mb-0 thumbnail"><img
-                                src="{{asset('landingpage/images/seragam.jpeg')}}" alt="Image"
-                                style="width:800px;height:240px;" class="img-fluid"></a>
-                        <div class="program-body">
-                            <h3 class="heading mb-2"><a href="#">Vinyasa Yoga</a></h3>
-                            <p><a href="#">Meditation Yoga</a> with <a href="#">David Scott</a></p>
-                            <div class="span"><span class="mr-4"><span class="icon-schedule icon"></span> 20 min</span>
-                                <span> <span class="icon-signal icon"></span> Advanced</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="program">
-                        <a href="#" class="d-block mb-0 thumbnail"><img
-                                src="{{asset('landingpage/images/seragam.jpeg')}}" alt="Image"
-                                style="width:800px;height:240px;" class="img-fluid"></a>
-                        <div class="program-body">
-                            <h3 class="heading mb-2"><a href="#">Barre Workout</a></h3>
-                            <p><a href="#">Meditation Yoga</a> with <a href="#">David Scott</a></p>
-                            <div class="span"><span class="mr-4"><span class="icon-schedule icon"></span> 20 min</span>
-                                <span> <span class="icon-signal icon"></span> Beginner</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>

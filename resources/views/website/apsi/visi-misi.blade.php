@@ -19,7 +19,7 @@
         </div>
     </div>
 </div>
-<div class="site-section site-section-sm">
+<div class="site-block-half d-flex">
     <div class="container-fluid mt-3 mb-3">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">

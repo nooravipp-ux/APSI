@@ -131,7 +131,7 @@
                             @foreach($data_img as $data)
                             <!-- Grid column -->
                             <div class="mb-3 pics animation all 2">
-                                <img class="img-fluid"
+                                <img class="img-fluid" style="width:800px;height:240px;"
                                     src="data:image/png;base64, {{$data->gambar}}"
                                     alt="Card image cap">
                             </div>

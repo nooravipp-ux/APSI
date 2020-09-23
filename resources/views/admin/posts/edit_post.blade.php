@@ -51,7 +51,7 @@
             <div class="col-md-12 col-sm-12 ">
                 <div class="x_panel">
                     <div class="x_title">
-                        <h2>Buat Berita</h2>
+                        <h2>Gallery</h2>
                         <ul class="nav navbar-right panel_toolbox">
                             <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                             </li>
@@ -72,10 +72,10 @@
                         <!-- Grid row -->
                         <div class="row shadow p-4 mb-4 bg-white border rounded mt-lg-3 mb-lg-5">
                             <div class="col-md-12">
-                                <form action="{{url('/admin/posts/save')}}" method="POST" enctype="multipart/form-data">
+                                <form action="{{url('')}}" method="POST" enctype="multipart/form-data">
                                     @csrf
                                     <div class="form-group row">
-                                        <label for="" class="col-sm-2 col-form-label">Title</label>
+                                        <label for="" class="col-sm-2 col-form-label">Judul Gambar</label>
                                         <div class="col-sm-10">
                                             <div class="input-group mb-3">
                                                 <div class="custom-file">
@@ -85,49 +85,21 @@
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="" class="col-sm-2 col-form-label">Banner</label>  
+                                        <label for="" class="col-sm-2 col-form-label">Gambar</label>  
                                         <div class="col-sm-10">
                                             <div class="input-group mb-3">
                                                 <div class="custom-file">
-                                                    <input type="file" name="banner">
+                                                    <input type="file" name="img">
                                                     
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="" class="col-sm-2 col-form-label">Article</label>  
-                                        <div class="col-sm-10">
-                                            <div class="input-group mb-3">
-                                                <div class="">
-                                                    <textarea name="article" id="" cols="30" rows="10"></textarea>
-                                                    
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="" class="col-sm-2 col-form-label">Kategori</label>  
+                                        <button type="submit" class="btn btn-primary">Upload</button>  
                                         <div class="col-sm-10">
                                             <div class="input-group mb-3">
                                                 <div class="custom-file">
-                                                    <select name="kategori" class="form-control">
-                                                        <option value="-">- pilih kategori -</option>
-                                                        @foreach($kategori as $data)
-                                                        <option value="{{$data->id}}">{{$data->kategori}}</option>
-                                                        @endforeach
-                                                    </select>
-                                                    
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <button type="submit" class="btn btn-primary">Post</button>  
-                                        <div class="col-sm-10">
-                                            <div class="input-group mb-3">
-                                                <div class="">
-                                                    
                                                     
                                                 </div>
                                             </div>

@@ -20,7 +20,9 @@ Route::get('/tentang/struktur-organisasi', 'WebsiteController@struktur_organisas
 Route::get('/keanggotaan', 'WebsiteController@keanggotaan');
 Route::get('/keanggotaan/pendaftaran-satpam', 'KeanggotaanController@pendaftaran_personil');
 Route::get('/keanggotaan/pendaftaran-bujp', 'KeanggotaanController@pendaftaran_BUJP');
-Route::get('/berita', 'WebsiteController@visi_misi');
+Route::get('/berita', 'WebsiteController@berita');
+Route::get('/berita/{slug}', 'WebsiteController@detail_berita');
+
 Route::get('/event', 'WebsiteController@visi_misi');
 Route::get('/contact', 'WebsiteController@contact');
 
@@ -45,4 +47,6 @@ Route::get('/admin/gallery', 'GalleryController@gallery');
 Route::post('/admin/gallery/simpan', 'GalleryController@upload_gambar');
 
 //Posting berita dan event
-
+Route::get('/admin/posts', 'PostsController@post');
+Route::get('/admin/posts/create', 'PostsController@create_post');
+Route::post('/admin/posts/save', 'PostsController@save_post');
