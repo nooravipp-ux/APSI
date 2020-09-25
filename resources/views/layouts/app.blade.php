@@ -9,7 +9,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="description" content="@yield('description')">
-    <meta name="keywords" content="apsi, apsi jabar, dpd apsi jabar, satpam apsi, daftar satpam apsi">
+    <meta name="keywords" content="apsi, apsi jabar, dpd apsi jabar, satpam apsi, pendaftaran satpam apsi">
     <meta name="robots" content="index, follow"> 
     <!-- Scripts -->
     <title>@yield('title')</title>

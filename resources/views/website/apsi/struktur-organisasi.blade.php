@@ -1,5 +1,6 @@
 @extends('layouts.app')
-@section('title','Strukutur Organisasi - DPD APSI JABAR')
+@section('title','STRUKTUR ORGANISASI APSI JABAR - DPD APSI JABAR')
+@section('description', 'Struktur Organisasi Dewan Pimpinan DAerah APSI Jawa Barat')
 @section('style')
 <style>
 

@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title','sejarah APSI - DPD APSI JABAR')
+@section('title','SEJARAH APSI JABAR - DPD APSI JABAR')
 @section('description', 'APSI adalah Asosiasi Profesi Sekuriti Indonesia, yang lahir pada tanggal 1 November 2014.')
 @section('style')
 <style>

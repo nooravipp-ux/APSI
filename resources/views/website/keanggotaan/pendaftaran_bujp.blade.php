@@ -1,5 +1,6 @@
 @extends('layouts.app')
-@section('title','Keanggotaan BUJP - DPD APSI JABAR')
+@section('title','PENDAFTARAN BUJP APSI JABAR - DPD APSI JABAR')
+@section('description', 'Dalam Peraturan Kepolisian No. 17 Tahun 2006 tentang Pedoman Pembinaan Badan Usaha Jasa Pengamanan yang tertuang dalam Pasal 3 dan Pasal 4, tersebut ada 6 jenis usaha BUJP.')
 @section('style')
 @section('content')
 <div class="slide-one-item home-slider owl-carousel">

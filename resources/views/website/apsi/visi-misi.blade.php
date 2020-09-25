@@ -1,5 +1,6 @@
 @extends('layouts.app')
-@section('title','Visi Misi - DPD APSI JABAR')
+@section('title','VISI-MISI APSI JABAR - DPD APSI JABAR')
+@section('description', 'Menjadikan Profesi Satpam Sebagai Bidang Pekerjaan yang Lebih Diakui, Dihargai dan Dibanggakan')
 @section('style')
 <style>
 p {

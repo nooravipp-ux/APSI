@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('title','Keanggotaan Satpam - DPD APSI JABAR')
+@section('description', 'Satuan Pengamanan (Satpam) yang lahir pada 30 Desember 1980 telah menjadi aset negara di bidang pengamanan. Keberadaan satpam di lingkungan kerja dan obyek vital telah memberikan andil terhadap keamanan nasional.')
 @section('style')
 @section('content')
 <div class="slide-one-item home-slider owl-carousel">
