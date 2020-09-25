@@ -31,14 +31,11 @@
                                             <li><a href="{{url('/keanggotaan/pendaftaran-bujp')}}">BUJP</a></li>
                                         </ul>
                                     </li>
-                                    <li>
+                                    <li  class="has-children">
                                         <a href="{{url('/berita')}}">BERITA</a>
-                                    </li>
-                                    <li class="has-children">
-                                        <a href="{{url('/event')}}">EVENTS</a>
                                         <ul class="dropdown arrow-top">
-                                            <li><a href="{{url('/keanggotaan/pendaftaran-satpam')}}">SEMINAR</a></li>
-                                            <li><a href="{{url('/keanggotaan/pendaftaran-bujp')}}">DIKLAT</a></li>
+                                            <li><a href="{{url('/berita')}}">SEMINAR</a></li>
+                                            <li><a href="{{url('/berita')}}">DIKLAT</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="{{url('/contact')}}">CONTACT</a></li>

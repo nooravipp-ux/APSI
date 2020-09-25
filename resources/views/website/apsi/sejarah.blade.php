@@ -36,6 +36,9 @@ ul.timeline>li:before {
     height: 20px;
     z-index: 400;
 }
+p {
+    text-align: justify;
+}
 </style>
 @endsection
 @section('content')

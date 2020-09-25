@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', '')
+@section('title', $title_post.' - DPD APSI JABAR')
 @section('style')
 
 
@@ -23,6 +23,29 @@
     <div class="container-fluid mt-3 mb-3">
         <hr>
         <div class="row">
+            <div class="col-md-2">
+                <h4>Kategori Berita</h4>
+                <ul>
+                    <li>Event</li>
+                    <li>Seminar</li>
+                    <li>Diklat</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <div class="program">
+                    <div class="program-body">
+                        <div class="d-block mb-5 thumbnail"><img src="data:image/png;base64, {{$post_detail->banner}}"
+                                alt="Image" style="width:800px;height:400px;" class="img-fluid">
+                        </div>
+                        <p><a href="{{url('/')}}">APSI JABAR</a> with {{$post_detail->username}}</a></p>
+                        <div class="span"><span class="mr-4 mb-5"><span class="icon-schedule icon"></span>
+                                {{$post_detail->published_at}}</span>
+                            <span> <span class="icon-signal icon"></span> {{$post_detail->kategori}}</span>
+                        </div>
+                        <p style="text-align: justify;">{!! $post_detail->article !!}</p>
+                    </div>
+                </div>
+            </div>
             <div class="col-md-3">
                 @foreach($side_posts as $post)
                 <div class="row">
@@ -41,29 +64,7 @@
                 </div>
                 <hr>
                 @endforeach
-            </div>
-            <div class="col-md-6">
-                <div class="program">
-                    <div class="program-body">
-                        <div class="d-block mb-5 thumbnail"><img src="data:image/png;base64, {{$post_detail->banner}}"
-                                alt="Image" style="width:800px;height:400px;" class="img-fluid">
-                        </div>
-                        <p><a href="{{url('/')}}">APSI JABAR</a> with {{$post_detail->username}}</a></p>
-                        <div class="span"><span class="mr-4 mb-5"><span class="icon-schedule icon"></span>
-                                {{$post_detail->published_at}}</span>
-                            <span> <span class="icon-signal icon"></span> {{$post_detail->kategori}}</span>
-                        </div>
-                        <p style="text-align: justify;">{{$post_detail->article}}</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <h4>Kategori Berita</h4>
-                <ul>
-                    <li>Event</li>
-                    <li>Seminar</li>
-                    <li>Diklat</li>
-                </ul>
+
             </div>
         </div>
     </div>

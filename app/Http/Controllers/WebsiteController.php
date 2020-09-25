@@ -12,7 +12,13 @@ class WebsiteController extends Controller
                 ->join('users','users.id','tbl_post.author_id')
                 ->limit(6)->orderBy('tbl_post.create_at', 'desc')->get();
         $gallery = DB::table('tbl_gallery')->limit(12)->orderBy('created_at', 'asc')->get();
-        return view('website.index', compact('gallery','posts'));
+        $upcoming_events = DB::table('tbl_post')
+                        ->join('tbl_kategori','tbl_kategori.id','tbl_post.kategori_id')
+                        ->join('users','users.id','tbl_post.author_id')
+                        ->where('tbl_kategori.kategori','event')
+                        ->limit(6)->orderBy('tbl_post.create_at', 'desc')->get();
+                        
+        return view('website.index', compact('gallery','posts','upcoming_events'));
     }
     public function apsi(){
         return view('website.keanggotaan.keanggotaan');
@@ -52,8 +58,9 @@ class WebsiteController extends Controller
                     ->join('tbl_kategori','tbl_kategori.id','tbl_post.kategori_id')
                     ->join('users','users.id','tbl_post.author_id')
                     ->where('slug', $slug)->first();
+        $title_post = $post_detail->title;
                     // dd($post);
-        return view('website.berita.detail_berita', compact('side_posts','post_detail'));
+        return view('website.berita.detail_berita', compact('side_posts','post_detail','title_post'));
     }
 
     public function event(){

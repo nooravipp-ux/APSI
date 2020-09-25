@@ -85,29 +85,26 @@
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="" class="col-sm-2 col-form-label">Banner</label>  
+                                        <label for="" class="col-sm-2 col-form-label">Banner</label>
                                         <div class="col-sm-10">
                                             <div class="input-group mb-3">
                                                 <div class="custom-file">
                                                     <input type="file" name="banner">
-                                                    
+
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="" class="col-sm-2 col-form-label">Article</label>  
-                                        <div class="col-sm-10">
-                                            <div class="input-group mb-3">
-                                                <div class="">
-                                                    <textarea name="article" id="" cols="30" rows="10"></textarea>
-                                                    
-                                                </div>
+                                        <label for="" class="col-sm-2 col-form-label">Article</label>
+                                        <div class="col-md-12 col-lg-8">
+                                            <div class="form-group">
+                                                <textarea id="article" name="article"></textarea>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="" class="col-sm-2 col-form-label">Kategori</label>  
+                                        <label for="" class="col-sm-2 col-form-label">Kategori</label>
                                         <div class="col-sm-10">
                                             <div class="input-group mb-3">
                                                 <div class="custom-file">
@@ -117,18 +114,18 @@
                                                         <option value="{{$data->id}}">{{$data->kategori}}</option>
                                                         @endforeach
                                                     </select>
-                                                    
+
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <button type="submit" class="btn btn-primary">Post</button>  
+                                        <button type="submit" class="btn btn-primary">Post</button>
                                         <div class="col-sm-10">
                                             <div class="input-group mb-3">
                                                 <div class="">
-                                                    
-                                                    
+
+
                                                 </div>
                                             </div>
                                         </div>
@@ -145,4 +142,17 @@
         </div>
     </div>
 </div>
+@endsection
+
+@section('script')
+<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+
+<script>
+tinymce.init({
+    selector: 'textarea#article',
+    menubar: true
+});
+</script>
+
+
 @endsection

@@ -23,7 +23,7 @@ pusat di jl. Terusan Buah Batu no.38 - 42, Batununggal, Bandung')
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-md-7 text-center" data-aos="fade">
-                    <h1 class="">Bergabung Dengan APSI JABAR</h1>
+                    <h1 class="">BERGABUNG DENGAN APSI JABAR</h1>
                     <h2 class="caption mb-2">Menguatkan Simpul Korsa Dengan Menjadi Anggota APSI Jadilah Bagian Dari
                         Keluarga Besar Satpam Indonesia</h2>
                 </div>

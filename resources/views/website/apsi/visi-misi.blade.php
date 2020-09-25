@@ -1,7 +1,11 @@
 @extends('layouts.app')
 @section('title','Visi Misi - DPD APSI JABAR')
 @section('style')
-
+<style>
+p {
+    text-align: justify;
+}
+</style>
 
 @endsection
 @section('content')
