@@ -1,5 +1,6 @@
 @extends('layouts.master')
 @section('style')
+<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
 <style>
 .gallery {
     -webkit-column-count: 3;
@@ -99,7 +100,7 @@
                                         <label for="" class="col-sm-2 col-form-label">Article</label>
                                         <div class="col-md-12 col-lg-8">
                                             <div class="form-group">
-                                                <textarea id="article" name="article"></textarea>
+                                                <textarea id="editor" name="article"></textarea>
                                             </div>
                                         </div>
                                     </div>
@@ -145,12 +146,11 @@
 @endsection
 
 @section('script')
-<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
 
 <script>
-tinymce.init({
-    selector: 'textarea#article',
-    menubar: true
+$(document).ready(function() {
+  $('#editor').summernote();
 });
 </script>
 

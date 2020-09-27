@@ -19,9 +19,9 @@
                                     <li class="has-children">
                                         <a href="{{url('/tentang/visi-misi')}}"> TENTANG APSI</a>
                                         <ul class="dropdown arrow-top">
-                                            <li><a href="{{url('/tentang/sejarah')}}">Sejarah</a></li>
-                                            <li><a href="{{url('/tentang/visi-misi')}}">Visi Misi</a></li>
-                                            <li><a href="{{url('/tentang/struktur-organisasi')}}">Struktur Organisasi</a></li>
+                                            <li><a href="{{url('/tentang/sejarah')}}">SEJARAH</a></li>
+                                            <li><a href="{{url('/tentang/visi-misi')}}">VISI MISI</a></li>
+                                            <li><a href="{{url('/tentang/struktur-organisasi')}}">STRUKTUR ORGANISASI</a></li>
                                         </ul>
                                     </li>
                                     <li class="has-children">

@@ -1,5 +1,6 @@
 @extends('layouts.app')
-@section('title','Berita - DPD APSI JABAR')
+@section('title','Berita, Event dan Seminar tentang Security dan APSI - DPD APSI JABAR')
+@section('description', 'Mengulas tentang semua Berita, Event dan kegiatan yang berhubungan tentang Security dan APSI')
 @section('style')
 
 
@@ -33,12 +34,7 @@
         <hr>
         <div class="row">
             <div class="col-md-2">
-                <h4>Kategori Berita</h4>
-                <ul>
-                    <li>Event</li>
-                    <li>Seminar</li>
-                    <li>Diklat</li>
-                </ul>
+               
             </div>
             <div class="col-md-6">
                 @foreach($posts as $post)
@@ -59,6 +55,9 @@
                 @endforeach
             </div>
             <div class="col-md-3">
+                <div class="row mt-4 mx-auto text-center section-heading">
+                    <h2>Popular Posts</h2>
+                </div>
                 @foreach($side_posts as $post)
                 <div class="row">
                     <div class="program">
