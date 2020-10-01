@@ -10,6 +10,7 @@ class WebsiteController extends Controller
         $posts = DB::table('tbl_post')
                 ->join('tbl_kategori','tbl_kategori.id','tbl_post.kategori_id')
                 ->join('users','users.id','tbl_post.author_id')
+                ->where('tbl_post.publish','true')
                 ->limit(6)->orderBy('tbl_post.create_at', 'desc')->get();
         $gallery = DB::table('tbl_gallery')->limit(12)->orderBy('created_at', 'asc')->get();
         $upcoming_events = DB::table('tbl_post')
@@ -38,6 +39,11 @@ class WebsiteController extends Controller
         return view('website.keanggotaan.keanggotaan');
     }
     public function berita(){
+        $head_lines = DB::table('tbl_post')
+                    ->join('tbl_kategori','tbl_kategori.id','tbl_post.kategori_id')
+                    ->join('users','users.id','tbl_post.author_id')
+                    ->where('tbl_post.headline','true')
+                    ->orderBy('tbl_post.create_at', 'asc')->get();
         $side_posts = DB::table('tbl_post')
                     ->join('tbl_kategori','tbl_kategori.id','tbl_post.kategori_id')
                     ->join('users','users.id','tbl_post.author_id')
@@ -46,7 +52,7 @@ class WebsiteController extends Controller
                 ->join('tbl_kategori','tbl_kategori.id','tbl_post.kategori_id')
                 ->join('users','users.id','tbl_post.author_id')
                 ->limit(4)->orderBy('tbl_post.create_at', 'desc')->get();
-        return view('website.berita.berita', compact('posts','side_posts'));
+        return view('website.berita.berita', compact('posts','side_posts','head_lines'));
     }
 
     public function detail_berita($slug){

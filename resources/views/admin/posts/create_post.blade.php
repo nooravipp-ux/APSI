@@ -121,6 +121,34 @@
                                         </div>
                                     </div>
                                     <div class="form-group row">
+                                        <label for="" class="col-sm-2 col-form-label">Publish</label>
+                                        <div class="col-sm-10">
+                                            <div class="input-group mb-3">
+                                                <div class="custom-file">
+                                                    <select name="publish" class="form-control">
+                                                        <option value="false" selected>Tidak</option>
+                                                        <option value="true">Ya</option>
+                                                    </select>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="" class="col-sm-2 col-form-label">Headline</label>
+                                        <div class="col-sm-10">
+                                            <div class="input-group mb-3">
+                                                <div class="custom-file">
+                                                    <select name="headline" class="form-control">
+                                                        <option value="false" selected>Tidak</option>
+                                                        <option value="true">Ya</option>
+                                                    </select>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
                                         <button type="submit" class="btn btn-primary">Post</button>
                                         <div class="col-sm-10">
                                             <div class="input-group mb-3">

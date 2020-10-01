@@ -7,27 +7,18 @@
 @endsection
 @section('content')
 <div class="slide-one-item home-slider owl-carousel">
-    <div class="site-blocks-cover overlay" style="background-image: url('{{asset('landingpage/images/dewan-pimpinan-daerah.jpg')}}');height:30px;"
+    @foreach($head_lines as $head)
+    <div class="site-blocks-cover overlay" style="background-image: url('{{asset('uploads/'.$head->banner_name)}}');height:30px;"
         data-aos="fade" data-stellar-background-ratio="0.5">
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-md-7 text-center" data-aos="fade">
-                    <h1 class="">Berita Terbaru</h1>
+                    <a href="{{url('/berita/'.$head->slug)}}"><h1 class="">{{$head->title}}</h1></a>
                 </div>
             </div>
         </div>
     </div>
-    <div class="site-blocks-cover overlay"
-        style="background-image: url('{{asset('landingpage/images/seragam.jpeg')}}');height:30px;" data-aos="fade"
-        data-stellar-background-ratio="0.5">
-        <div class="container">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-md-7 text-center" data-aos="fade">
-                    <h1 class="">Rakernas Msyawarah APSI ke 20 di Rayakan di Bali</h1>
-                </div>
-            </div>
-        </div>
-    </div>
+    @endforeach
 </div>
 <div class="site-block-half d-flex">
     <div class="container-fluid mt-3 mb-3">
@@ -40,7 +31,7 @@
                 @foreach($posts as $post)
                 <div class="program">
                     <a href="{{url('/berita/'.$post->slug)}}" class="d-block mb-0 thumbnail"><img
-                            src="data:image/png;base64, {{$post->banner}}" alt="Image" style="width:800px;height:400px;"
+                        src="{{url('uploads/'.$post->banner_name)}}" alt="{{$post->original_banner_name}}"
                             class="img-fluid"></a>
                     <div class="program-body">
                         <h2 class="heading mb-2"><a href="{{url('/berita/'.$post->slug)}}">{{$post->title}}</a></h2>

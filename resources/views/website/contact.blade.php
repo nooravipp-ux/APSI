@@ -8,7 +8,6 @@
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-md-7 text-center" data-aos="fade">
-                    <h2 class="caption mb-2">Contact</h2>
                     <h1 class="">Contact Us</h1>
                 </div>
             </div>

@@ -220,7 +220,7 @@ pusat di jl. Terusan Buah Batu no.38 - 42, Batununggal, Bandung')
                 <div class="col-md-6 col-lg-4 mb-5">
                     <div class="program">
                         <a href="{{url('/berita/'.$post->slug)}}" class="d-block mb-0 thumbnail"><img
-                                src="data:image/png;base64, {{$post->banner}}" alt="Image"
+                                src="{{url('uploads/'.$post->banner_name)}}" alt="{{$post->original_banner_name}}"
                                 style="width:800px;height:240px;" class="img-fluid"></a>
                         <div class="program-body">
                             <h3 class="heading mb-2"><a href="{{url('/berita/'.$post->slug)}}">{{$post->title}}</a></h3>
@@ -246,8 +246,8 @@ pusat di jl. Terusan Buah Batu no.38 - 42, Batununggal, Bandung')
             <div class="row no-gutters">
                 @foreach($gallery as $img)
                 <div class="col-md-6 col-lg-3">
-                    <a href="" class="image-popup img-opacity"><img src="data:image/png;base64, {{$img->gambar}}"
-                            alt="{{$img->title}}" style="width:450px; height:300px;" class="img-fluid"></a>
+                    <a href="" class="image-popup img-opacity"><img src="{{url('uploads/'. $img->gambar)}}"
+                            alt="{{$img->original_file_name}}" style="width:450px; height:300px;" class="img-fluid"></a>
                 </div>
                 @endforeach
             </div>

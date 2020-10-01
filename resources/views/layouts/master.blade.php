@@ -81,18 +81,6 @@
 										<li><a href="index.html">Registration</a></li>
 									</ul>
 								</li>
-								<li><a><i class="fa fa-users"></i>Record Training<span class="fa fa-chevron-down"></span></a>
-									<ul class="nav child_menu">
-										<li><a href="index.html">Members</a></li>
-										<li><a href="index.html">Registration</a></li>
-									</ul>
-								</li>
-								<li><a><i class="fa fa-file-text-o"></i>Reqruitement & Contract<span class="fa fa-chevron-down"></span></a>
-									<ul class="nav child_menu">
-										<li><a href="index.html">Members</a></li>
-										<li><a href="index.html">Registration</a></li>
-									</ul>
-								</li>
 								<li><a><i class="fa fa-book"></i>Laporan<span class="fa fa-chevron-down"></span></a>
 									<ul class="nav child_menu">
 										<li><a href="index.html">Laporan Patroli</a></li>

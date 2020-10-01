@@ -45,8 +45,10 @@ Route::get('/admin/pendaftaran-bujp/export', 'KeanggotaanController@export_bujp_
 //Gallery
 Route::get('/admin/gallery', 'GalleryController@gallery');
 Route::post('/admin/gallery/simpan', 'GalleryController@upload_gambar');
+Route::get('/admin/gallery/hapus/{id}', 'GalleryController@delete');
 
 //Posting berita dan event
 Route::get('/admin/posts', 'PostsController@post');
 Route::get('/admin/posts/create', 'PostsController@create_post');
 Route::post('/admin/posts/save', 'PostsController@save_post');
+Route::get('/admin/posts/delete/{id}', 'PostsController@delete');

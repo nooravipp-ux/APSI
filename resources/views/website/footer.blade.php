@@ -15,7 +15,6 @@
                                 <li><a href="{{url('/keanggotaan/pendaftaran-satpam')}}">Gada Pratama</a></li>
                                 <li><a href="{{url('/keanggotaan/pendaftaran-satpam')}}">Gada Madya</a></li>
                                 <li><a href="{{url('/keanggotaan/pendaftaran-satpam')}}">Gada Utama</a></li>
-                                <li><a href="{{url('/keanggotaan/pendaftaran-bujp')}}">Gada Utama BUJP</a></li>
                             </ul>
                         </div>
                     </div>

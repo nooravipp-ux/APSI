@@ -80,17 +80,17 @@
                             <div class="col-md-2">
                                 <div class="banner">
                                     <img class="img-fluid" style="width:400px;height:200px;"
-                                        src="data:image/png;base64, {{$post->banner}}" alt="Card image cap">
+                                        src="{{url('uploads/'.$post->banner_name)}}" alt="Card image cap">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="body">
-                                    <p>{{substr($post->article,0 ,125)}} ....</p>
+                                    <p>{!! substr($post->article,0 ,125) !!} ....</p>
                                 </div>
                             </div>
                             <div class="col-md-1">
                                 <div class="action">
-                                    <a href="#">
+                                    <a href="{{url('/admin/posts/delete/'.$post->post_id)}}" onclick="return confirm('yakin?');">
                                         <span class="glyphicon glyphicon-trash"></span>
                                     </a> |
                                     <a href="#">
