@@ -855,7 +855,7 @@ textarea.form-control {
                                             <div class="col-lg-3 col-md-4 col-sm-4">
                                                 <div class="main-box clearfix">
                                                     <h2>{{$data_pendaftar->nama}}</h2>
-                                                    <img src="data:image/png;base64, {{$data_pendaftar->foto}}"
+                                                    <img src="{{url('uploads/'.$data_pendaftar->foto)}}"
                                                         alt="Foto Belum di Isi"
                                                         class="profile-img img-responsive center-block"
                                                         style="height: 300px;">
@@ -973,7 +973,7 @@ textarea.form-control {
                                                             <div class="tab-pane fade in active" id="tab-ktp">
 
                                                                 <img id="ktp"
-                                                                    src="data:image/png;base64, {{$data_pendaftar->ktp}}"
+                                                                    src="{{url('uploads/'.$data_pendaftar->ktp)}}"
                                                                     alt="Snow">
 
 
@@ -993,7 +993,7 @@ textarea.form-control {
 
                                                             <div class="tab-pane fade" id="tab-ijazah">
                                                                 <img id="ijazah"
-                                                                    src="data:image/png;base64, {{$data_pendaftar->ijazah_diklat}}"
+                                                                    src="{{url('uploads/'.$data_pendaftar->ijazah)}}"
                                                                     alt="Snow">
 
 

@@ -855,9 +855,6 @@ textarea.form-control {
                                             <div class="col-lg-3 col-md-4 col-sm-4">
                                                 <div class="main-box clearfix">
                                                     <h2>{{$data_pendaftar->nama_perusahaan}}</h2>
-                                                    <img src="data:image/png;base64," alt="Foto Belum di Isi"
-                                                        class="profile-img img-responsive center-block"
-                                                        style="height: 300px;">
                                                     <div>
                                                         <form action="{{url('/admin/pendaftaran-bujp/confirm')}}" method="post">
                                                             @csrf
@@ -974,7 +971,7 @@ textarea.form-control {
                                                             <div class="tab-pane fade in active" id="tab-akta">
 
                                                                 <img class="img-fluid" id="k" alt="Bukti Pembayaran"
-                                                                    src="data:image/png;base64, {{$data_pendaftar->akta_pendirian_perusahaan}}">
+                                                                    src="{{url('uploads/'.$data_pendaftar->app)}}">
 
 
                                                                 <div id="myModal" class="modal">
@@ -993,7 +990,7 @@ textarea.form-control {
 
                                                             <div class="tab-pane fade" id="tab-siup">
                                                                 <img class="img-fluid" id="k" alt="Bukti Pembayaran"
-                                                                    src="data:image/png;base64, {{$data_pendaftar->siup}}">
+                                                                    src="{{url('uploads/'.$data_pendaftar->siup)}}">
 
 
                                                                 <div id="myModal" class="modal">
@@ -1011,7 +1008,7 @@ textarea.form-control {
 
                                                             <div class="tab-pane fade" id="tab-nib">
                                                                 <img class="img-fluid" id="k" alt="Bukti Pembayaran"
-                                                                    src="data:image/png;base64, {{$data_pendaftar->nib}}">
+                                                                    src="{{url('uploads/'.$data_pendaftar->nib)}}">
 
 
                                                                 <div id="myModal" class="modal">
@@ -1028,7 +1025,7 @@ textarea.form-control {
                                                             </div>
                                                             <div class="tab-pane fade" id="tab-ijin">
                                                                 <img class="img-fluid" id="k" alt="Bukti Pembayaran"
-                                                                    src="data:image/png;base64, {{$data_pendaftar->ijin_mabes_polri}}">
+                                                                    src="{{url('uploads/'.$data_pendaftar->simp)}}">
                                                                 <div id="myModal" class="modal">
 
                                                                     <!-- The Close Button -->

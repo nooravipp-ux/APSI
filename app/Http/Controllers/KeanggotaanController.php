@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Exports\PendaftaranSatpamExport;
 use App\Exports\PendaftaranBUJPExport;
 use Maatwebsite\Excel\Facades\Excel;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\File;
 
 class KeanggotaanController extends Controller
 {
@@ -19,48 +21,80 @@ class KeanggotaanController extends Controller
     }
 
     public function simpan_pendaftar(Request $req){
-        // dd($req->all());
-        // $this->validate($req, [
-        //     'file-ktp' => 'required|file|image|mimes:jpeg,png,jpg|max:1048',
-        //     'file-ijazah' => 'required|file|image|mimes:jpeg,png,jpg|max:1048',
-        //     'file-verifikasi' => 'required|file|image|mimes:jpeg,png,jpg|max:1048',
-        //     'file-foto' => 'required|file|image|mimes:jpeg,png,jpg|max:1048',
-        // ]);
+        $ktp = $req->file('file_ktp');
+        $extension_ktp = $ktp->getClientOriginalExtension();
+        Storage::disk('public')->put($ktp->getFilename().'.'.$extension_ktp,  File::get($ktp));
 
-        $path_file_ktp = $req->file('file_ktp')->getRealPath();
-        $path_file_ijazah = $req->file('file_ijazah')->getRealPath();
-        $path_file_foto = $req->file('file_foto')->getRealPath();
+        $ijazah = $req->file('file_ijazah');
+        $extension_ijazah = $ijazah->getClientOriginalExtension();
+        Storage::disk('public')->put($ijazah->getFilename().'.'.$extension_ijazah,  File::get($ijazah));
 
-        $file_ktp = base64_encode(file_get_contents($path_file_ktp));
-        $file_ijazah = base64_encode(file_get_contents($path_file_ijazah));
-        $file_foto = base64_encode(file_get_contents($path_file_foto));
+        $foto = $req->file('file_foto');
+        $extension_foto = $foto->getClientOriginalExtension();
+        Storage::disk('public')->put($foto->getFilename().'.'.$extension_foto,  File::get($foto));
+
         DB::table('tbl_pendaftaran_satpam')->insert(
-            ['nama' => $req->nama, 'nama_perusahaan' => $req->nama_perusahaan, 'tanggal_lahir' => $req->tgl_lahir, 'alamat_kantor' => $req->alamat_kantor,'telepon' => $req->no_telepon, 'email' => $req->email, 'jabatan'=>$req->calon_anggota, 'ktp'=>$file_ktp, 'ijazah_diklat'=>$file_ijazah, 'foto'=>$file_foto]
+            [
+                'nama' => $req->nama, 'nama_perusahaan' => $req->nama_perusahaan, 
+                'tanggal_lahir' => $req->tgl_lahir,
+                'alamat_kantor' => $req->alamat_kantor,
+                'telepon' => $req->no_telepon,
+                'email' => $req->email,
+                'jabatan'=>$req->calon_anggota,
+                'ktp'=>$ktp->getFilename().'.'.$extension_ktp,
+                'ktp_mime'=>$ktp->getClientMimeType(),
+                'ktp_original_file_name'=>$ktp->getClientOriginalName(),
+                'ijazah'=>$ijazah->getFilename().'.'.$extension_ijazah,
+                'ijazah_mime'=>$ijazah->getClientMimeType(),
+                'ijazah_original_file_name'=>$ijazah->getClientOriginalName(),
+                'foto'=>$foto->getFilename().'.'.$extension_foto,
+                'foto_mime'=>$foto->getClientMimeType(),
+                'foto_original_file_name'=>$foto->getClientOriginalName()
+            ]
         );
 
         return redirect('/')->with('status', 'Data di Simpan!');
     }
 
     public function simpan_pendaftar_bujp(Request $req){
-        // dd($req->all());
-        // $this->validate($req, [
-        //     'file-ktp' => 'required|file|image|mimes:jpeg,png,jpg|max:1048',
-        //     'file-ijazah' => 'required|file|image|mimes:jpeg,png,jpg|max:1048',
-        //     'file-verifikasi' => 'required|file|image|mimes:jpeg,png,jpg|max:1048',
-        //     'file-foto' => 'required|file|image|mimes:jpeg,png,jpg|max:1048',
-        // ]);
+        $app = $req->file('akta_pendirian_perusahaan');
+        $extension_app = $app->getClientOriginalExtension();
+        Storage::disk('public')->put($app->getFilename().'.'.$extension_app,  File::get($app));
+        
+        $siup = $req->file('siup');
+        $extension_siup = $siup->getClientOriginalExtension();
+        Storage::disk('public')->put($siup->getFilename().'.'.$extension_siup,  File::get($siup));
+        
+        $nib = $req->file('nib');
+        $extension_nib = $nib->getClientOriginalExtension();
+        Storage::disk('public')->put($nib->getFilename().'.'.$extension_nib,  File::get($nib));
 
-        $path_akta_pendirian_perusahaan = $req->file('akta_pendirian_perusahaan')->getRealPath();
-        $path_file_siup = $req->file('siup')->getRealPath();
-        $path_file_nib = $req->file('nib')->getRealPath();
-        $path_file_ijin_mabes_polri = $req->file('ijin_mabes_polri')->getRealPath();
+        $simp = $req->file('ijin_mabes_polri');
+        $extension_simp = $simp->getClientOriginalExtension();
+        Storage::disk('public')->put($simp->getFilename().'.'.$extension_simp,  File::get($simp));
 
-        $akta_pendirian_perusahaan = base64_encode(file_get_contents($path_akta_pendirian_perusahaan));
-        $siup = base64_encode(file_get_contents($path_file_siup));
-        $nib = base64_encode(file_get_contents($path_file_nib));
-        $ijin_mabes_polri = base64_encode(file_get_contents($path_file_ijin_mabes_polri));
         DB::table('tbl_pendaftaran_bujp')->insert(
-            ['nama_perusahaan' => $req->nama_perusahaan, 'alamat_kantor' => $req->alamat_kantor,'penanggung_jawab' => $req->penanggung_jawab, 'jabatan' => $req->jabatan, 'jml_gada_pratama'=>$req->gada_pratama, 'jml_gada_madya'=>$req->gada_madya, 'jml_gada_utama'=>$req->gada_utama, 'akta_pendirian_perusahaan'=>$akta_pendirian_perusahaan, 'siup'=>$siup, 'nib'=>$nib, 'ijin_mabes_polri'=>$ijin_mabes_polri]
+            [
+                'nama_perusahaan' => $req->nama_perusahaan,
+                'alamat_kantor' => $req->alamat_kantor,
+                'penanggung_jawab' => $req->penanggung_jawab,
+                'jabatan' => $req->jabatan,
+                'jml_gada_pratama'=>$req->gada_pratama,
+                'jml_gada_madya'=>$req->gada_madya,
+                'jml_gada_utama'=>$req->gada_utama,
+                'app'=>$app->getFilename().'.'.$extension_app,
+                'app_mime'=>$app->getClientMimeType(),
+                'app_original_file_name'=>$app->getClientOriginalName(),
+                'siup'=>$siup->getFilename().'.'.$extension_siup,
+                'siup_mime'=>$siup->getClientMimeType(),
+                'siup_original_file_name'=>$siup->getClientOriginalName(),
+                'nib'=>$nib->getFilename().'.'.$extension_nib,
+                'nib_mime'=>$nib->getClientMimeType(),
+                'nib_original_file_name'=>$nib->getClientOriginalName(),
+                'simp'=>$simp->getFilename().'.'.$extension_simp,
+                'simp_mime'=>$simp->getClientMimeType(),
+                'simp_original_file_name'=>$simp->getClientOriginalName()
+            ]
         );
 
         return redirect('/')->with('status', 'Data di Simpan!');
