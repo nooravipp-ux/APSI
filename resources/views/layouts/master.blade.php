@@ -75,7 +75,7 @@
 										<li><a href="{{url('/admin/pendaftaran')}}">SATPAM</a></li>
 									</ul>
 								</li>
-								<li><a><i class="fa fa-child"></i>Management Personil<span class="fa fa-chevron-down"></span></a>
+								<li><a><i class="fa fa-child"></i>Management Anggota<span class="fa fa-chevron-down"></span></a>
 									<ul class="nav child_menu">
 										<li><a href="index.html">Members</a></li>
 										<li><a href="index.html">Registration</a></li>

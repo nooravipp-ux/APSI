@@ -39,6 +39,9 @@ ul.timeline>li:before {
 p {
     text-align: justify;
 }
+.custom-bg {
+    background-color: #0f263a;
+}
 </style>
 @endsection
 @section('content')
@@ -59,7 +62,7 @@ p {
 <div class="site-block-half d-flex">
     <div class="container-fluid mt-3 mb-3">
         <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
+            <ol class="breadcrumb custom-bg">
                 <li class="breadcrumb-item"><a href="{{url('/')}}">Home</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Sejarah APSI</li>
             </ol>

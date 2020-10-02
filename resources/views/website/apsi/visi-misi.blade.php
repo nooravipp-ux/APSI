@@ -6,6 +6,10 @@
 p {
     text-align: justify;
 }
+
+.custom-bg {
+    background-color: #0f263a;
+}
 </style>
 
 @endsection
@@ -27,7 +31,7 @@ p {
 <div class="site-block-half d-flex">
     <div class="container-fluid mt-3 mb-3">
         <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
+            <ol class="breadcrumb custom-bg">
                 <li class="breadcrumb-item"><a href="{{url('/')}}">Home</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Visi & Misi</li>
             </ol>
@@ -36,7 +40,7 @@ p {
         <div class="row">
             <div class="col-md-3">
                 <div class="card" style="width: 18rem;">
-                    <div class="card-header">
+                    <div class="card-header custom-bg">
                         Link
                     </div>
                     <ul class="list-group list-group-flush">
@@ -64,6 +68,16 @@ p {
                     <li>Mewujudkan Pekerjaan Satpam menjadi Profesi Satpam</li>
                 </ul>
                 <h3>Obsesi APSI</h3>
+                <ol>
+                    <li>Yang dapat disebut anggota Satapam bila memenuhi 3 kriteria :</li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ol>
             </div>
         </div>
     </div>

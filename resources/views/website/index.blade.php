@@ -153,214 +153,216 @@ pusat di jl. Terusan Buah Batu no.38 - 42, Batununggal, Bandung')
             </div>
         </div>
     </div>
-    <div class="site-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 mx-auto text-center mb-5 section-heading">
-                    <h2 class="mb-5">Anggota Terdaftar</h2>
-                </div>
-            </div>
-            <div class="row align-items-stretched">
-                <div class="col-md-6 col-lg-3 mb-4">
-                    <div class="pricing p-5 h-100 text-center bg-image no-border" style="background-image: url('');">
-                        <div class="pricing-content">
-                            <div class="text-center mb-4">
-                                <h3 class="h4 mb-4">GADA PRATAMA</h3>
-                                <strong class="font-weight-normal h1 text-white">1654</strong>
-                            </div>
-                            <a href="{{url('/keanggotaan/pendaftaran-satpam')}}"
-                                class="btn pill btn-outline-white">Bergabung</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 mb-4">
-                    <div class="pricing p-5 h-100 text-center">
-                        <div class="text-center mb-4">
-                            <h3 class="h4 mb-4">GADA MADYA</h3>
-                            <strong class="font-weight-normal h1">150</strong>
-                        </div>
-                        <p class="mb-0"><a href="{{url('/keanggotaan/pendaftaran-satpam')}}"
-                                class="btn pill btn-primary">Bergabung</a></p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 mb-4">
-                    <div class="pricing p-5 h-100 text-center">
-                        <div class="text-center mb-4">
-                            <h3 class="h4 mb-4">GADA UTAMA</h3>
-                            <strong class="font-weight-normal h1">1200</strong>
-                        </div>
-                        <p class="mb-0"><a href="{{url('/keanggotaan/pendaftaran-satpam')}}"
-                                class="btn pill btn-primary">Bergabung</a></p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 mb-4">
-                    <div class="pricing p-5 h-100 text-center">
-                        <div class="text-center mb-4">
-                            <h3 class="h4 mb-4">GADA UTAMA BUJP</h3>
-                            <strong class="font-weight-normal h1">500</strong>
-                        </div>
-                        <p class="mb-0"><a href="{{url('/keanggotaan/pendaftaran-bujp')}}"
-                                class="btn pill btn-primary">Bergabung</a></p>
-                    </div>
-                </div>
+</div>
+<div class="site-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto text-center mb-5 section-heading">
+                <h2 class="mb-5">Anggota Terdaftar</h2>
             </div>
         </div>
-
-
-    </div>
-    <div class="site-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 mx-auto text-center mb-5 section-heading">
-                    <h2 class="mb-5">Berita Terkini </h2>
-                </div>
-            </div>
-            <div class="row">
-                 @foreach($posts as $post)
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="program">
-                        <a href="{{url('/berita/'.$post->slug)}}" class="d-block mb-0 thumbnail"><img
-                                src="{{url('uploads/'.$post->banner_name)}}" alt="{{$post->original_banner_name}}"
-                                style="width:800px;height:240px;" class="img-fluid"></a>
-                        <div class="program-body">
-                            <h3 class="heading mb-2"><a href="{{url('/berita/'.$post->slug)}}">{{$post->title}}</a></h3>
-                            <p><a href="{{url('/')}}">APSI JABAR</a> with {{$post->username}}</p>
-                            <div class="span"><span class="mr-4"><span class="icon-schedule icon"></span> {{$post->published_at}}</span>
-                                <span> <span class="icon-signal icon"></span> {{$post->kategori}}</span>
-                            </div>
+        <div class="row align-items-stretched">
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="pricing p-5 h-100 text-center bg-image no-border" style="background-image: url('');">
+                    <div class="pricing-content">
+                        <div class="text-center mb-4">
+                            <h3 class="h4 mb-4">GADA PRATAMA</h3>
+                            <strong class="font-weight-normal h1 text-white">1654</strong>
                         </div>
+                        <a href="{{url('/keanggotaan/pendaftaran-satpam')}}"
+                            class="btn pill btn-outline-white">Bergabung</a>
                     </div>
                 </div>
-                @endforeach
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="pricing p-5 h-100 text-center">
+                    <div class="text-center mb-4">
+                        <h3 class="h4 mb-4">GADA MADYA</h3>
+                        <strong class="font-weight-normal h1">150</strong>
+                    </div>
+                    <p class="mb-0"><a href="{{url('/keanggotaan/pendaftaran-satpam')}}"
+                            class="btn pill btn-primary">Bergabung</a></p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="pricing p-5 h-100 text-center">
+                    <div class="text-center mb-4">
+                        <h3 class="h4 mb-4">GADA UTAMA</h3>
+                        <strong class="font-weight-normal h1">1200</strong>
+                    </div>
+                    <p class="mb-0"><a href="{{url('/keanggotaan/pendaftaran-satpam')}}"
+                            class="btn pill btn-primary">Bergabung</a></p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="pricing p-5 h-100 text-center">
+                    <div class="text-center mb-4">
+                        <h3 class="h4 mb-4">BUJP</h3>
+                        <strong class="font-weight-normal h1">500</strong>
+                    </div>
+                    <p class="mb-0"><a href="{{url('/keanggotaan/pendaftaran-bujp')}}"
+                            class="btn pill btn-primary">Bergabung</a></p>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="site-section">
-        <div class="">
-            <div class="row">
-                <div class="col-md-6 mx-auto text-center mb-5 section-heading">
-                    <h2 class="mb-5">Our Gallery</h2>
+
+</div>
+<div class="site-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto text-center mb-5 section-heading">
+                <h2 class="mb-5">Berita Terkini </h2>
+            </div>
+        </div>
+        <div class="row">
+            @foreach($posts as $post)
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="program">
+                    <a href="{{url('/berita/'.$post->slug)}}" class="d-block mb-0 thumbnail"><img
+                            src="{{url('uploads/'.$post->banner_name)}}" alt="{{$post->original_banner_name}}"
+                            style="width:800px;height:240px;" class="img-fluid"></a>
+                    <div class="program-body">
+                        <h3 class="heading mb-2"><a href="{{url('/berita/'.$post->slug)}}">{{$post->title}}</a></h3>
+                        <p><a href="{{url('/')}}">APSI JABAR</a> with {{$post->username}}</p>
+                        <div class="span"><span class="mr-4"><span class="icon-schedule icon"></span>
+                                {{$post->published_at}}</span>
+                            <span> <span class="icon-signal icon"></span> {{$post->kategori}}</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row no-gutters">
-                @foreach($gallery as $img)
-                <div class="col-md-6 col-lg-3">
-                    <a href="" class="image-popup img-opacity"><img src="{{url('uploads/'. $img->gambar)}}"
-                            alt="{{$img->original_file_name}}" style="width:450px; height:300px;" class="img-fluid"></a>
+            @endforeach
+        </div>
+    </div>
+</div>
+
+<div class="site-section">
+    <div class="">
+        <div class="row">
+            <div class="col-md-6 mx-auto text-center mb-5 section-heading">
+                <h2 class="mb-5">Our Gallery</h2>
+            </div>
+        </div>
+        <div class="row no-gutters">
+            @foreach($gallery as $img)
+            <div class="col-md-6 col-lg-3">
+                <a href="" class="image-popup img-opacity"><img src="{{url('uploads/'. $img->gambar)}}"
+                        alt="{{$img->original_file_name}}" style="width:450px; height:300px;" class="img-fluid"></a>
+            </div>
+            @endforeach
+        </div>
+    </div>
+</div>
+<div class="site-section block-15">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto text-center mb-5 section-heading">
+                <h2>Upcoming Events</h2>
+            </div>
+        </div>
+        <div class="nonloop-block-15 owl-carousel">
+            <div class="media-with-text p-md-5">
+                <div class="img-border-sm mb-4">
+                    <a href="#" class="popup-vimeo image-play">
+                        <img src="" alt="" class="img-fluid">
+                    </a>
                 </div>
-                @endforeach
+                <h2 class="heading mb-0"><a href="#">Lorem Ipsum Dolor Sit Amet</a></h2>
+                <span class="mb-3 d-block post-date">Dec 20th, 2018 &bullet; By <a href="#">Admin</a></span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores culpa qui aliquam placeat
+                    nobis veritatis tempora natus rerum obcaecati.</p>
+            </div>
+            <div class="media-with-text p-md-4">
+                <div class="img-border-sm mb-4">
+                    <a href="#" class="popup-vimeo image-play">
+                        <img src="" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <h2 class="heading mb-0"><a href="#">Lorem Ipsum Dolor Sit Amet</a></h2>
+                <span class="mb-3 d-block post-date">Dec 20th, 2018 &bullet; By <a href="#">Admin</a></span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores culpa qui aliquam placeat
+                    nobis veritatis tempora natus rerum obcaecati.</p>
+            </div>
+            <div class="media-with-text p-md-4">
+                <div class="img-border-sm mb-4">
+                    <a href="#" class="popup-vimeo image-play">
+                        <img src="" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <h2 class="heading mb-0"><a href="#">Lorem Ipsum Dolor Sit Amet</a></h2>
+                <span class="mb-3 d-block post-date">Dec 20th, 2018 &bullet; By <a href="#">Admin</a></span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores culpa qui aliquam placeat
+                    nobis veritatis tempora natus rerum obcaecati.</p>
+            </div>
+            <div class="media-with-text p-md-4">
+                <div class="img-border-sm mb-4">
+                    <a href="#" class="popup-vimeo image-play">
+                        <img src="" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <h2 class="heading mb-0"><a href="#">Lorem Ipsum Dolor Sit Amet</a></h2>
+                <span class="mb-3 d-block post-date">Dec 20th, 2018 &bullet; By <a href="#">Admin</a></span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores culpa qui aliquam placeat
+                    nobis veritatis tempora natus rerum obcaecati.</p>
+            </div>
+            <div class="media-with-text p-md-4">
+                <div class="img-border-sm mb-4">
+                    <a href="#" class="popup-vimeo image-play">
+                        <img src="" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <h2 class="heading mb-0"><a href="#">Lorem Ipsum Dolor Sit Amet</a></h2>
+                <span class="mb-3 d-block post-date">Dec 20th, 2018 &bullet; By <a href="#">Admin</a></span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores culpa qui aliquam placeat
+                    nobis veritatis tempora natus rerum obcaecati.</p>
+            </div>
+            <div class="media-with-text p-md-4">
+                <div class="img-border-sm mb-4">
+                    <a href="#" class="popup-vimeo image-play">
+                        <img src="" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <h2 class="heading mb-0"><a href="#">Lorem Ipsum Dolor Sit Amet</a></h2>
+                <span class="mb-3 d-block post-date">Dec 20th, 2018 &bullet; By <a href="#">Admin</a></span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores culpa qui aliquam placeat
+                    nobis veritatis tempora natus rerum obcaecati.</p>
+            </div>
+            <div class="media-with-text p-md-4">
+                <div class="img-border-sm mb-4">
+                    <a href="#" class="popup-vimeo image-play">
+                        <img src="" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <h2 class="heading mb-0"><a href="#">Lorem Ipsum Dolor Sit Amet</a></h2>
+                <span class="mb-3 d-block post-date">Dec 20th, 2018 &bullet; By <a href="#">Admin</a></span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores culpa qui aliquam placeat
+                    nobis veritatis tempora natus rerum obcaecati.</p>
+            </div>
+            <div class="media-with-text p-md-4">
+                <div class="img-border-sm mb-4">
+                    <a href="#" class="popup-vimeo image-play">
+                        <img src="" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <h2 class="heading mb-0"><a href="#">Lorem Ipsum Dolor Sit Amet</a></h2>
+                <span class="mb-3 d-block post-date">Dec 20th, 2018 &bullet; By <a href="#">Admin</a></span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores culpa qui aliquam placeat
+                    nobis veritatis tempora natus rerum obcaecati.</p>
+            </div>
+            <div class="media-with-text p-md-4">
+                <div class="img-border-sm mb-4">
+                    <a href="#" class="popup-vimeo image-play">
+                        <img src="" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <h2 class="heading mb-0"><a href="#">Lorem Ipsum Dolor Sit Amet</a></h2>
+                <span class="mb-3 d-block post-date">Dec 20th, 2018 &bullet; By <a href="#">Admin</a></span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores culpa qui aliquam placeat
+                    nobis veritatis tempora natus rerum obcaecati.</p>
             </div>
         </div>
     </div>
-    <div class="site-section block-15">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 mx-auto text-center mb-5 section-heading">
-                    <h2>Upcoming Events</h2>
-                </div>
-            </div>
-            <div class="nonloop-block-15 owl-carousel">
-                <div class="media-with-text p-md-5">
-                    <div class="img-border-sm mb-4">
-                        <a href="#" class="popup-vimeo image-play">
-                            <img src="" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <h2 class="heading mb-0"><a href="#">Lorem Ipsum Dolor Sit Amet</a></h2>
-                    <span class="mb-3 d-block post-date">Dec 20th, 2018 &bullet; By <a href="#">Admin</a></span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores culpa qui aliquam placeat
-                        nobis veritatis tempora natus rerum obcaecati.</p>
-                </div>
-                <div class="media-with-text p-md-4">
-                    <div class="img-border-sm mb-4">
-                        <a href="#" class="popup-vimeo image-play">
-                            <img src="" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <h2 class="heading mb-0"><a href="#">Lorem Ipsum Dolor Sit Amet</a></h2>
-                    <span class="mb-3 d-block post-date">Dec 20th, 2018 &bullet; By <a href="#">Admin</a></span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores culpa qui aliquam placeat
-                        nobis veritatis tempora natus rerum obcaecati.</p>
-                </div>
-                <div class="media-with-text p-md-4">
-                    <div class="img-border-sm mb-4">
-                        <a href="#" class="popup-vimeo image-play">
-                            <img src="" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <h2 class="heading mb-0"><a href="#">Lorem Ipsum Dolor Sit Amet</a></h2>
-                    <span class="mb-3 d-block post-date">Dec 20th, 2018 &bullet; By <a href="#">Admin</a></span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores culpa qui aliquam placeat
-                        nobis veritatis tempora natus rerum obcaecati.</p>
-                </div>
-                <div class="media-with-text p-md-4">
-                    <div class="img-border-sm mb-4">
-                        <a href="#" class="popup-vimeo image-play">
-                            <img src="" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <h2 class="heading mb-0"><a href="#">Lorem Ipsum Dolor Sit Amet</a></h2>
-                    <span class="mb-3 d-block post-date">Dec 20th, 2018 &bullet; By <a href="#">Admin</a></span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores culpa qui aliquam placeat
-                        nobis veritatis tempora natus rerum obcaecati.</p>
-                </div>
-                <div class="media-with-text p-md-4">
-                    <div class="img-border-sm mb-4">
-                        <a href="#" class="popup-vimeo image-play">
-                            <img src="" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <h2 class="heading mb-0"><a href="#">Lorem Ipsum Dolor Sit Amet</a></h2>
-                    <span class="mb-3 d-block post-date">Dec 20th, 2018 &bullet; By <a href="#">Admin</a></span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores culpa qui aliquam placeat
-                        nobis veritatis tempora natus rerum obcaecati.</p>
-                </div>
-                <div class="media-with-text p-md-4">
-                    <div class="img-border-sm mb-4">
-                        <a href="#" class="popup-vimeo image-play">
-                            <img src="" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <h2 class="heading mb-0"><a href="#">Lorem Ipsum Dolor Sit Amet</a></h2>
-                    <span class="mb-3 d-block post-date">Dec 20th, 2018 &bullet; By <a href="#">Admin</a></span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores culpa qui aliquam placeat
-                        nobis veritatis tempora natus rerum obcaecati.</p>
-                </div>
-                <div class="media-with-text p-md-4">
-                    <div class="img-border-sm mb-4">
-                        <a href="#" class="popup-vimeo image-play">
-                            <img src="" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <h2 class="heading mb-0"><a href="#">Lorem Ipsum Dolor Sit Amet</a></h2>
-                    <span class="mb-3 d-block post-date">Dec 20th, 2018 &bullet; By <a href="#">Admin</a></span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores culpa qui aliquam placeat
-                        nobis veritatis tempora natus rerum obcaecati.</p>
-                </div>
-                <div class="media-with-text p-md-4">
-                    <div class="img-border-sm mb-4">
-                        <a href="#" class="popup-vimeo image-play">
-                            <img src="" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <h2 class="heading mb-0"><a href="#">Lorem Ipsum Dolor Sit Amet</a></h2>
-                    <span class="mb-3 d-block post-date">Dec 20th, 2018 &bullet; By <a href="#">Admin</a></span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores culpa qui aliquam placeat
-                        nobis veritatis tempora natus rerum obcaecati.</p>
-                </div>
-                <div class="media-with-text p-md-4">
-                    <div class="img-border-sm mb-4">
-                        <a href="#" class="popup-vimeo image-play">
-                            <img src="" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <h2 class="heading mb-0"><a href="#">Lorem Ipsum Dolor Sit Amet</a></h2>
-                    <span class="mb-3 d-block post-date">Dec 20th, 2018 &bullet; By <a href="#">Admin</a></span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores culpa qui aliquam placeat
-                        nobis veritatis tempora natus rerum obcaecati.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    @endsection
+</div>
+@endsection
