@@ -5,7 +5,7 @@
                     <h3 class="footer-heading mb-4 text-white">About</h3>
                     <p> Asosiasi Profesi Satpam Indonesia (APSI) adalah organisasi satpam yang telah terdaftar di Mabes Polri. Karena itu, satpam memiliki organisasi yang bisa dijadikan naungan dalam pengembangan wawasan dalam dunia kesatpaman....
                     </p>
-                    <p><a href="{{url('/tentang/sejarah')}}" class="btn btn-primary pill text-white px-4">Read More</a></p>
+                    <p><a href="{{url('/tentang/sejarah')}}" class="btn btn-warning pill text-white px-4">Read More</a></p>
                 </div>
                 <div class="col-md-4">
                     <div class="row">

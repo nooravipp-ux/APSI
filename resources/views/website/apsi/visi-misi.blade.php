@@ -67,17 +67,6 @@ p {
                     <li>Menggalang Kerja Sama dengan Asosiasi Bidang Sekuriti lain, baik Nasional , Regional dan International</li>
                     <li>Mewujudkan Pekerjaan Satpam menjadi Profesi Satpam</li>
                 </ul>
-                <h3>Obsesi APSI</h3>
-                <ol>
-                    <li>Yang dapat disebut anggota Satapam bila memenuhi 3 kriteria :</li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ol>
             </div>
         </div>
     </div>

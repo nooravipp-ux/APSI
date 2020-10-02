@@ -444,7 +444,11 @@
                 </ol>
             </div>
         </div>
-
+        <div class="row">
+            <div class="col-md-8 offset-md-3">
+                <span><a class="btn btn-lg btn-warning" href="{{url('/keanggotaan/pendaftaran-satpam')}}">DAFTAR SATPAM</a> <a class="btn btn-lg btn-warning" href="{{url('/keanggotaan/pendaftaran-bujp')}}">DAFTAR BUJP</a></span>
+            </div>
+        </div>
     </div>
 </div>
 @endsection

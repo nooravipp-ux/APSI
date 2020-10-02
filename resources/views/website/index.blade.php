@@ -39,7 +39,7 @@ pusat di jl. Terusan Buah Batu no.38 - 42, Batununggal, Bandung')
         <p class="mb-5"> Asosiasi Profesi Satpam Indonesia (APSI) adalah organisasi satpam yang telah terdaftar di Mabes
             Polri. Karena itu, satpam memiliki organisasi yang bisa dijadikan naungan dalam pengembangan wawasan dalam
             dunia kesatpaman.</p>
-        <p><a href="{{url('/tentang/sejarah')}}" class="btn btn-primary pill px-4 py-3 text-white">Lihat lebih
+        <p><a href="{{url('/tentang/sejarah')}}" class="btn btn-warning pill px-4 py-3 text-white">Lihat lebih
                 lanjut</a></p>
     </div>
 </div>
@@ -163,15 +163,13 @@ pusat di jl. Terusan Buah Batu no.38 - 42, Batununggal, Bandung')
         </div>
         <div class="row align-items-stretched">
             <div class="col-md-6 col-lg-3 mb-4">
-                <div class="pricing p-5 h-100 text-center bg-image no-border" style="background-image: url('');">
-                    <div class="pricing-content">
-                        <div class="text-center mb-4">
-                            <h3 class="h4 mb-4">GADA PRATAMA</h3>
-                            <strong class="font-weight-normal h1 text-white">1654</strong>
-                        </div>
-                        <a href="{{url('/keanggotaan/pendaftaran-satpam')}}"
-                            class="btn pill btn-outline-white">Bergabung</a>
+                <div class="pricing p-5 h-100 text-center">
+                    <div class="text-center mb-4">
+                        <h3 class="h4 mb-4">GADA PRATAMA</h3>
+                        <strong class="font-weight-normal h1">200</strong>
                     </div>
+                    <p class="mb-0"><a href="{{url('/keanggotaan/pendaftaran-satpam')}}"
+                            class="btn pill btn-warning">Bergabung</a></p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3 mb-4">
@@ -181,7 +179,7 @@ pusat di jl. Terusan Buah Batu no.38 - 42, Batununggal, Bandung')
                         <strong class="font-weight-normal h1">150</strong>
                     </div>
                     <p class="mb-0"><a href="{{url('/keanggotaan/pendaftaran-satpam')}}"
-                            class="btn pill btn-primary">Bergabung</a></p>
+                            class="btn pill btn-warning">Bergabung</a></p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3 mb-4">
@@ -191,7 +189,7 @@ pusat di jl. Terusan Buah Batu no.38 - 42, Batununggal, Bandung')
                         <strong class="font-weight-normal h1">1200</strong>
                     </div>
                     <p class="mb-0"><a href="{{url('/keanggotaan/pendaftaran-satpam')}}"
-                            class="btn pill btn-primary">Bergabung</a></p>
+                            class="btn pill btn-warning">Bergabung</a></p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3 mb-4">
@@ -201,7 +199,7 @@ pusat di jl. Terusan Buah Batu no.38 - 42, Batununggal, Bandung')
                         <strong class="font-weight-normal h1">500</strong>
                     </div>
                     <p class="mb-0"><a href="{{url('/keanggotaan/pendaftaran-bujp')}}"
-                            class="btn pill btn-primary">Bergabung</a></p>
+                            class="btn pill btn-warning">Bergabung</a></p>
                 </div>
             </div>
         </div>

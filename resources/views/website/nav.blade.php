@@ -17,7 +17,7 @@
                                         <a href="{{url('/')}}">HOME</a>
                                     </li>
                                     <li class="has-children">
-                                        <a href="{{url('/tentang/visi-misi')}}"> TENTANG APSI</a>
+                                        <a href=""> TENTANG APSI</a>
                                         <ul class="dropdown arrow-top">
                                             <li><a href="{{url('/tentang/sejarah')}}">SEJARAH</a></li>
                                             <li><a href="{{url('/tentang/visi-misi')}}">VISI MISI</a></li>
@@ -25,10 +25,11 @@
                                         </ul>
                                     </li>
                                     <li class="has-children">
-                                        <a href="{{url('/keanggotaan')}}">KEANGGOTAAN</a>
+                                        <a href="">KEANGGOTAAN</a>
                                         <ul class="dropdown arrow-top">
-                                            <li><a href="{{url('/keanggotaan/pendaftaran-satpam')}}">SATPAM</a></li>
-                                            <li><a href="{{url('/keanggotaan/pendaftaran-bujp')}}">BUJP</a></li>
+                                            <li><a href="{{url('/keanggotaan')}}">KEANGGOTAAN</a></li>
+                                            <li><a href="{{url('/keanggotaan/pendaftaran-satpam')}}">DAFTAR SATPAM</a></li>
+                                            <li><a href="{{url('/keanggotaan/pendaftaran-bujp')}}">DAFTAR BUJP</a></li>
                                         </ul>
                                     </li>
                                     <li  class="has-children">
