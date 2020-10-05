@@ -225,7 +225,7 @@ pusat di jl. Terusan Buah Batu no.38 - 42, Batununggal, Bandung')
                         <h3 class="heading mb-2"><a href="{{url('/berita/'.$post->slug)}}">{{$post->title}}</a></h3>
                         <p><a href="{{url('/')}}">APSI JABAR</a> with {{$post->username}}</p>
                         <div class="span"><span class="mr-4"><span class="icon-schedule icon"></span>
-                                {{$post->published_at}}</span>
+                                {{date('l, F Y h:i', strtotime($post->published_at))}}</span>
                             <span> <span class="icon-signal icon"></span> {{$post->kategori}}</span>
                         </div>
                     </div>

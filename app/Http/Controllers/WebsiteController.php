@@ -51,7 +51,7 @@ class WebsiteController extends Controller
         $posts = DB::table('tbl_post')
                 ->join('tbl_kategori','tbl_kategori.id','tbl_post.kategori_id')
                 ->join('users','users.id','tbl_post.author_id')
-                ->limit(4)->orderBy('tbl_post.create_at', 'desc')->get();
+                ->orderBy('tbl_post.create_at', 'desc')->paginate(5);
         return view('website.berita.berita', compact('posts','side_posts','head_lines'));
     }
 

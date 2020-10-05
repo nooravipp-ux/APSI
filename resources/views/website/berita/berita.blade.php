@@ -37,7 +37,7 @@
                         <h2 class="heading mb-2"><a href="{{url('/berita/'.$post->slug)}}">{{$post->title}}</a></h2>
                         <p><a href="{{url('/')}}">APSI JABAR</a> with {{$post->username}}</p>
                         <div class="span"><span class="mr-4"><span class="icon-schedule icon"></span>
-                                {{$post->published_at}}</span>
+                            {{date('l, F Y h:i', strtotime($post->published_at))}}</span>
                             <span> <span class="icon-signal icon"></span> {{$post->kategori}}</span>
                         </div>
                     </div>
@@ -58,7 +58,7 @@
                             <p><a href="{{url('/')}}">APSI JABAR</a> with <a
                                     href="{{url('/berita/'.$post->slug)}}">{{$post->username}}</a></p>
                             <div class="span"><span class="mr-4"><span class="icon-schedule icon"></span>
-                                    {{$post->published_at}}</span>
+                            {{date('l, F Y h:i', strtotime($post->published_at))}}</span>
                                 <span> <span class="icon-signal icon"></span> {{$post->kategori}}</span>
                             </div>
                         </div>
@@ -66,9 +66,17 @@
                 </div>
                 <hr>
                 @endforeach
-
             </div>
         </div>
+        <div class="row">
+                <div class="col-md-2">
+               
+               </div>
+               <div class="col-md-6">
+                {{ $posts->links() }}
+               </div>
+        </div>
+        
     </div>
 </div>
 @endsection

@@ -1,5 +1,5 @@
 @extends('auth.base-auth')
-
+@section('title','Login Admin - DPD APSI JABAR')
 @section('auth')
 <div class="limiter">
 		<div class="container-login100">

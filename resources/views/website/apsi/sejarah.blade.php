@@ -71,7 +71,7 @@ p {
         <div class="row">
             <div class="col-md-3">
                 <div class="card" style="width: 18rem;">
-                    <div class="card-header">
+                    <div class="card-header custom-bg">
                         Link
                     </div>
                     <ul class="list-group list-group-flush">

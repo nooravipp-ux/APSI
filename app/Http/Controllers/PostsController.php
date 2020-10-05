@@ -11,7 +11,7 @@ use DB;
 class PostsController extends Controller
 {
     public function post(){
-        $posts = DB::table('tbl_post')->paginate(10);;
+        $posts = DB::table('tbl_post')->paginate(5);
         return view('admin.posts.posts', compact('posts'));
     }
 
@@ -43,5 +43,13 @@ class PostsController extends Controller
 
         DB::table('tbl_post')->where('post_id', $id)->delete();
         return redirect('/admin/posts')->with('status', 'Data di Hapus!');
+    }
+
+    public function publish_post($id){
+        DB::table('tbl_post')->where('post_id', $id)->update(
+            ['publish' => 'true','published_at' => date('Y-m-d H:i:s')]
+        );
+
+        return redirect('/admin/posts');
     }
 }

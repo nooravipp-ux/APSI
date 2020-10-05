@@ -51,4 +51,5 @@ Route::get('/admin/gallery/hapus/{id}', 'GalleryController@delete');
 Route::get('/admin/posts', 'PostsController@post');
 Route::get('/admin/posts/create', 'PostsController@create_post');
 Route::post('/admin/posts/save', 'PostsController@save_post');
+Route::get('/admin/posts/publish/{id}', 'PostsController@publish_post');
 Route::get('/admin/posts/delete/{id}', 'PostsController@delete');

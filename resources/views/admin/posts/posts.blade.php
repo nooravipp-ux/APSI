@@ -70,42 +70,45 @@
                     </div>
                     <div class="x_content">
                         <!-- Grid row -->
-                        @foreach($posts as $post)
-                        <div class="row shadow p-4 mb-4 bg-white border rounded mt-lg-3 mb-lg-2">
-                            <div class="col-md-3">
-                                <div class="title">
-                                    <p>{{$post->title}}</p>
-                                </div>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="banner">
-                                    <img class="img-fluid" style="width:400px;height:200px;"
-                                        src="{{url('uploads/'.$post->banner_name)}}" alt="Card image cap">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="body">
-                                    <p>{!! substr($post->article,0 ,125) !!} ....</p>
-                                </div>
-                            </div>
-                            <div class="col-md-1">
-                                <div class="action">
-                                    <a href="{{url('/admin/posts/delete/'.$post->post_id)}}" onclick="return confirm('yakin?');">
-                                        <span class="glyphicon glyphicon-trash"></span>
-                                    </a> |
-                                    <a href="#">
-                                        <span class="glyphicon glyphicon-edit"></span>
-                                    </a> |
-                                    <a href="#">
-                                        <span class="glyphicon glyphicon-upload"></span>
-                                    </a>
-                                </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">tittle</th>
+                                            <th scope="col">create at</th>
+                                            <th scope="col">publish</th>
+                                            <th scope="col">headline</th>
+                                            <th scope="col">action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach($posts as $post)
+                                        <tr>
+                                            <th>{{$post->title}}</th>
+                                            <td>{{$post->create_at}}</td>
+                                            <td>{{$post->publish}}</td>
+                                            <td>{{$post->headline}}</td>
+                                            <td><a href="{{url('/admin/posts/delete/'.$post->post_id)}}"
+                                                    onclick="return confirm('yakin?');">
+                                                    <span class="glyphicon glyphicon-trash"></span>
+                                                </a> |
+                                                <a href="#">
+                                                    <span class="glyphicon glyphicon-edit"></span>
+                                                </a> |
+                                                <a href="{{url('/admin/posts/publish/'.$post->post_id)}}">
+                                                    <span class="glyphicon glyphicon-upload"></span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        @endforeach
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
-                        @endforeach
                         <div class="row shadow p-4 mb-4 bg-white border rounded mt-lg-3 mb-lg-2">
                             <div class="container text-center">
-                            {{ $posts->links() }}
+                                {{ $posts->links() }}
                             </div>
                         </div>
                     </div>

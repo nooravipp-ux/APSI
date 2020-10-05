@@ -34,12 +34,12 @@
             <div class="col-md-6">
                 <div class="program">
                     <div class="program-body">
+                        <p style="text-align: justify;">{!! $post_detail->article !!}</p>
                         <p><a href="{{url('/')}}">APSI JABAR</a> with {{$post_detail->username}} <span
                                 class="mr-4 mb-5"><span
-                                    class="icon-schedule icon"></span>{{date('d M Y',strtotime($post_detail->published_at))}}</span>
+                                    class="icon-schedule icon"></span>{{date('l, F Y h:i', strtotime($post_detail->published_at))}}</span>
                             <span> <span class="icon-signal icon"></span> {{$post_detail->kategori}}</span>
                         </p>
-                        <p style="text-align: justify;">{!! $post_detail->article !!}</p>
                     </div>
                 </div>
             </div>
@@ -56,7 +56,7 @@
                             <p><a href="{{url('/')}}">APSI JABAR</a> with <a
                                     href="{{url('/berita/'.$post->slug)}}">{{$post->username}}</a></p>
                             <div class="span"><span class="mr-4"><span class="icon-schedule icon"></span>
-                                    {{$post->published_at}}</span>
+                            {{date('l, F Y h:i', strtotime($post->published_at))}}</span>
                                 <span> <span class="icon-signal icon"></span> {{$post->kategori}}</span>
                             </div>
                         </div>
