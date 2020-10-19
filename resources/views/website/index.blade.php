@@ -257,7 +257,7 @@ pusat di jl. Terusan Buah Batu no.38 - 42, Batununggal, Bandung')
     <div class="container">
         <div class="row">
             <div class="col-md-6 mx-auto text-center mb-5 section-heading">
-                <h2>Upcoming Events</h2>
+                <h2>Diklat & Pelatihan</h2>
             </div>
         </div>
         <div class="nonloop-block-15 owl-carousel">

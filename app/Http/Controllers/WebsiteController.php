@@ -12,7 +12,7 @@ class WebsiteController extends Controller
                 ->join('users','users.id','tbl_post.author_id')
                 ->where('tbl_post.publish','true')
                 ->limit(6)->orderBy('tbl_post.create_at', 'desc')->get();
-        $gallery = DB::table('tbl_gallery')->limit(12)->orderBy('created_at', 'asc')->get();
+        $gallery = DB::table('tbl_gallery')->limit(8)->orderBy('created_at', 'desc')->get();
         $upcoming_events = DB::table('tbl_post')
                         ->join('tbl_kategori','tbl_kategori.id','tbl_post.kategori_id')
                         ->join('users','users.id','tbl_post.author_id')

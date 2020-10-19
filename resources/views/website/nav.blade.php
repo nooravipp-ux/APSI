@@ -19,24 +19,24 @@
                                     <li class="has-children">
                                         <a href=""> TENTANG APSI</a>
                                         <ul class="dropdown arrow-top">
-                                            <li><a href="{{url('/tentang/sejarah')}}">SEJARAH</a></li>
-                                            <li><a href="{{url('/tentang/visi-misi')}}">VISI MISI</a></li>
-                                            <li><a href="{{url('/tentang/struktur-organisasi')}}">STRUKTUR ORGANISASI</a></li>
+                                            <li><a href="{{url('/tentang/sejarah')}}">Sejarah</a></li>
+                                            <li><a href="{{url('/tentang/visi-misi')}}">Visi & Misi</a></li>
+                                            <li><a href="{{url('/tentang/struktur-organisasi')}}">Struktur Organisasi</a></li>
                                         </ul>
                                     </li>
                                     <li class="has-children">
-                                        <a href="">KEANGGOTAAN</a>
+                                        <a href=""> KEANGGOTAAN</a>
                                         <ul class="dropdown arrow-top">
-                                            <li><a href="{{url('/keanggotaan')}}">KEANGGOTAAN</a></li>
-                                            <li><a href="{{url('/keanggotaan/pendaftaran-satpam')}}">DAFTAR SATPAM</a></li>
-                                            <li><a href="{{url('/keanggotaan/pendaftaran-bujp')}}">DAFTAR BUJP</a></li>
+                                            <li><a href="{{url('/keanggotaan')}}">Keanggotaan APSI</a></li>
+                                            <li><a href="{{url('/keanggotaan/pendaftaran-satpam')}}">Satpam</a></li>
+                                            <li><a href="{{url('/keanggotaan/pendaftaran-bujp')}}">BUJP</a></li>
                                         </ul>
                                     </li>
                                     <li  class="has-children">
-                                        <a href="{{url('/berita')}}">BERITA</a>
+                                        <a href=""> BERITA</a>
                                         <ul class="dropdown arrow-top">
-                                            <li><a href="{{url('/berita')}}">SEMINAR</a></li>
-                                            <li><a href="{{url('/berita')}}">DIKLAT</a></li>
+                                            <li><a href="{{url('/berita')}}">Seminar & Diklat</a></li>
+                                            <li><a href="{{url('/berita')}}">Berita APSI</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="{{url('/contact')}}">CONTACT</a></li>
